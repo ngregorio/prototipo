@@ -642,6 +642,7 @@ function descargarPdf(el) {
 			descrgarArchivo(url);
 		}else{	
 			alert("Sr. contribuyente debe seleccionar un bien raíz");
+			return false;
 		}
 	}
 	if($("#avaluopropietario").is(":checked"))
@@ -651,6 +652,7 @@ function descargarPdf(el) {
 			descrgarArchivo(url);
 		}else{	
 			alert("Sr. contribuyente debe seleccionar un bien raíz");
+			return false;
 		}
 	}
 	if($("#avaluodetalle").is(":checked"))
@@ -660,6 +662,7 @@ function descargarPdf(el) {
 			descrgarArchivo(url);
 		}else{	
 			alert("Sr. contribuyente debe seleccionar un bien raíz");
+			return false;
 		}
 	}
 	if($("#avaluoanterior").is(":checked"))
@@ -670,10 +673,12 @@ function descargarPdf(el) {
 			descrgarArchivo(url);
 		}else{	
 			alert("Sr. contribuyente debe seleccionar un bien raíz");
+			return false;
 		}
 	}
 	}else{	
 		alert("Sr. contribuyente debe seleccionar un certificado");
+		return false;
 	}	
 }
 
@@ -708,16 +713,20 @@ function enviarMail(el) {
 			if(checkBR()){	
 				$("#msgMail").html("Se ha enviado el certificado al mail: <b>" + m +"</b>");
 				$("#divMail").show();
+				return true;
 			}else{	
 				alert("Sr. contribuyente debe seleccionar un bien raíz");
+				return false;
 			}
 		}else
 		{
 			alert("Sr. contribuyente debe seleccionar un certificado");
+			return false;
 		}
 	}else
 	{
 		alert("Sr. Contribuyente debe ingresar un mail válido");
+		return false;
 	}
 }
 
