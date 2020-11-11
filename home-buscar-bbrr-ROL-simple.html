@@ -322,7 +322,7 @@ o la dirección, luego seleccionar el botón "Buscar".
 				<button class="btn btn-default" type="button" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
 			</p>
 			<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-				<button class="btn boton-default" onclick="validarDireccion();"> Buscar </button>
+				<button class="btn boton-default" type="button" onclick="return validarDireccion();"> Buscar </button>
 				
 				<!--button class="btn boton-default" type="submit"> Buscar </button-->
 			</p>
@@ -353,9 +353,9 @@ o la dirección, luego seleccionar el botón "Buscar".
 				<div class="tooltip"> Seleccione la Región y la Comuna donde se encuentra la propiedad, ingrese los datos que se solicitan del bien raíz y seleccione el botón "Buscar".. </div>
 				</i>
 			</div>
-			
+			<!--action="home-buscar-bbrr-ROL-DIRECCION-certificado.html" onsubmit="return validarROL();" -->
 			<hr class="hr_titlex" style="margin: 5px 0;">
-			<form role="form" class="margin-bottom-40" action="home-buscar-bbrr-ROL-DIRECCION-certificado.html" onsubmit="return validarROL();" style="font-size:13px;">
+			<form role="form" class="margin-bottom-40" style="font-size:13px;">
 			<div class="block_inline">
 				<div class="col-sm-6">
 					<label for="exampleInputPassword1">Región (*)</label>
@@ -475,7 +475,7 @@ o la dirección, luego seleccionar el botón "Buscar".
 			<button id="idVolver" name="idVolver" class="btn btn-default" type="button" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
 		</p>
 		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-			<button id="idBuscar" name="idBuscar" class="btn boton-default" type="submit"> Buscar </button>
+			<button id="idBuscar" name="idBuscar" class="btn boton-default" onclick="return validarROL();" type="button"> Buscar </button>
 		</p>
 		</div>
 		</nav>
@@ -535,9 +535,10 @@ function validarDireccion() {
 		alert("Sr. Contribuyente seleccione un tipo de bien raíz para buscar ");
 		$("#idBR").addClass('error-campo');		
 		return false;
-	}else
+	}else{	
 		$("#idBR").removeClass('error-campo');
-	window.location.href='home-buscar-bbrr-ROL-DIRECCION-certificado.html';
+		window.location.href="home-buscar-bbrr-ROL-DIRECCION-certificado.html";
+	}
 }
 
 function validarROL() {
@@ -567,9 +568,10 @@ function validarROL() {
 		alert("Sr. Contribuyente ingrese un Número de Predio para buscar ");
 		$("#idPredio").addClass('error-campo');		
 		return false;
-	}else
+	}else{	
 		$("#idPredio").removeClass('error-campo');
-	return true;
+		window.location.href="home-buscar-bbrr-ROL-DIRECCION-certificado.html";
+	}
 }
 </script>	   	        
 		
