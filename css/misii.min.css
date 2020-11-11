@@ -185,7 +185,7 @@ table{border-collapse:collapse;border-spacing:0;}
 #misii #sidebar ul a li.selected i{color:#fff;}
 #misii #sidebar ul a li.selected span{color:#fff;}
 #misii #sidebar ul a:hover li.selected{background-color:#0062a1 !important;}
-#misii #box_right .panel-default>.panel-heading+.panel-collapse>.panel-body{border-top-color:#e0e0e0;padding:5px 5px;overflow-x:auto;margin-right:57px;line-height:20px;font-size:14px;background-color:#fff;}
+#misii #box_right .panel-default>.panel-heading+.panel-collapse>.panel-body{border-top-color:#e0e0e0;padding:15px 20px;overflow-x:auto;margin-right:57px;line-height:20px;font-size:14px;background-color:#fff;}
 #misii #box_right .panel-default>.panel-heading+.panel-collapse>.panel-body .panel-body{padding:0;}
 #misii #box_right .panel-default>.panel-heading+.panel-collapse>.panel-body #accordioncs .panel-body{padding:10px 20px 5px;}
 #misii #box_right .panel-default>.panel-heading+.panel-collapse>.panel-body .row{margin:0;padding:0;}

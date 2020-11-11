@@ -1,3 +1,13 @@
+.form-controlx {
+	display: flex;
+	font-size: 13px;
+	border-radius: 0;
+	box-shadow: none;
+	background: #f5f5f5;
+	border: 1px solid #ccc;
+	color:#000;
+}
+
 .horizontal-center {
     display: table-cell;
     text-align: center;
@@ -393,12 +403,12 @@ Fondo caja: #f5f5f5
 .my-card-block{
 	border-top: 1px solid rgba(0,0,0,.125);
 	padding: 8px 10px 8px 15px;
-	background-color: #f5f5f5;
+	/*background-color: #f5f5f5;*/
 }
 
 .my-card-block-last{
-	border-top: 1px solid rgba(0,0,0,.125);
-	border-bottom: 1px solid rgba(0,0,0,.125);
+	border-top: 1px solid #bbbbbb;
+	border-bottom: 1px solid #bbbbbb;
 	padding: 8px 10px 8px 15px;
 	background-color: #f5f5f5;
 }
@@ -407,6 +417,23 @@ Fondo caja: #f5f5f5
 	border-top: 1px solid rgba(0,0,0,.125);
 	padding: 8px 10px 8px 15px;
 	background-color: #E8E8E8;
+}
+
+.my-card-block-blue{
+	border-top: 1px solid rgba(0,0,0,.125);
+	padding: 8px 10px 8px 15px;
+	background-color: #D5EFFF;
+}
+
+.my-card-block-green{
+	border-top: 1px solid rgba(0,0,0,.125);
+	padding: 8px 10px 8px 15px;
+	background-color: #E2F0D9;
+}
+.my-card-block-yellow{
+	border-top: 1px solid rgba(0,0,0,.125);
+	padding: 8px 10px 8px 15px;
+	background-color: #FFF6DD;
 }
 
 .g-card-block
@@ -433,6 +460,17 @@ Fondo caja: #f5f5f5
 	color: #fff;
     border-bottom: 1px solid #002c48;
 }
+.my-card-title-search {
+    /*background-color:#706f6f;*/
+	
+	background-color:#435772;
+	margin-bottom: 0px;
+	vertical-align: center;
+	padding: 7px 10px 7px 10px;
+	font-size: 13px;
+	color:#fff;
+}
+
 .my-card-title {
     /*background-color:#706f6f;*/
 	background-color:#0f69b4;
@@ -445,7 +483,7 @@ Fondo caja: #f5f5f5
 
 .my-card-title-result {
     /*background-color:#706f6f;*/
-	background-color:#706f6f;
+	background-color:#5dafe4;
 	margin-bottom: 0px;
 	vertical-align: center;
 	padding: 7px 10px 7px 10px;
@@ -465,6 +503,12 @@ Fondo caja: #f5f5f5
 .my-card-footer {
 	padding: 8px 15px 8px 15px;
     background-color: #bbb;
+    border-top: 1px solid rgba(0,0,0,.125);
+	color: #000;
+}
+.my-card-footer-gray {
+	padding: 8px 15px 8px 15px;
+    background-color: #cccccc;
     border-top: 1px solid rgba(0,0,0,.125);
 	color: #000;
 }
@@ -708,4 +752,32 @@ strong{
 .web-sii .modal-dialog {
     width: 740px !important;
     margin: 30px auto;
+}
+
+#over
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+    text-align: center; /*handles the horizontal centering*/
+}
+/*handles the vertical centering*/
+.Centerer
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.Centered
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.highlight td {
+  background: #D5EFFF;
+}
+
+.error-campo {
+  border: 1px solid #ff0000 !important;
 }
