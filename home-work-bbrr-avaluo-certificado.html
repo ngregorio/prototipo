@@ -132,10 +132,13 @@
 	A continuación se listan las propiedades registradss en el SII asociadas a su RUT al 15-07-2020, 
 	obtener antecedentes de un bien raíz.
 	</p-->	
-
-	<span class="derecha" style="font-size:15px;"> Si desea obtener un certificado de avalúo fiscal simple de otro bien raíz pinche <a href="home-buscar-bbrr-ROL-simple.html">
-	<b>aqui</b></a>
-	</span>
+	<div>
+	<p class="derecha" style="padding-top:2px;font-size:15px;"> Si desea obtener un certificado de avalúo fiscal simple de otro bien raíz pinche <a href="home-buscar-bbrr-ROL-simple.html">
+	<b>aqui</b>
+	<i class="fa fa-external-link fa-azul" style="font-size:16px;" aria-hidden="true"></i>
+	&nbsp;&nbsp;</a>
+	</p>
+	</div>
 	<!--/div-->
 	<hr class="hr_title">
 
@@ -527,13 +530,13 @@
 
 
 		<div class="header"  style="margin-top:1px;">
-			<nav class="navbar-primary" style="background:#f5f5f5 !important;">
+			<nav class="navbar-primary" style="background:#fff !important;">
 				<div class="alingboton">
 				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
 					<button class="btn btn-default" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
 				</p>
 				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<button class="btn boton-agregar" onclick="descargarPdf();"> Descargar </button>
+					<button class="btn boton-agregar" onclick="descargarPdf();"> Descargar Certificado</button>
 				</p>
 				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
 					<div id="contenido" class="alingboton">
@@ -551,8 +554,12 @@
 		</div>
 		<br>
 		<div class="row col-md-12" id="divMail" style="padding-right:0px;margin-right:0px;">
-		<p class="alert alert-warning" style="padding-right:0px;padding-right:0px;">&nbsp;<span id="msgMail"></span></p>
-		</div>
+			<p class="alert alert-warning" style="padding-right:0px;padding-right:0px;margin-right:0px;">
+			&nbsp;<span id="msgMail"></span>
+			  <button type="button" class="close" onClick="closeAlert();"> x
+			  </button>
+			</p>
+		</div>		
 
 </div>
 
@@ -730,6 +737,10 @@ function enviarMail(el) {
 	}
 }
 
+function closeAlert()
+{
+	$("#divMail").hide();
+}
 </script>	
 
 <script>	
@@ -753,8 +764,19 @@ function descargarPdfx(el) {
 	document.body.removeChild(link);
 }
 </script>	
+
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+});
+</script>
+    	
        <!-- FIN PIE -->
 	   <!--
+	   
+data-container="body" data-toggle="popover" data-placement="top" data-content="Tooltip."
+	   
 If you're not posting the form, I would simplify it further by using:
 
 <input type='radio' class='radio1' value='val1' />
@@ -768,7 +790,7 @@ Having a class name on the input allows me to easily style the inputs...
 -->	   
        
 </div>
-	<script charset="UTF-8" src="./js/es.js"></script>
+	
 	<div style="position: static;"><div class="a2a_overlay" id="a2a_overlay"></div>
 	<div id="a2a_modal" class="a2a_modal" role="dialog" tabindex="-1" style="display:none">
 	<div class="a2a_modal_body a2a_menu" id="a2a_copy_link" style="display:none">

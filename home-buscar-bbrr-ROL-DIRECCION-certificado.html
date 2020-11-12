@@ -299,9 +299,13 @@ o la dirección, luego seleccionar el botón "Buscar".
 					</div>
 					</div>
 					<div class="col-sm-6">
-					<div class="form-group">
-						<label>Nro. del bien raíz</label>
-						<input type="text" placeholder="Introduce el detalle del bien" class="long_text_control"/>
+					<div class="form-group" id="contenido">
+						<i class="fa fa-question-circle box_tooltip float_right">
+						<div class="tooltip">Coresponde al número del departamento, local, oficina, bodega, parcela, etc.</div>
+						</i>						
+						<label>Nro. del bien raíz						
+						</label>
+						<input type="text" placeholder="Introduce el número" class="long_text_control"/>
 					</div>
 					</div>
 				</div>
@@ -450,11 +454,11 @@ o la dirección, luego seleccionar el botón "Buscar".
 				</div>
 				<div class="form-group">
 					<label for="exampleInput2" >Manzana (*)</label>
-					<input  id="idManzana" name="idManzana" type="text" placeholder="Introduce el nro de Manzana" class="long_text_control">
+					<input  id="idManzana" name="idManzana" type="text" placeholder="Introduce el nro. de Manzana" class="long_text_control">
 				</div>
 				<div class="form-group">
 					<label for="exampleInput2" >Predio (*)</label>
-					<input  id="idPredio" name="idPredio" type="text" placeholder="Introduce el nro del Predio" class="long_text_control">
+					<input  id="idPredio" name="idPredio" type="text" placeholder="Introduce el nro. del Predio" class="long_text_control">
 				</div>
 			
 			</div>
@@ -549,7 +553,7 @@ o la dirección, luego seleccionar el botón "Buscar".
 
 <hr class="hr_title">
 <div class="col-md-12 my-card-title-result">
-	<p class="text-center ">  BIEN RAIZ BUSCADO </p>
+	<p class="text-center ">  INFORMACION DEL BIEN RAIZ BUSCADO </p>
 </div>
 
 
@@ -582,31 +586,18 @@ o la dirección, luego seleccionar el botón "Buscar".
 			</table>				
 
 
-<div class="container">
-	<div class="col-md-12 margin-top-10" style="font-size: 12px;">
-			<div class="alingboton">
-				<span class="pagination-first"><a href="#">&lsaquo;&lsaquo; Primera &nbsp;</a></span>
-				<span class="pagination-prev"><a href="#">&lsaquo;  Anterior &nbsp;</a></span>
-				<span class="pagination-page"><a href="#">&nbsp;(1)&nbsp;</a></span>
-				<span class="pagination-next"><a href="#">Siguiente &rsaquo;</a></span>
-				<span class="pagination-last"><a href="#">Última &rsaquo;&rsaquo;&nbsp;</a></span>				
-			</div>
-			<div>
-				<span style="text-align:right !important;">Página: 1 / 1</span>			
-			</div>
-	</div>
-</div>
-
-
+<p class="espacio_doble">
+</p>
+<hr class="hr_bottom">
 
 		<div class="header"  style="margin-top:1px;">
-			<nav class="navbar-primary" style="background:#f5f5f5 !important;">
+			<nav class="navbar-primary" style="background:#fff !important;">
 				<div class="alingboton">
 				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
 					<button class="btn btn-default" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
 				</p>
 				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<button class="btn boton-agregar" onclick="descargarPdf();"> Descargar </button>
+					<button class="btn boton-agregar" onclick="descargarPdf();"> Descargar Certificado</button>
 				</p>
 				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
 					<div id="contenido" class="alingboton">
@@ -624,8 +615,11 @@ o la dirección, luego seleccionar el botón "Buscar".
 
 		<br>
 		<div class="row col-md-12" id="divMail" style="padding-right:0px;margin-right:0px;">
-		<p class="alert alert-warning" style="padding-right:0px;padding-right:0px;">&nbsp;<span id="msgMail"></span></p>
+			<p class="alert alert-warning" style="padding-right:0px;padding-right:0px;">&nbsp;<span id="msgMail"></span>
+			<button type="button" class="close" onClick="closeAlert();">x</button>		
+			</p>
 		</div>
+	
 	
 </div>
 </div>
@@ -700,6 +694,11 @@ function enviarMail(el) {
 		alert("Sr. Contribuyente debe ingresar un mail válido");
 	}
 }
+function closeAlert()
+{
+	$("#divMail").hide();
+}
+
 </script>		   
 <script>	
 function validarDireccion() {
