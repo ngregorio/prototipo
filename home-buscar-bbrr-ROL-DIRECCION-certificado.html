@@ -300,7 +300,7 @@ o la dirección, luego seleccionar el botón "Buscar".
 					</div>
 					<div class="col-sm-6">
 					<div class="form-group">
-						<label>Nro. del tipo de bien raíz</label>
+						<label>Nro. del bien raíz</label>
 						<input type="text" placeholder="Introduce el detalle del bien" class="long_text_control"/>
 					</div>
 					</div>
@@ -494,7 +494,7 @@ o la dirección, luego seleccionar el botón "Buscar".
 <div class="row col-sm-12" id="contenido" style="margin-right:0px;margin-left:0px;padding-left:0px;padding-right:0px;">                    
 		<div style="background-color:#fff;margin:1px 0px;">
 		<input id="avaluosimple" name="avaluosimple" type="checkbox"> 
-		<img src="./img/pdf-icon.png" width="20" height="20" alt="Certificado de avalúo"/>CERTIFICADO DE AVALÚO FISCAL SIMPLE 
+		<img src="./img/pdf-icono.png" width="20" height="20" alt="Certificado de avalúo"/>CERTIFICADO DE AVALÚO FISCAL SIMPLE 
 		</input>
 		<i class="fa fa-question-circle box_tooltip float_right">
 		<div class="tooltip"> Este documento certifica el avalúo fiscal vigente del bien raíz y antecedentes generales registrados en el SII. </div>
@@ -504,7 +504,7 @@ o la dirección, luego seleccionar el botón "Buscar".
 <div class="row col-sm-12" id="contenido" style="margin-right:0px;margin-left:0px;padding-left:0px;padding-right:0px;">                    
 		<div style="background-color:#f5f5f5;margin:1px 0px;">
 		<input id="avaluoanterior" name="avaluoanterior" type="checkbox"> 
-		<img src="./img/pdf-icon.png" width="20" height="20" alt="Certificado de avalúo"/>CERTIFICADO DE AVALÚO FISCAL DE PERIODOS ANTERIORES - (Año / Semestre)
+		<img src="./img/pdf-icono.png" width="20" height="20" alt="Certificado de avalúo"/>CERTIFICADO DE AVALÚO FISCAL DE PERIODOS ANTERIORES - (Año / Semestre)
 		</input>
 		<i class="fa fa-question-circle box_tooltip float_right">
 		<div class="tooltip"> Este documento certifica el avalúo fiscal del bien raíz de acuerdo a las tablas vigentes al semestre indicado y su uso es exclusivo para trámites de determinación del impuesto a las Herencias y otorgamiento de la Posesión Efectiva. </div>
@@ -731,13 +731,6 @@ function validarDireccion() {
 		return false;
 	}else
 		$("#idNro").removeClass('error-campo');
-	if($("#idBR").val()=="")
-	{	
-		alert("Sr. Contribuyente seleccione un tipo de bien raíz para buscar ");
-		$("#idBR").addClass('error-campo');		
-		return false;
-	}else
-		$("#idBR").removeClass('error-campo');
 	return true;
 }
 

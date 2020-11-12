@@ -368,6 +368,21 @@ Fondo caja: #f5f5f5
     table-layout: fixed;
 }
 
+.my-card-group-block{
+    position: relative;
+    display: block;
+	border-top: 1px solid rgba(0,0,0,.125);
+	padding: 8px 10px 8px 15px;
+}
+
+.my-card-group-block-red{
+    position: relative;
+	background-color: #;
+    display: block;
+	border-top: 1px solid rgba(0,0,0,.125);
+	padding: 8px 10px 8px 15px;
+}
+
 .my-card {
     position: relative;
     display: block;
@@ -396,6 +411,16 @@ Fondo caja: #f5f5f5
     display: table-cell;
     vertical-align: top;
 }
+
+.my-card-group .my-card-group-block {
+    display: table-cell;
+    vertical-align: top;
+}
+.my-card-group .my-card-group-block:first-child {
+	border: 1px solid rgba(0,0,0,.125);
+}
+
+
 .my-card-group .my-xcard {    
     vertical-align: top;
 }
@@ -435,6 +460,19 @@ Fondo caja: #f5f5f5
 	padding: 8px 10px 8px 15px;
 	background-color: #FFF6DD;
 }
+
+.my-card-block-violet{
+	border-top: 1px solid rgba(0,0,0,.125);
+	padding: 8px 10px 8px 15px;
+	background-color: #EAD6EA;
+}
+
+.my-card-block-pink{
+	border-top: 1px solid rgba(0,0,0,.125);
+	padding: 8px 10px 8px 15px;
+	background-color: #FFEFEF;
+}
+
 
 .g-card-block
 {

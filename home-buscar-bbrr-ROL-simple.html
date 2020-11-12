@@ -256,7 +256,7 @@ o la dirección, luego seleccionar el botón "Buscar".
 				<div class="block_inline">
 					<div class="col-sm-6">
 					<div class="form-group">
-						<label>Tipo de bien raíz (*)</label>
+						<label>Tipo de bien raíz</label>
 						<select  id="idBR" name="idBR" class="form-control" style="font-size:11px;"  tabindex="-98">
 						<option value="" selected="selected">Ninguna</option>
 						<option value="12">
@@ -300,7 +300,7 @@ o la dirección, luego seleccionar el botón "Buscar".
 					</div>
 					<div class="col-sm-6">
 					<div class="form-group">
-						<label>Nro. del tipo de bien raíz</label>
+						<label>Nro. del bien raíz</label>
 						<input type="text" placeholder="Introduce el detalle del bien" class="long_text_control"/>
 					</div>
 					</div>
@@ -530,11 +530,6 @@ function validarDireccion() {
 		return false;
 	}else
 		$("#idNro").removeClass('error-campo');
-	if($("#idBR").val()=="")
-	{	
-		alert("Sr. Contribuyente seleccione un tipo de bien raíz para buscar ");
-		$("#idBR").addClass('error-campo');		
-		return false;
 	}else{	
 		$("#idBR").removeClass('error-campo');
 		window.location.href="home-buscar-bbrr-ROL-DIRECCION-certificado.html";
