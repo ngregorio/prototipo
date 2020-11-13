@@ -133,13 +133,188 @@ o la dirección, luego seleccionar el botón "Buscar".
 </p-->
 
 <div class="row col-sm-12" style="width=100% important!;margin-right:0px;margin-left:0px;padding-left:0px;padding-right:0px;">                    
-	<div class="col-sm-6" style="border:1px solid #c0c0c0; padding:0px; height:360px;">
+	<div class="col-sm-6" style="border: 1px solid #ccc; padding:0px; height:440px;">
+		<div style="height:380px;" id="contenido">		
+
+		<div class="col-sm-12" style="padding:0px;">
+
+			<div class="col-sm-12 text-md-center text-center my-card-title" style="color:#fff;margin:3px 0px;padding:5px;">
+				<b>BUSQUEDA POR ROL</b>
+				<i class="fa fa-question-circle box_tooltip float_right" style="color:#fff;">
+				<div class="tooltip"> Seleccione la Región y la Comuna donde se encuentra la propiedad, ingrese los datos que se solicitan del bien raíz y seleccione el botón "Buscar".. </div>
+				</i>
+			</div>
+			
+			<hr class="hr_titlex" style="margin: 5px 0;">
+			<form role="form" class="margin-bottom-40" action="home-buscar-bbrr-ROL-DIRECCION-certificado.html" onsubmit="return validarROL();" style="font-size:13px;">
+			<div class="block_inline">
+				<div class="col-sm-6">
+					<label for="exampleInputPassword1">Región (*)</label>
+					<div class="form-group" style="font-size: 11px important!;">
+						<select  id="idRegion2" name="idRegion2" class="form-control" style="font-size:11px;">
+							<option value="" selected="selected">--SELECCIONE UNA REGIÓN--</option>
+							<option value="15">REGION DE ARICA Y PARINACOTA</option>
+							<option value="1" >REGION DE TARAPACA</option>
+							<option value="2" >REGION DE ANTOFAGASTA</option>
+							<option value="3" >REGION DE ATACAMA</option>
+							<option value="4" >REGION DE COQUIMBO</option>
+							<option value="5" >REGION DE VALPARAISO</option>
+							<option value="13">REGION METROPOLITANA DE SANTIAGO</option>
+							<option value="6" >REGION DEL LIBERTADOR BERNARDO O'HIGGINS</option>
+							<option value="7" >REGION DEL MAULE</option>
+							<option value="16">REGION DE ÑUBLE</option>
+							<option value="8" >REGION DEL BIO BIO</option>
+							<option value="9" >REGION DE LA ARAUCANIA</option>
+							<option value="14">REGION DE LOS RIOS</option>
+							<option value="10">REGION DE LOS LAGOS</option>
+							<option value="11">REGION DE AYSEN DEL GENERAL CARLOS IBAÑEZ DEL CAMPO</option>
+							<option value="12">REGION DE MAGALLANES Y LA ANTARTICA CHILENA</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<label for="exampleInputPassword1">Comuna (*)</label>
+					<div class="form-group">
+						<select  id="idComuna2" name="idComuna2" class="form-control" style="font-size:11px;">
+						<option value="" selected="selected">--SELECCIONE UNA COMUNA--</option>
+						<option value="14605" class="ng-binding ng-scope" style="">ALHUÉ</option>
+						<option value="16403" class="ng-binding ng-scope">BUIN</option>
+						<option value="16402" class="ng-binding ng-scope">CALERA DE TANGO</option>
+						<option value="14166" class="ng-binding ng-scope">CERRILLOS</option>
+						<option value="14156" class="ng-binding ng-scope">CERRO NAVIA</option>
+						<option value="14201" class="ng-binding ng-scope">COLINA</option>
+						<option value="14127" class="ng-binding ng-scope">CONCHALÍ</option>
+						<option value="14603" class="ng-binding ng-scope">CURACAVÍ</option>
+						<option value="16165" class="ng-binding ng-scope">EL BOSQUE</option>
+						<option value="14503" class="ng-binding ng-scope">EL MONTE</option>
+						<option value="14157" class="ng-binding ng-scope">ESTACIÓN CENTRAL</option>
+						<option value="14158" class="ng-binding ng-scope">HUECHURABA</option>
+						<option value="13167" class="ng-binding ng-scope">INDEPENDENCIA</option>
+						<option value="14502" class="ng-binding ng-scope">ISLA DE MAIPO</option>
+						<option value="16110" class="ng-binding ng-scope">LA CISTERNA</option>
+						<option value="15128" class="ng-binding ng-scope">LA FLORIDA</option>
+						<option value="16131" class="ng-binding ng-scope">LA GRANJA</option>
+						<option value="16154" class="ng-binding ng-scope">LA PINTANA</option>
+						<option value="15132" class="ng-binding ng-scope">LA REINA</option>
+						<option value="14202" class="ng-binding ng-scope">LAMPA</option>
+						<option value="15108" class="ng-binding ng-scope">LAS CONDES</option>
+						<option value="15161" class="ng-binding ng-scope">LO BARNECHEA</option>
+						<option value="16164" class="ng-binding ng-scope">LO ESPEJO</option>
+						<option value="14155" class="ng-binding ng-scope">LO PRADO</option>
+						<option value="15151" class="ng-binding ng-scope">MACUL</option>
+						<option value="14109" class="ng-binding ng-scope">MAIPÚ</option>
+						<option value="14602" class="ng-binding ng-scope">MARÍA PINTO</option>
+						<option value="14601" class="ng-binding ng-scope">MELIPILLA</option>
+						<option value="14505" class="ng-binding ng-scope">PADRE HURTADO</option>
+						<option value="16404" class="ng-binding ng-scope">PAINE</option>
+						<option value="16162" class="ng-binding ng-scope">PEDRO AGUIRRE CERDA</option>
+						<option value="14504" class="ng-binding ng-scope">PEÑAFLOR</option>
+						<option value="15152" class="ng-binding ng-scope">PEÑALOLÉN</option>
+						<option value="16302" class="ng-binding ng-scope">PIRQUE</option>
+						<option value="15103" class="ng-binding ng-scope">PROVIDENCIA</option>
+						<option value="14111" class="ng-binding ng-scope">PUDAHUEL</option>
+						<option value="16301" class="ng-binding ng-scope">PUENTE ALTO</option>
+						<option value="14114" class="ng-binding ng-scope">QUILICURA</option>
+						<option value="14107" class="ng-binding ng-scope">QUINTA NORMAL</option>
+						<option value="13159" class="ng-binding ng-scope">RECOLETA</option>
+						<option value="14113" class="ng-binding ng-scope">RENCA</option>
+						<option value="16401" class="ng-binding ng-scope">SAN BERNARDO</option>
+						<option value="16163" class="ng-binding ng-scope">SAN JOAQUÍN</option>
+						<option value="16303" class="ng-binding ng-scope">SAN JOSÉ DE MAIPO</option>
+						<option value="16106" class="ng-binding ng-scope">SAN MIGUEL</option>
+						<option value="14604" class="ng-binding ng-scope">SAN PEDRO</option>
+						<option value="16153" class="ng-binding ng-scope">SAN RAMÓN</option>
+						<option value="13101" class="ng-binding ng-scope">SANTIAGO</option>
+						<option value="13134" class="ng-binding ng-scope">SANTIAGO OESTE</option>
+						<option value="13135" class="ng-binding ng-scope">SANTIAGO SUR</option>
+						<option value="14501" class="ng-binding ng-scope">TALAGANTE</option>
+						<option value="14203" class="ng-binding ng-scope">TIL-TIL</option>
+						<option value="15160" class="ng-binding ng-scope">VITACURA</option>
+						<option value="15105" class="ng-binding ng-scope">ÑUÑOA</option>
+						</select>
+					</div>
+				</div>
+			</div>
+				
+			<br>
+			<H5 class="text-center"><b>&nbsp;&nbsp;&nbsp;Ingrese el ROL</b></H5>
+			<hr class="hr_titlex" style="margin:5px 0;">
+			<div class="block_inline">
+				<div class="form-group">
+					<label for="exampleInput0">&nbsp;</label>
+					<label for="exampleInput1" class="label-control">&nbsp;ROL&nbsp;</label>
+				</div>
+				<div class="form-group">
+					<label for="exampleInput2" >Manzana (*)</label>
+					<input  id="idManzana" name="idManzana" type="text" placeholder="Introduce el nro de Manzana" id="exampleInput2" class="long_text_control">
+					
+				</div>
+				<div class="form-group">				
+					<label for="exampleInput2">&nbsp;</label>
+					<span><b>&nbsp;-</b></span>
+				</div>
+				<div class="form-group">
+					<label for="exampleInput2" >Predio (*)</label>
+					<input  id="idPredio" name="idPredio" type="text" placeholder="Introduce el nro del Predio" id="exampleInput2" class="long_text_control">
+				</div>
+				<div class="form-group">				
+					<label for="exampleInput2">&nbsp;</label>
+					<span></span>
+				</div>
+			
+			</div>
+
+			<p class="espacio_doble">&nbsp;</p>
+			<p class="espacio_doble">&nbsp;</p>
+			<p class="espacio_doble">&nbsp;</p>			
+			<p class="espacio">&nbsp;</p>
+			
+			<div class="col-sm-12">
+				<hr class="hr_titlex" style="margin:5px 0;">
+					<div class="col-sm-6" style="padding-right:2px;">
+					<div class="form-group">
+						<label>Código capcha</label>
+						<img src="./img/captcha.png" width="150" height="50" alt="Captcha">
+						<span>&nbsp;<i class="fa fa-refresh fa-azul" style="font-size:23px;" aria-hidden="true"></i></span>
+					</div>
+					</div>				
+					<div class="col-sm-6" style="padding-right:0px;">
+					<div class="form-group">
+						<label>Texto de la Imagen</label>
+						<input id="idCodigo" name="idCodigo" type="text" placeholder="Introduce el texto de la imagen" class="long_text_control"/>
+					</div>
+					</div>
+			</div>			
+			
+		<div class="col-sm-12">
+		
+		<div class="alingboton">
+		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+			<button class="btn btn-default" type="button" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
+		</p>
+		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+			<button class="btn boton-default" type="submit"> Buscar </button>
+		</p>
+		</div>
+		
+		</div>
+			
+			
+			</form>
+		</div>			
+		
+		</div>
 	
-		<div style="height:300px;" id="contenido">		
+		
+	</div>
+
+	<div class="col-sm-6" style="border:1px solid #c0c0c0; padding:0px; height:440px;">
+	
+		<div style="height:380px;" id="contenido">		
 
 		<div class="col-sm-12" style="padding:0px;">
 			<div class="col-sm-12 text-md-center text-center my-card-title" style="color:#fff;margin:3px 0px;padding:5px;">
-				<b>BUSQUEDA DE BIEN RAIZ POR DIRECCION</b>
+				<b>BUSQUEDA POR DIRECCION</b>
 				<i class="fa fa-question-circle box_tooltip float_right"  style="color:#fff;">
 				<div class="tooltip"> Seleccione la Región y la Comuna donde se encuentra la propiedad, ingrese los datos que se solicitan del bien raíz y seleccione el botón "Buscar".. </div>
 				</i>
@@ -317,10 +492,25 @@ o la dirección, luego seleccionar el botón "Buscar".
 					</div>
 					</div>
 				</div>
-						
+
+			<div class="col-sm-12">
+				<hr class="hr_titlex" style="margin:5px 0;">
+					<div class="col-sm-6" style="padding-right:2px;">
+					<div class="form-group">
+						<label>Código capcha</label>
+						<img src="./img/captcha.png" width="150" height="50" alt="Captcha">
+						<span>&nbsp;<i class="fa fa-refresh fa-azul" style="font-size:23px;" aria-hidden="true"></i></span>
+					</div>
+					</div>				
+					<div class="col-sm-6" style="padding-right:0px;">
+					<div class="form-group">
+						<label>Texto de la Imagen</label>
+						<input id="idCodigo2" name="idCodigo2" type="text" placeholder="Introduce el texto de la imagen" class="long_text_control"/>
+					</div>
+					</div>
+			</div>
+				
 		<div class="col-sm-12" style="padding:0px;">
-			<div class="header">
-			<nav class="navbar-primary" style="background:#f5f5f5 !important">
 			<div class="alingboton">
 			<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
 				<button class="btn btn-default" type="button" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
@@ -328,8 +518,6 @@ o la dirección, luego seleccionar el botón "Buscar".
 			<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
 				<button class="btn boton-default" type="submit"> Buscar </button>
 			</p>
-			</div>
-			</nav>
 			</div>
 		</div>		
 
@@ -341,152 +529,6 @@ o la dirección, luego seleccionar el botón "Buscar".
 		
 	</div>
 	<!--/div-->                   
-	<div class="col-sm-6" style="border: 1px solid #ccc; padding:0px; height:360px;">
-		<div style="height:300px;" id="contenido">		
-
-		<div class="col-sm-12" style="padding:0px;">
-
-			<div class="col-sm-12 text-md-center text-center my-card-title" style="color:#fff;margin:3px 0px;padding:5px;">
-				<b>BUSQUEDA DE BIEN RAIZ POR ROL</b>
-				<i class="fa fa-question-circle box_tooltip float_right" style="color:#fff;">
-				<div class="tooltip"> Seleccione la Región y la Comuna donde se encuentra la propiedad, ingrese los datos que se solicitan del bien raíz y seleccione el botón "Buscar".. </div>
-				</i>
-			</div>
-			
-			<hr class="hr_titlex" style="margin: 5px 0;">
-			<form role="form" class="margin-bottom-40" action="home-buscar-bbrr-ROL-DIRECCION-certificado.html" onsubmit="return validarROL();" style="font-size:13px;">
-			<div class="block_inline">
-				<div class="col-sm-6">
-					<label for="exampleInputPassword1">Región (*)</label>
-					<div class="form-group" style="font-size: 11px important!;">
-						<select  id="idRegion2" name="idRegion2" class="form-control" style="font-size:11px;">
-							<option value="" selected="selected">--SELECCIONE UNA REGIÓN--</option>
-							<option value="15">REGION DE ARICA Y PARINACOTA</option>
-							<option value="1" >REGION DE TARAPACA</option>
-							<option value="2" >REGION DE ANTOFAGASTA</option>
-							<option value="3" >REGION DE ATACAMA</option>
-							<option value="4" >REGION DE COQUIMBO</option>
-							<option value="5" >REGION DE VALPARAISO</option>
-							<option value="13">REGION METROPOLITANA DE SANTIAGO</option>
-							<option value="6" >REGION DEL LIBERTADOR BERNARDO O'HIGGINS</option>
-							<option value="7" >REGION DEL MAULE</option>
-							<option value="16">REGION DE ÑUBLE</option>
-							<option value="8" >REGION DEL BIO BIO</option>
-							<option value="9" >REGION DE LA ARAUCANIA</option>
-							<option value="14">REGION DE LOS RIOS</option>
-							<option value="10">REGION DE LOS LAGOS</option>
-							<option value="11">REGION DE AYSEN DEL GENERAL CARLOS IBAÑEZ DEL CAMPO</option>
-							<option value="12">REGION DE MAGALLANES Y LA ANTARTICA CHILENA</option>
-						</select>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<label for="exampleInputPassword1">Comuna (*)</label>
-					<div class="form-group">
-						<select  id="idComuna2" name="idComuna2" class="form-control" style="font-size:11px;">
-						<option value="" selected="selected">--SELECCIONE UNA COMUNA--</option>
-						<option value="14605" class="ng-binding ng-scope" style="">ALHUÉ</option>
-						<option value="16403" class="ng-binding ng-scope">BUIN</option>
-						<option value="16402" class="ng-binding ng-scope">CALERA DE TANGO</option>
-						<option value="14166" class="ng-binding ng-scope">CERRILLOS</option>
-						<option value="14156" class="ng-binding ng-scope">CERRO NAVIA</option>
-						<option value="14201" class="ng-binding ng-scope">COLINA</option>
-						<option value="14127" class="ng-binding ng-scope">CONCHALÍ</option>
-						<option value="14603" class="ng-binding ng-scope">CURACAVÍ</option>
-						<option value="16165" class="ng-binding ng-scope">EL BOSQUE</option>
-						<option value="14503" class="ng-binding ng-scope">EL MONTE</option>
-						<option value="14157" class="ng-binding ng-scope">ESTACIÓN CENTRAL</option>
-						<option value="14158" class="ng-binding ng-scope">HUECHURABA</option>
-						<option value="13167" class="ng-binding ng-scope">INDEPENDENCIA</option>
-						<option value="14502" class="ng-binding ng-scope">ISLA DE MAIPO</option>
-						<option value="16110" class="ng-binding ng-scope">LA CISTERNA</option>
-						<option value="15128" class="ng-binding ng-scope">LA FLORIDA</option>
-						<option value="16131" class="ng-binding ng-scope">LA GRANJA</option>
-						<option value="16154" class="ng-binding ng-scope">LA PINTANA</option>
-						<option value="15132" class="ng-binding ng-scope">LA REINA</option>
-						<option value="14202" class="ng-binding ng-scope">LAMPA</option>
-						<option value="15108" class="ng-binding ng-scope">LAS CONDES</option>
-						<option value="15161" class="ng-binding ng-scope">LO BARNECHEA</option>
-						<option value="16164" class="ng-binding ng-scope">LO ESPEJO</option>
-						<option value="14155" class="ng-binding ng-scope">LO PRADO</option>
-						<option value="15151" class="ng-binding ng-scope">MACUL</option>
-						<option value="14109" class="ng-binding ng-scope">MAIPÚ</option>
-						<option value="14602" class="ng-binding ng-scope">MARÍA PINTO</option>
-						<option value="14601" class="ng-binding ng-scope">MELIPILLA</option>
-						<option value="14505" class="ng-binding ng-scope">PADRE HURTADO</option>
-						<option value="16404" class="ng-binding ng-scope">PAINE</option>
-						<option value="16162" class="ng-binding ng-scope">PEDRO AGUIRRE CERDA</option>
-						<option value="14504" class="ng-binding ng-scope">PEÑAFLOR</option>
-						<option value="15152" class="ng-binding ng-scope">PEÑALOLÉN</option>
-						<option value="16302" class="ng-binding ng-scope">PIRQUE</option>
-						<option value="15103" class="ng-binding ng-scope">PROVIDENCIA</option>
-						<option value="14111" class="ng-binding ng-scope">PUDAHUEL</option>
-						<option value="16301" class="ng-binding ng-scope">PUENTE ALTO</option>
-						<option value="14114" class="ng-binding ng-scope">QUILICURA</option>
-						<option value="14107" class="ng-binding ng-scope">QUINTA NORMAL</option>
-						<option value="13159" class="ng-binding ng-scope">RECOLETA</option>
-						<option value="14113" class="ng-binding ng-scope">RENCA</option>
-						<option value="16401" class="ng-binding ng-scope">SAN BERNARDO</option>
-						<option value="16163" class="ng-binding ng-scope">SAN JOAQUÍN</option>
-						<option value="16303" class="ng-binding ng-scope">SAN JOSÉ DE MAIPO</option>
-						<option value="16106" class="ng-binding ng-scope">SAN MIGUEL</option>
-						<option value="14604" class="ng-binding ng-scope">SAN PEDRO</option>
-						<option value="16153" class="ng-binding ng-scope">SAN RAMÓN</option>
-						<option value="13101" class="ng-binding ng-scope">SANTIAGO</option>
-						<option value="13134" class="ng-binding ng-scope">SANTIAGO OESTE</option>
-						<option value="13135" class="ng-binding ng-scope">SANTIAGO SUR</option>
-						<option value="14501" class="ng-binding ng-scope">TALAGANTE</option>
-						<option value="14203" class="ng-binding ng-scope">TIL-TIL</option>
-						<option value="15160" class="ng-binding ng-scope">VITACURA</option>
-						<option value="15105" class="ng-binding ng-scope">ÑUÑOA</option>
-						</select>
-					</div>
-				</div>
-			</div>
-				
-			<br>
-			<H5 class="text-center"><b>&nbsp;&nbsp;&nbsp;Ingrese el ROL</b></H5>
-			<hr class="hr_titlex" style="margin:5px 0;">
-			<div class="block_inline">
-				<div class="form-group">
-					<label for="exampleInput0">&nbsp;</label>
-					<label for="exampleInput1" class="label-control">&nbsp;ROL&nbsp;&nbsp;&nbsp;&nbsp;</label>
-				</div>
-				<div class="form-group">
-					<label for="exampleInput2" >Manzana (*)</label>
-					<input  id="idManzana" name="idManzana" type="text" placeholder="Introduce el nro. de Manzana" class="long_text_control">
-				</div>
-				<div class="form-group">
-					<label for="exampleInput2" >Predio (*)</label>
-					<input  id="idPredio" name="idPredio" type="text" placeholder="Introduce el nro. del Predio" class="long_text_control">
-				</div>
-			
-			</div>
-			<p class="espacio_doble">&nbsp;</p>
-			<p class="espacio_doble">&nbsp;</p>
-			<p class="espacio_doble">&nbsp;</p>
-			<p class="espacio">&nbsp;</p>
-		<div class="header">
-		<nav class="navbar-primary" style="background:#f5f5f5 !important">
-		<div class="alingboton">
-		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-			<button class="btn btn-default" type="button" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
-		</p>
-		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-			<button class="btn boton-default" type="submit"> Buscar </button>
-		</p>
-		</div>
-		</nav>
-		</div>
-			
-			
-			</form>
-		</div>			
-		
-		</div>
-	
-		
-	</div>
 </div>	
 
 <p class="espacio"> &nbsp;</p>
@@ -730,6 +772,13 @@ function validarDireccion() {
 		return false;
 	}else
 		$("#idNro").removeClass('error-campo');
+	if($("#idCodigo2").val()=="")
+	{	
+		alert("Sr. Contribuyente ingrese un Código Capcha para buscar ");
+		$("#idCodigo2").addClass('error-campo');		
+		return false;
+	}else
+		$("#idCodigo2").removeClass('error-campo');
 	return true;
 }
 
@@ -762,6 +811,13 @@ function validarROL() {
 		return false;
 	}else
 		$("#idPredio").removeClass('error-campo');
+	if($("#idCodigo").val()=="")
+	{	
+		alert("Sr. Contribuyente ingrese un Código Capcha para buscar ");
+		$("#idCodigo").addClass('error-campo');		
+		return false;
+	}else
+		$("#idCodigo").removeClass('error-campo');
 	return true;
 }
 </script>	   
