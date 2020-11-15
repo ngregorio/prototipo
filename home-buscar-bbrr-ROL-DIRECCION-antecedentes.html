@@ -252,13 +252,13 @@ o la dirección, luego seleccionar el botón "Buscar".
 				<div class="block_inline">
 					<div class="col-sm-6">
 					<div class="form-group">
-						<label>Tipo de bien raíz (*)</label>
+						<label>Tipo de bien raíz</label>
 						<input type="text" placeholder="Selecciona el tipo de bien raíz" class="long_text_control"/>
 					</div>
 					</div>
 					<div class="col-sm-6">
 					<div class="form-group">
-						<label>Nro. del tipo de bien raíz</label>
+						<label>Nro. del bien raíz</label>
 						<input type="text" placeholder="Introduce el detalle del bien" class="long_text_control"/>
 					</div>
 					</div>
@@ -277,20 +277,14 @@ o la dirección, luego seleccionar el botón "Buscar".
 		</div>
 		</div>
 
-		<div class="col-sm-12" style="padding:0px;">
-			<div class="header">
-			<nav class="navbar-primary" style="background:#f5f5f5 !important">
-			<div class="alingboton">
+		<div class="col-sm-12 alingboton">
 			<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
 				<button class="btn btn-default" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
 			</p>
 			<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-				<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-certificado.html'"> Buscar </button>
+				<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-certificado.html'" style="padding-left:25px;padding-right:25px;"> Buscar </button>
 			</p>
-			</div>
-			</nav>
-			</div>
-		</div>		
+		</div>
 		
 	</div>
 	<!--/div-->                   
@@ -424,18 +418,15 @@ o la dirección, luego seleccionar el botón "Buscar".
 		</div>
 	
 		
-		<div class="header">
-		<nav class="navbar-primary" style="background:#f5f5f5 !important">
-		<div class="alingboton">
+	<div class="col-sm-12 alingboton">
 		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
 			<button class="btn btn-default" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
 		</p>
 		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-			<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-certificado.html'"> Buscar </button>
+			<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-certificado.html'" style="padding-left:25px;padding-right:25px;"> Buscar </button>
 		</p>
-		</div>
-		</nav>
-		</div>
+	</div>
+
 	</div>
 </div>	
 
@@ -460,7 +451,7 @@ o la dirección, luego seleccionar el botón "Buscar".
 
 <hr class="hr_title">
 <div class="col-md-12 my-card-title-result">
-	<p class="text-center ">  BIEN RAIZ BUSCADO </p>
+	<p class="text-center "> INFORMACION DEL BIEN RAIZ BUSCADO </p>
 </div>
 
 
@@ -493,46 +484,28 @@ o la dirección, luego seleccionar el botón "Buscar".
 			</table>				
 
 
-<div class="container">
-	<div class="col-md-12 margin-top-10" style="font-size: 12px;">
-			<div class="alingboton">
-				<span class="pagination-first"><a href="#">&lsaquo;&lsaquo; Primera &nbsp;</a></span>
-				<span class="pagination-prev"><a href="#">&lsaquo;  Anterior &nbsp;</a></span>
-				<span class="pagination-page"><a href="#">&nbsp;(1)&nbsp;</a></span>
-				<span class="pagination-next"><a href="#">Siguiente &rsaquo;</a></span>
-				<span class="pagination-last"><a href="#">Última &rsaquo;&rsaquo;&nbsp;</a></span>				
-			</div>
-			<div>
-				<span style="text-align:right !important;">Página: 1 / 1</span>			
-			</div>
+<p class="espacio_doble">
+</p>
+<!--hr class="hr_bottom"-->
+
+	<div class="row alingboton">
+		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+			<button class="btn btn-default" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
+		</p>
+		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+			<button class="btn boton-agregar" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-resultado.html'"> Descargar Documento</button>
+		</p>
+		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+			<div id="contenido">
+			<input type="text" placeholder="Introduce el mail" id="exampleInput2" class="form-control2" style="font-size: 13px;">
+			<i class="fa fa-azul fa-question-circle box_tooltip float_right">
+			<div class="tooltip"> El certificado serà enviado al correo, puede ingresar o cambiar el correo.</div>
+			</i>
+			</input>
+			</div> 
+			<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-resultado.html'"> Enviar por mail </button>
+		</p>
 	</div>
-</div>
-
-
-
-		<div class="header"  style="margin-top:1px;">
-			<nav class="navbar-primary" style="background:#f5f5f5 !important;">
-				<div class="alingboton">
-				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<button class="btn btn-default" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
-				</p>
-				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-resultado.html'"> Descargar </button>
-				</p>
-				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<div id="contenido">
-					<input type="text" placeholder="Introduce el mail" id="exampleInput2" class="form-control2" style="font-size: 13px;">
-					<i class="fa fa-azul fa-question-circle box_tooltip float_right">
-					<div class="tooltip"> El certificado serà enviado al correo, puede ingresar o cambiar el correo.</div>
-					</i>
-					</input>
-					</div> 
-					<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-resultado.html'"> Envir por mail </button>
-				</p>
-				</div>
-			</nav>
-		</div>
-
 	
 </div>
 </div>

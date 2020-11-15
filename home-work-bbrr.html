@@ -147,24 +147,7 @@
 		 CONSULTAR MIS BIENES RAICES
 	</div>
 
-	<!--div style="border: 1px solid #ccc; background:#f5f5f5;">
-	<p style="font-size:13px">
-	A continuación se listan las propiedades registradss en el SII asociadas a su RUT al dd-mm-aaaa.
-	<ul style="font-size:13px">
-	<li>Para consultar la <b>Ficha Predial</b> y obtener <b>Antecedentes </b>del Bien Raíz debe pinchar en la Columna "ROL" 
-	</li>
-	<li>Para consultar los otros <b>Propietarios</b> del Bien Raíz debe pinchar en la columna "% de Derechos", si el % de derecho es menor a 100%.
-	</li>
-	<li>Para consultar los <b>Certificados de Avalúo Fiscal </b> del Bien Raíz debe pinchar en la columna "Avalúo Fiscal". 
-	</li>
-	<li>Para consultar las <b>Cuotas de Contribuciones</b> del Bien Raíz debe pinchas en la columna "Estado de Cuotas Contribuciones". 
-	</li>
-	<li>Para ingresar una <b>Solicitud</b> de un Bien Raíz debe seleccionar el Icono <i class="fa fa-outdent fa-azul" style="font-size:16px;" aria-hidden="true"> </i> en la columna "Otras Opciones".
-	</li>
-	<li>Para <b>ubicar en el mapa</b> el Bien Raíz debe seleccionar el Icono <img src="./img/local.jpg" width="20" height="20" alt="Ver mapa"/> en la columna "Otras Opciones".
-	</li>
-	</ul>
-	<br-->
+
 	<div style="border: 1px solid #ccc; background:#f5f5f5;">
 		<!--p class="my-subtitle">
 		A continuación se listan las propiedades registradss en el SII asociadas a su RUT al dd-mm-aaaa.
@@ -179,27 +162,21 @@
 	<p class="text-center">LISTADO DE BIENES RAICES</p>
 </div>
 
-	<div class="block_inline" style="font-size: 12px;margin:5px 0;border: 1px solid #ccc; background:#f5f5f5;">
-	<div class="col-md-12 margin-top-10">
-	<div class="alingboton">
-		<span>
-			Total Registros: 6<b> </b>
-		</span>
-		<span>
-		<b>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
-		</b>Filtrar:
-		</span>
-		<span>
-			<input id="searchText" class="form-control search-text" style="font-size: 12px; background:#fff;"> 
-		</span>
-		<span>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
-			(Filtrados: 0) <b>
-			</b>
-		</span>
-		<span>
-			<form class="form-inline" style="float: right;">
-				<label">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Total de registros por página:</label> 
+	<div class="col-md-12 alingboton filtro">
+		<div class="col-md-2">
+			<p><b>Total Registros: 6 </b></p>
+		</div>
+		<div class="col-md-3">
+			<p class="alingboton" style="font-size: 12px;"><b>Filtrar:</b>
+				<input id="searchText" class="form-control search-text" style="font-size: 12px;background:#fff;"> 
+			</p>
+		</div>
+		<div class="col-md-2">
+			<p><b>(Filtrados: 0)</b></p>
+		</div>
+		<div class="col-md-5" style="float:right">			
+			<form class="form-inline derecha">
+				<label><b>Total de registros por página:</b></label> 
 				<select class="form-control" style="font-size: 12px;background:#fff;" "name="pageSizeSelect" id="pageSizeSelect">
 				<option label="10" value="number:10"  selected="selected">10</option>
 				<option label="25" value="number:25">25</option>
@@ -210,10 +187,10 @@
 				<option label="2000" value="number:2000">2000</option>
 				</select>
 			</form>
-		</span>
+		</div>
 	</div>
-	</div>
-</div>
+
+	
 
 <table class="table table-striped table-bordered table-hover cf">
 <thead class="cf">
@@ -245,7 +222,11 @@
 	<td style="text-align: right !important;" data-title="Año">1990</td>
 	<td data-title="Derecho"  class="text-center"><a href="home-work-bbrr-copropietarios.html"><b>100,00%</b></a></td>
 	<td data-title="Avalúo Fiscal" style="text-align: right !important;"><a href="home-work-bbrr-certificado.html" data-toggle="tooltip" title="Certificado de Avalúo" data-placement="bottom"><b>$40.000.000</b></a></td>
-	<td data-title="Cuotas Vencidas"  class="text-center alert alert-success"><a href="home-work-cont-pagar-cuota-ROL.html" data-toggle="tooltip" title="Ver cuotas de contribuciones"><b>Vigente</b></a></td>
+	<td data-title="Cuotas Vencidas"  class="text-center">
+		<a href="home-work-cont-pagar-cuota-ROL.html" data-toggle="tooltip" title="Ver cuotas de contribuciones">
+		<p class="aldia"><b>Al día</b></p>
+		</a>
+	</td>
 	<td data-title="Acciones" >
 		<div class="imgcontainer">
 		<!--a href="home-work-bbrr-Ficha.html"><img src="./img/info.png" width="18" height="18" alt="Fichs predial"/></a-->
@@ -266,7 +247,11 @@
 	<td style="text-align: right !important;" data-title="Año">1990</td>
 	<td data-title="Derecho"  class="text-center"><a href="home-work-bbrr-copropietarios.html" data-toggle="tooltip" title="Ver multi-propietarios" data-placement="bottom"><b>100,00%</b></a></td>
 	<td data-title="Avalúo Fiscal" style="text-align: right !important;"><a href="home-work-bbrr-certificado.html" data-toggle="tooltip" title="Certificado de Avalúo" data-placement="bottom"><b>$40.000.000</b></a></td>
-	<td data-title="Cuotas Vencidas"  class="text-center alert alert-danger"><a href="home-work-cont-pagar-cuota-ROL.html" data-toggle="tooltip" title="Ver cuotas de contribuciones"><b>Vencido</b></a></td>
+	<td data-title="Cuotas Vencidas"  class="text-center">
+		<a href="home-work-cont-pagar-cuota-ROL.html" data-toggle="tooltip" title="Ver cuotas de contribuciones">
+		<p class="atrasado"><b>Atrasado</b></p>
+		</a>
+	</td>
 	<td data-title="Acciones" >
 		<div class="imgcontainer">
 		<!--a href="home-work-bbrr-Ficha.html"><img src="./img/info.png" width="18" height="18" alt="Fichs predial"/></a-->
@@ -290,7 +275,11 @@
 	<td style="text-align: right !important;" data-title="Año">1990</td>
 	<td data-title="Derecho"  class="text-center"><a href="home-work-bbrr-copropietarios.html" data-toggle="tooltip" title="Ver multi-propietarios" data-placement="bottom"><b>100,00%</b></a></td>
 	<td data-title="Avalúo Fiscal" style="text-align: right !important;"><a href="home-work-bbrr-certificado.html" data-toggle="tooltip" title="Certificado de Avalúo" data-placement="bottom"><b>$40.000.000</b></a></td>
-	<td data-title="Cuotas Vencidas"  class="text-center alert alert-danger"><a href="home-work-cont-pagar-cuota-ROL.html" data-toggle="tooltip" title="Ver cuotas de contribuciones"><b>Vencido</b></a></td>
+	<td data-title="Cuotas Vencidas"  class="text-center">
+		<a href="home-work-cont-pagar-cuota-ROL.html" data-toggle="tooltip" title="Ver cuotas de contribuciones">
+		<p class="atrasado"><b>Atrasado</b></p>
+		</a>
+	</td>
 	<td data-title="Acciones" >
 		<div class="imgcontainer">
 		<!--a href="#"><img src="./img/info.png" width="18" height="18" alt="Fichs predial"/></a-->
@@ -311,7 +300,11 @@
 	<td style="text-align: right !important;" data-title="Año">1990</td>
 	<td data-title="Derecho"  class="text-center"><a href="home-work-bbrr-copropietarios.html" data-toggle="tooltip" title="Ver multi-propietarios" data-placement="bottom"><b>33,33%</b></a></td>
 	<td data-title="Avalúo Fiscal" style="text-align: right !important;"><a href="home-work-bbrr-certificado.html" data-toggle="tooltip" title="Certificado de Avalúo" data-placement="bottom"><b>$12.340.000.000</b></a></td>
-	<td data-title="Cuotas Vencidas"  class="text-center alert alert-success"><a href="home-work-cont-pagar-cuota-ROL.html" data-toggle="tooltip" title="Ver cuotas de contribuciones"><b>Vigente</b></a></td>
+	<td data-title="Cuotas Vencidas"  class="text-center">
+		<a href="home-work-cont-pagar-cuota-ROL.html" data-toggle="tooltip" title="Ver cuotas de contribuciones">
+		<p class="aldia"><b>Al día</b></p>
+		</a>
+	</td>
 	<td data-title="Acciones" >
 		<div class="imgcontainer">
 		<!--a href="#"><img src="./img/info.png" width="18" height="18" alt="Fichs predial"/></a-->
@@ -332,7 +325,11 @@
 	<td style="text-align: right !important;" data-title="Año">1990</td>
 	<td data-title="Derecho"  class="text-center"><a href="home-work-bbrr-copropietarios.html"><b>100,00%</b></a></td>
 	<td data-title="Avalúo Fiscal" style="text-align: right !important;"><a href="#" data-toggle="tooltip" title="Certificado de Avalúo" data-placement="bottom"><b>$40.000.000</b></a></td>	
-	<td data-title="Cuotas Vencidas"  class="text-center alert alert-success"><a href="home-work-cont-pagar-cuota-ROL.html" data-toggle="tooltip" title="Ver cuotas de contribuciones"><b>Vigente</b></a></td>
+	<td data-title="Cuotas Vencidas"  class="text-center">
+		<a href="home-work-cont-pagar-cuota-ROL.html" data-toggle="tooltip" title="Ver cuotas de contribuciones">
+		<p class="aldia"><b>Al día</b></p>
+		</a>
+	</td>
 	<td data-title="Acciones" >
 		<div class="imgcontainer">
 		<!--a href="#" data-toggle="tooltip" title="Ingresar Solicitud"><img src="./img/cert.png" width="20" height="20" alt="Certificado de avalúo"/></a-->
@@ -352,7 +349,7 @@
 	<td style="text-align: right !important;" data-title="Año">1990</td>
 	<td data-title="Derecho"  class="text-center"><a href="home-work-bbrr-copropietarios.html" data-toggle="tooltip" title="Ver multi-propietarios" data-placement="bottom"><b>10,00%</b></a></td>
 	<td data-title="Avalúo Fiscal" style="text-align: right !important;"><a href="home-work-bbrr-certificado.html" data-toggle="tooltip" title="Certificado de Avalúo" data-placement="bottom"><b>$1.000.000</b></a></td>
-	<td data-title="Cuotas Vencidas"  class="text-center"><a href="#"><b>Exento</b></a></td>
+	<td data-title="Cuotas Vencidas"  class="text-center"><a href="#"><p class="exento"><b>Exento</b></p></a></td>
 	<td data-title="Acciones" >
 		<div class="imgcontainer">
 		<!--a href="home-work-bbrr-Ficha.html"><img src="./img/info.png" width="18" height="18" alt="Fichs predial"/></a-->
@@ -394,28 +391,11 @@
 	</div>
 </div>
 
-
-<!--div class="container">
-	<div class="col-md-12 margin-top-10" style="font-size: 12px;">
-			<div class="alingboton">
-				<span class="pagination-first"><a href="#">&lsaquo;&lsaquo; Primera &nbsp;</a></span>
-				<span class="pagination-prev"><a href="#">&lsaquo;  Anterior &nbsp;</a></span>
-				<span class="pagination-page"><a href="#">&nbsp;(1)&nbsp;</a></span>
-				<span class="pagination-next"><a href="#">Siguiente &rsaquo;</a></span>
-				<span class="pagination-last"><a href="#">Última &rsaquo;&rsaquo;&nbsp;</a></span>				
-			</div>
-			<div>
-				<span style="text-align:right !important;">Página: 1 / 1</span>			
-			</div>
-	</div>
-</div-->
-	<div class="header">
-		<nav class="navbar-primary" style="background:#f5f5f5 !important">
+<!--hr class="hr_bottom"-->
+	<div class="row alingboton">
 		<p class="text-center">
 			<button class="btn btn-default" onclick="window.location='home-menu-ava.html'"> Volver al menú</button>
 		</p>
-
-		</nav>
 	</div>
 
 <br>

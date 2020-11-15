@@ -161,90 +161,24 @@
 			</div>
 	</div>			
 	<hr class="hr_title">	
-<!--div class="row col-sm-12" style="margin:5px 0px;padding-left:0px;padding-right:0px;">		
-<div class="col-sm-12" style="padding-left:0px;padding-right:0px;">
-	<span class="derecha" style="font-size:13px;">	
-		<span> <b>Descargar Certificados de avalúo seleccionados </b>&nbsp;&nbsp;
-		<a href="" role="button">
-		<i class="fa fa-download fa-azul" style="font-size:16px;" aria-hidden="true"></i>
-		</a>
-		</span>
-	</span>	
-</div>	
-<div class="col-sm-12" style="padding-left:0px;padding-right:0px;">
-	<span class="derecha" style="font-size: 13px;">				
-		<span> <b>Enviar por Mail Certificados de avaluo seleccionados </b>&nbsp;
-		<input type="text" placeholder="Introduce el mail" id="exampleInput2" class="form-control2" style="font-size: 13px;">
-		<a href="" role="button">
-		&nbsp;&nbsp;<i class="fa fa-envelope fa-azul" style="font-size:16px;" aria-hidden="true"></i>
-		</a> 
-		</span>
-	</span>		
-</div>	
-</div-->		
-<!--div class="row col-sm-12" style="width=100% important!;margin-right:0px;margin-left:0px;padding-left:0px;padding-right:0px;">                    
-	<div class="col-sm-6" style=" border: 1px solid #ccc; height:105px;">
-		<div style="height:45px;">
-			<div style="background-color:#f5f5f5;margin:1px 0px;">
-			<input type="checkbox"> 
-			&nbsp; &nbsp;ANTECEDENTE DEL BIEN RAIZ 
-			</input>
-			</div>
-			<div style="vertical-align:middle important!;margin:1px 0px;">
-			<p style="font-size: 13px;">
-			<br>
-			Los antecedentes generales que podrá consultar son dirección de la propiedad, nombre y Rut de la persona registrada como propietario ante el Servicio de Impuestos Internos y los antecedentes para el cobro de contribuciones (Impuesto Territorial)..
+
+
+	<div class="col-md-12 alingboton filtro">
+		<div class="col-md-2">
+			<p><b>Total Registros: 6 </b></p>
+		</div>
+		<div class="col-md-3">
+			<p class="alingboton" style="font-size: 12px;"><b>Filtrar:</b>
+				<input id="searchText" class="form-control search-text" style="font-size: 12px;background:#fff;"> 
 			</p>
-			</div>
 		</div>
-	</div>
-	<div class="col-sm-6" style=" border: 1px solid #ccc; height:105px;">
-		<div style="height:45px;">
-			<div style="background-color:#f5f5f5;margin:1px 0px;">
-			<input type="checkbox"> 
-			&nbsp; &nbsp;
-			<span>DETALLE CATASTRAL</span>
-			</input>
-			</div>
-			<div style="vertical-align:middle important!;margin:1px 0px;">
-			<p style="font-size: 13px;">
-			<br>
-			La información detallada que podrá consultar, es superficie del terreno del predio, antecedentes de las construcciones, exenciones que le rigen y clasificación de uso de suelo en caso de los bienes raíces agrícolas..
-			</p>		
-			</div>
+		<div class="col-md-2">
+			<p><b>(Filtrados: 0)</b></p>
 		</div>
-	</div>			
-</div>	
-</div-->		
-
-
-
-<!--p class="text-center">
- <BR>SELECCIONE DESDE EL LISTADO DE BIENES RAICES
-</p-->
-<!--p class="espacio" style="padding-bottom:0px;">&nbsp;</p-->
-<div class="block_inline" style="font-size:12px;margin:5px 0;border: 1px solid #ccc; background:#f5f5f5;">
-	<div class="col-md-12 margin-top-10">
-	<div class="alingboton">
-		<span>
-			Total Registros: <b>6</b>
-		</span>
-		<span>
-		<b>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
-		</b>Filtrar:
-		</span>
-		<span>
-			<input id="searchText" class="form-control search-text" style="font-size: 12px;background:#fff;"> 
-		</span>
-		<span>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
-			<b>(Filtrados: 0) 
-			</b>
-		</span>
-		<span>
-			<form class="form-inline" style="float: right;">
-				<label>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Total de registros por página:</label> 
-				<select class="form-control" style="font-size: 12px;background:#fff;" name="pageSizeSelect" id="pageSizeSelect">
+		<div class="col-md-5" style="float:right">			
+			<form class="form-inline derecha">
+				<label><b>Total de registros por página:</b></label> 
+				<select class="form-control" style="font-size: 12px;background:#fff;" "name="pageSizeSelect" id="pageSizeSelect">
 				<option label="10" value="number:10"  selected="selected">10</option>
 				<option label="25" value="number:25">25</option>
 				<option label="50" value="number:50">50</option>
@@ -254,10 +188,10 @@
 				<option label="2000" value="number:2000">2000</option>
 				</select>
 			</form>
-		</span>
+		</div>
 	</div>
-	</div>
-</div>
+
+
 
 <table class="table table-striped table-bordered table-hover cf">
 <thead class="cf">
@@ -295,7 +229,7 @@
 	<!--td data-title="Avalúo Fiscal" style="text-align: right !important;"><a href="home-work-bbrr-certificado.html" data-toggle="tooltip" title="Certificado de Avalúo" data-placement="bottom"><b>$40.000.000</b></a></td-->
 	<td data-title="Avalúo Fiscal" style="text-align: right !important;"><b>$40.000.000</b></td>
 	<!--td data-title="Cuotas Vencidas"  class="text-center alert alert-success"><a href="home-work-cont-pagar-cuota-ROL.html" data-toggle="tooltip" title="Ver cuotas de contribuciones"><b>Vigente</b></a></td-->
-	<td data-title="Cuotas Vencidas"  class="text-center alert alert-success"><b>Vigente</b></td>
+	<td data-title="Cuotas Vencidas"  class="text-center"><p class="aldia"><b>Al día</b></p></td>
 	<!--td data-title="Acciones" >
 		<a href="#" data-toggle="tooltip" title="Obtener Antecedentes del bien raíz"><img src="./img/pdf-icon.png" width="20" height="20" alt="Certificado de avalúo"/></a>
 		<a href="#" data-toggle="tooltip" title="Enviar por mail antecedente simple"><i class="fa fa-envelope fa-azul" style="font-size:16px;" aria-hidden="true"></i></a>
@@ -316,7 +250,7 @@
 	<td style="text-align: right !important;" data-title="Año">1990</td>
 	<td data-title="Derecho"  class="text-center"><b>100,00%</b></td>
 	<td data-title="Avalúo Fiscal" style="text-align: right !important;"><b>$40.000.000</b></td>
-	<td data-title="Cuotas Vencidas"  class="text-center alert alert-danger"><b>Vencido</b></td>
+	<td data-title="Cuotas Vencidas"  class="text-center"><p class="atrasado"><b>Atrasado</b></p></td>
 	</tr>
 
 	<tr>
@@ -330,7 +264,7 @@
 	<td style="text-align: right !important;" data-title="Año">1990</td>
 	<td data-title="Derecho"  class="text-center"><b>100,00%</b></td>
 	<td data-title="Avalúo Fiscal" style="text-align: right !important;"><b>$40.000.000</b></td>
-	<td data-title="Cuotas Vencidas"  class="text-center alert alert-danger"><b>Vencido</b></td>
+	<td data-title="Cuotas Vencidas"  class="text-center"><p class="atrasado"><b>Atrasado</b></p></td>
 	</tr>
 
 	<tr>
@@ -344,7 +278,7 @@
 	<td style="text-align: right !important;" data-title="Año">1990</td>
 	<td data-title="Derecho"  class="text-center"><b>33,33%</b></td>
 	<td data-title="Avalúo Fiscal" style="text-align: right !important;"><b>$123.340.000.000</b></td>
-	<td data-title="Cuotas Vencidas"  class="text-center alert alert-success"><b>Vigente</b></td>
+	<td data-title="Cuotas Vencidas"  class="text-center"><p class="aldia"><b>Al día</b></p></td>
 	</tr>
 
 	<tr>
@@ -358,7 +292,7 @@
 	<td style="text-align: right !important;" data-title="Año">1990</td>
 	<td data-title="Derecho"  class="text-center"><b>100,00%</b></td>
 	<td data-title="Avalúo Fiscal" style="text-align: right !important;"><b>$40.000.000</b></td>
-	<td data-title="Cuotas Vencidas"  class="text-center alert alert-success"><b>Vigente</b></td>
+	<td data-title="Cuotas Vencidas"  class="text-center"><p class="aldia"><b>Al día</b></p></td>
 	</tr>
 
 	<tr>
@@ -372,54 +306,64 @@
 	<td style="text-align: right !important;" data-title="Año">1990</td>
 	<td data-title="Derecho"  class="text-center"><b>10,00%</b></td>
 	<td data-title="Avalúo Fiscal" style="text-align: right !important;"><b>$1.000.000</b></td>
-	<td data-title="Cuotas Vencidas"  class="text-center"><b>Exento</b></td>
+	<td data-title="Cuotas Vencidas"  class="text-center"><p class="exento"><b>Exento</b></p></td>
 	</tr>	
 </tbody>
 </table>
 
-<div class="container">
-	<div class="col-md-12 margin-top-10" style="font-size: 12px;">
-			<div class="alingboton">
-				<span class="pagination-first"><a href="#">&lsaquo;&lsaquo; Primera &nbsp;</a></span>
-				<span class="pagination-prev"><a href="#">&lsaquo; Anterior &nbsp;</a></span>
-				<span class="pagination-page"><a href="#">&nbsp;(1)&nbsp;</a></span>
-				<span class="pagination-next"><a href="#">Siguiente &rsaquo;</a></span>
-				<span class="pagination-last"><a href="#">Última &rsaquo;&rsaquo;</a></span>				
-			</div>
-			<div>
-				<span style="text-align:right !important;">Página: 1 / 1</span>			
-			</div>
+<div class="row" style="font-size:11px">
+	<div class="col-sm-5">
+	<div class="dataTables_info" id="direccionesVigentes_info" role="status" aria-live="polite">
+	<b>Mostrando  del 1 al 3 de un total de 3 registros</b>
+	</div>
+	</div>
+	<div class="col-sm-7" style="padding:0px;">
+		<div class="dataTables_paginate paging_simple_numbers derecha" id="direccionesVigentes_paginate" style="font-size:13px;">
+
+		<ul class="pagination" style="margin:2px 0;">
+			<li class="previous" id="direccionesVigentes_previous" style="color:#000;">
+				<a href="">Anterior</a>
+			</li>
+			<li class="active">
+				<a href="">1</a>
+			</li>
+			<li class="paginate_button">
+				<a href="">2</a>
+			</li>
+			<li class="next" id="direccionesVigentes_next" style="color:#000;">
+				<a href="">Siguiente</a>
+			</li>
+		</ul>
+		
+		</div>
 	</div>
 </div>
 
 <br>
+
+
+
+	<div class="row alingboton">
+		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+			<button class="btn btn-default" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
+		</p>
+		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+			<button class="btn boton-agregar" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-resultado.html'"> Descargar Documento</button>
+		</p>
+		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+			<div id="contenido">
+			<input type="text" placeholder="Introduce el mail" id="exampleInput2" class="form-control2" style="font-size: 13px;">
+			<i class="fa fa-azul fa-question-circle box_tooltip float_right">
+			<div class="tooltip"> El certificado o antecedente serà enviado al correo, puede ingresar o cambiar el correo.</div>
+			</i>
+			</input>
+			</div> 
+			<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-resultado.html'"> Enviar por mail </button>
+		</p>
+	</div>
+		
 </div>
-
-		<div class="header"  style="margin-top:1px;">
-			<!--nav class="navbar-primary" style="background:#f5f5f5 !important; border-bottom:1px solid #c0c0c0;"-->
-			<nav class="navbar-primary" style="background:#f5f5f5 !important;">
-				<div class="alingboton">
-				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<button class="btn btn-default" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
-				</p>
-				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-resultado.html'"> Descargar </button>
-				</p>
-				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<div id="contenido">
-					<input type="text" placeholder="Introduce el mail" id="exampleInput2" class="form-control2" style="font-size: 13px;">
-					<i class="fa fa-azul fa-question-circle box_tooltip float_right">
-					<div class="tooltip"> El certificado o antecedente serà enviado al correo, puede ingresar o cambiar el correo.</div>
-					</i>
-					</input>
-					</div> 
-					<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-resultado.html'"> Envir por mail </button>
-				</p>
-				</div>
-			</nav>
-		</div>
-
-
+</div>
 </div>  <!-- cierra div class='container'> de script que contiene mostrar() -->
 </div>     <!-- cierra <div class='web-sii cuerpo'> de script que contiene mostrar()  -->
        <!-- FIN CUERPO -->

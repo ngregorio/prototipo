@@ -188,28 +188,22 @@
 <!--p class="text-center" style="margin:0px;">
  <BR>SELECCIONE LOS PAGOS DESDE EL LISTADO
 </p-->
-<div class="block_inline" style="font-size:12px; margin:5px 0px;border: 1px solid #ccc; background:#f5f5f5;">
-	<div class="col-md-12 margin-top-10">
-	<div class="alingboton">
-		<span>
-			Total Registros: <b>6</b>
-		</span>
-		<span>
-		<b>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
-		</b>Filtrar:
-		</span>
-		<span>
-			<input id="searchText" class="form-control search-text" style="font-size: 12px;background:#fff;"> 
-		</span>
-		<span>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
-			<b>(Filtrados: 0) 
-			</b>
-		</span>
-		<span>
-			<form class="form-inline" style="float: right;">
-				<label>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Total de registros por página:</label> 
-				<select class="form-control" style="font-size: 12px;background:#fff;" name="pageSizeSelect" id="pageSizeSelect">
+	<div class="col-md-12 alingboton filtro">
+		<div class="col-md-2">
+			<p><b>Total Registros: 6 </b></p>
+		</div>
+		<div class="col-md-3">
+			<p class="alingboton" style="font-size: 12px;"><b>Filtrar:</b>
+				<input id="searchText" class="form-control search-text" style="font-size: 12px;background:#fff;"> 
+			</p>
+		</div>
+		<div class="col-md-2">
+			<p><b>(Filtrados: 0)</b></p>
+		</div>
+		<div class="col-md-5" style="float:right">			
+			<form class="form-inline derecha">
+				<label><b>Total de registros por página:</b></label> 
+				<select class="form-control" style="font-size: 12px;background:#fff;" "name="pageSizeSelect" id="pageSizeSelect">
 				<option label="10" value="number:10"  selected="selected">10</option>
 				<option label="25" value="number:25">25</option>
 				<option label="50" value="number:50">50</option>
@@ -219,10 +213,10 @@
 				<option label="2000" value="number:2000">2000</option>
 				</select>
 			</form>
-		</span>
+		</div>
 	</div>
-	</div>
-</div>
+
+
 
 
 <table class="table table-striped table-bordered table-hover cf">
@@ -246,7 +240,7 @@
 	<td> <input type="checkbox"> </input></td>
 	<td data-title="cuota-año" class="text-center">1-2020</td>
 	<td data-title="fecha vcto" class="text-center">30-04-2020</td>
-	<td data-title="fecha pago" class="text-center alert alert-success">30-04-2020</td>
+	<td data-title="fecha pago" class="text-center"><p class="aldia"><b>30-04-2020</b></p></td>
 	<td data-title="Comuna">COPIAPO</td>
 	<td data-title="Rol" class="text-center"><a href="#">00121-00151</a></td>
 	<td data-title="Dirección">MANUEL RODRIGUEZ 390 209 DONA TRINIDAD</td>
@@ -258,7 +252,7 @@
 	<td> <input type="checkbox"> </input></td>
 	<td data-title="cuota-año" class="text-center">4-2019</td>
 	<td data-title="fecha vcto" class="text-center">30-11-2019</td>
-	<td data-title="fecha pago" class="text-center alert alert-success">30-11-2019</td>
+	<td data-title="fecha pago" class="text-center"><p class="aldia"><b>30-11-2019</b></p></td>
 	<td data-title="Comuna">COPIAPO</td>
 	<td data-title="Rol" class="text-center"><a href="#">00121-00151</a></td>
 	<td data-title="Dirección">MANUEL RODRIGUEZ 390 209 DONA TRINIDAD</td>
@@ -270,7 +264,7 @@
 	<td> <input type="checkbox"> </input></td>
 	<td data-title="cuota-año" class="text-center">3-2019</td>
 	<td data-title="fecha vcto" class="text-center">30-09-2019</td>
-	<td data-title="fecha pago" class="text-center alert alert-success">30-09-2019</td>
+	<td data-title="fecha pago" class="text-center"><p class="aldia"><b>30-09-2019</b></p></td>
 	<td data-title="Comuna">COPIAPO</td>
 	<td data-title="Rol" class="text-center"><a href="#">00121-00151</a></td>
 	<td data-title="Dirección">MANUEL RODRIGUEZ 390 209 DONA TRINIDAD</td>
@@ -282,7 +276,7 @@
 	<td> <input type="checkbox"> </input></td>
 	<td data-title="cuota-año" class="text-center">2-2019</td>
 	<td data-title="fecha vcto" class="text-center">30-06-2019</td>
-	<td data-title="fecha pago" class="text-center alert alert-success">30-06-2019</td>
+	<td data-title="fecha pago" class="text-center"><p class="aldia"><b>30-09-2019</b></p></td>
 	<td data-title="Comuna">COPIAPO</td>
 	<td data-title="Rol" class="text-center"><a href="#">00121-00151</a></td>
 	<td data-title="Dirección">MANUEL RODRIGUEZ 390 209 DONA TRINIDAD</td>
@@ -294,7 +288,7 @@
 	<td> <input type="checkbox"> </input></td>
 	<td data-title="cuota-año" class="text-center">1-2019</td>
 	<td data-title="fecha vcto" class="text-center">30-04-2019</td>
-	<td data-title="fecha pago" class="text-center alert alert-danger">30-05-2019</td>
+	<td data-title="fecha pago" class="text-center"><p class="atrasado"><b>30-05-2019</b></p></td>
 	<td data-title="Comuna">COPIAPO</td>
 	<td data-title="Rol" class="text-center"><a href="#">00121-00151</a></td>
 	<td data-title="Dirección">MANUEL RODRIGUEZ 390 209 DONA TRINIDAD</td>
@@ -306,7 +300,7 @@
 	<td> <input type="checkbox"> </input></td>
 	<td data-title="cuota-año" class="text-center">4-2018</td>
 	<td data-title="fecha vcto" class="text-center">30-11-2019</td>
-	<td data-title="fecha pago" class="text-center alert alert-success">30-11-2018</td>
+	<td data-title="fecha pago" class="text-center"><p class="aldia"><b>30-11-2018</b></p></td>
 	<td data-title="Comuna">COPIAPO</td>
 	<td data-title="Rol" class="text-center"><a href="#">00121-00151</a></td>
 	<td data-title="Dirección">MANUEL RODRIGUEZ 390 209 DONA TRINIDAD</td>
@@ -318,49 +312,58 @@
 </tbody>
 </table>
 
-</div>
-<div class="container">
-	<div class="col-md-12 margin-top-10" style="font-size: 12px;">
-			<div class="alingboton">
-				<span class="pagination-first"><a href="#"> &lsaquo;&lsaquo;Primera &nbsp;</a></span>
-				<span class="pagination-prev"><a href="#"> &lsaquo;Anterior &nbsp;</a></span>
-				<span class="pagination-page"><a href="#">&nbsp;(1)&nbsp;</a></span>
-				<span class="pagination-next"><a href="#">Siguiente &rsaquo;&nbsp;</a></span>
-				<span class="pagination-last"><a href="#">Última &rsaquo;&rsaquo;&nbsp;</a></span>				
-			</div>
-			<div>
-				<span style="text-align:right !important;">Página: 1 / 1</span>			
-			</div>
+
+<div class="row" style="font-size:11px">
+	<div class="col-sm-5">
+	<div class="dataTables_info" id="direccionesVigentes_info" role="status" aria-live="polite">
+	<b>Mostrando  del 1 al 3 de un total de 3 registros</b>
+	</div>
+	</div>
+	<div class="col-sm-7" style="padding:0px;">
+		<div class="dataTables_paginate paging_simple_numbers derecha" id="direccionesVigentes_paginate" style="font-size:13px;">
+
+		<ul class="pagination" style="margin:2px 0;">
+			<li class="previous" id="direccionesVigentes_previous" style="color:#000;">
+				<a href="">Anterior</a>
+			</li>
+			<li class="active">
+				<a href="">1</a>
+			</li>
+			<li class="paginate_button">
+				<a href="">2</a>
+			</li>
+			<li class="next" id="direccionesVigentes_next" style="color:#000;">
+				<a href="">Siguiente</a>
+			</li>
+		</ul>
+		
+		</div>
 	</div>
 </div>
 
 
-		<div class="header"  style="margin-top:1px;">
-			<!--nav class="navbar-primary" style="background:#f5f5f5 !important; border-bottom:1px solid #c0c0c0;"-->
-			<nav class="navbar-primary" style="background:#f5f5f5 !important;">
-				<div class="alingboton">
-				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<!--button class="btn btn-default" onclick="window.location='home-work-cont-certificado-pago.html'"> Volver</button-->
-					<button class="btn btn-default" onclick="window.location='home-menu-ava.html'"> Volver al menú</button>					
-				</p>
-				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-resultado.html'"> Descargar </button>
-				</p>
-				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<div id="contenido">
-					<input type="text" placeholder="Introduce el mail" id="exampleInput2" class="form-control2" style="font-size: 13px;">
-					<i class="fa fa-azul fa-question-circle box_tooltip float_right">
-					<div class="tooltip"> El certificado o antecedente serà enviado al correo, puede ingresar o cambiar el correo.</div>
-					</i>
-					</input>
-					</div> 
-					<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-resultado.html'"> Envir por mail </button>
-				</p>
-				</div>
-			</nav>
-		</div>
+<div class="row alingboton">
+	<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+		<!--button class="btn btn-default" onclick="window.location='home-work-cont-certificado-pago.html'"> Volver</button-->
+		<button class="btn btn-default" onclick="window.location='home-menu-ava.html'"> Volver al menú</button>					
+	</p>
+	<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+		<button class="btn boton-agregar" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-resultado.html'"> Descargar Cert. y/o Detalle</button>
+	</p>
+	<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+		<div id="contenido">
+		<input type="text" placeholder="Introduce el mail" id="exampleInput2" class="form-control2" style="font-size: 13px;">
+		<i class="fa fa-azul fa-question-circle box_tooltip float_right">
+		<div class="tooltip"> El certificado o antecedente serà enviado al correo, puede ingresar o cambiar el correo.</div>
+		</i>
+		</input>
+		</div> 
+		<button class="btn boton-default" onclick="window.location='home-buscar-bbrr-ROL-DIRECCION-resultado.html'"> Envir por mail </button>
+	</p>
+</div>
 	
 
+</div>
 </div>
 
 </div>  <!-- cierra div class='container'> de script que contiene mostrar() -->

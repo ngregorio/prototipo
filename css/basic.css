@@ -65,7 +65,12 @@
     align-items: center;
     justify-content: center;
 }
-
+.filtro{
+	font-size:12px;
+	margin:0px !important;
+	padding:5px 0px 0px 0px !important;
+	border:1px solid #ccc;"
+}
 .text_control{
     height: 30px;
     padding: 6px 12px;
@@ -129,10 +134,10 @@ td span.color_r{
 .boton-eliminar:hover{border-color:#eb510d;background:#eb510d;color:#000;}
 */
 .boton-eliminar:hover{color:#C0C0C0 !important;}
-.boton-eliminar{border-color:#e22c2c;background:#e22c2c;color:#fff;}
+.boton-eliminar{border-color:#e22c2c;background:#e22c2c;color:#fff !important;}
 
 .boton-agregar:hover{color:#e0e0e0 !important;}
-.boton-agregar{border-color:#00B050;background:#00B050;color:#fff;}
+.boton-agregar{border-color:#00B050;background:#00B050;color:#fff !important;}
 
 .modal-footer  .btn-default:hover{color:#e0e0e0 !important;}
 .modal-footer  .btn-default{border-color:#e6500a !important;background:#e6500a !important;color:#fff !important;}
@@ -470,10 +475,20 @@ Fondo caja: #f5f5f5
 	padding: 8px 10px 8px 15px;
 	background-color: #E8E8E8;
 }
+.my-color-gris{
+	background-color: #E8E8E8;
+}
+
+.my-color-gray{
+	background-color: #E8E8E8;
+}
 
 .my-card-block-blue{
 	border-top: 1px solid rgba(0,0,0,.125);
 	padding: 8px 10px 8px 15px;
+	background-color: #D5EFFF;
+}
+.my-color-blue{
 	background-color: #D5EFFF;
 }
 
@@ -482,9 +497,16 @@ Fondo caja: #f5f5f5
 	padding: 8px 10px 8px 15px;
 	background-color: #E2F0D9;
 }
+.my-color-green{
+	background-color: #E2F0D9;
+}
+
 .my-card-block-yellow{
 	border-top: 1px solid rgba(0,0,0,.125);
 	padding: 8px 10px 8px 15px;
+	background-color: #FFF6DD;
+}
+.my-color-yellow{
 	background-color: #FFF6DD;
 }
 
@@ -493,13 +515,18 @@ Fondo caja: #f5f5f5
 	padding: 8px 10px 8px 15px;
 	background-color: #EAD6EA;
 }
+.my-color-violet{
+	background-color: #EAD6EA;
+}
 
 .my-card-block-pink{
 	border-top: 1px solid rgba(0,0,0,.125);
 	padding: 8px 10px 8px 15px;
 	background-color: #FFEFEF;
 }
-
+.my-color-pink{
+	background-color: #FFEFEF;
+}
 
 .g-card-block
 {
@@ -846,3 +873,36 @@ strong{
 .error-campo {
   border: 1px solid #ff0000 !important;
 }
+
+.aldia{
+	/*border-radius: 5px; */
+	margin: 5px !important; 		
+	font-weight: bold;
+	/*background-color:#00B050; 
+	background-color:rgba(0,176,80,.9); 
+	*/
+	background-color:rgba(45, 136, 87, 0.9);
+	color: #fff;
+}
+
+.atrasado{
+	/*border-radius: 5px; */
+	margin: 5px !important; 
+	font-weight: bold;
+	/*background-color:rgba(226,44,44,.9); */
+	background-color:rgba(198, 38, 38, 0.9);
+	color: #fff;
+}
+
+.exento{
+	/*border-radius: 5px; */
+	margin: 5px !important; 
+	font-weight: bold;
+	background-color:rgba(93,175,228);	
+	color: #fff;
+}
+
+/*
+ <p style="border-radius: 10px;cursor:pointer; margin: 15px; height: 20px; font-weight: bold;background-color:#de9494; color: #b62e2e;"> Vencida</p>
+ */
+ 

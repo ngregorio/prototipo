@@ -7,16 +7,13 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <title>SII | Servicio de Impuestos Internos</title>
-<link href="./css/misii.min.css" rel="stylesheet">
-<link href="./css/jquery-ui.min.css" rel="stylesheet">
+<script type="text/javascript" src="./js/responsive_barranav.js"></script>
 <link href="./css/bootstrap-sii.min.css" rel="stylesheet">
 <link href="./css/general.css" rel="stylesheet">
 <link href="./css/estilos.css" rel="stylesheet">
-<link href="./css/basic.css" rel="stylesheet">
 <link href="./css/responsive.table.css" rel="stylesheet">
-
-
-<script type="text/javascript" src="./js/responsive_barranav.js"></script>
+<link href="./css/basic.css" rel="stylesheet">
+<link href="./css/ayuda.css" rel="stylesheet">
 
 <script type="text/javascript" src="./js/jquery.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
@@ -193,38 +190,40 @@
 	</p-->
 </div>	
 
-<hr class="hr_title">
+	<hr class="hr_title">
 	<div class="col-md-12 my-card-title">
 		<p class="text-center" style="margin-bottom:0px;">SELECCIONE LAS CUOTAS PARA PAGAR LAS CONTRIBUCIONES</p>
 	</div>
 
 	<div class="col-md-12 box-header">
 		<div class="col-md-4 my-small-card">
-			<p style="margin:5px 0;">
-			<input type="checkbox"> Todas del Pago Anual.</input>
+			<p style="margin:5px 0;color:#0f69b4;">
+			<input type="checkbox"> <b>Todas del Pago Anual.</b></input>
 			</p>
 		</div>
 		<div class="col-md-4 my-small-card">
-			<p style="margin:5px 0;">
-			<input type="checkbox"> Sólo cuotas próximas a vencer .</input>
+			<p style="margin:5px 0;color:#0f69b4;">
+			<input type="checkbox"> <b>Sólo cuotas próximas a vencer.</b></input>
 			</p>
 		</div>
 		<div class="col-md-4 my-small-card">
-			<p style="margin:5px 0;">
-			<input type="checkbox"> Todas las cuotas para pago.</input>
+			<p style="margin:5px 0;color:#0f69b4;">
+			<input type="checkbox"><b> Todas las cuotas para pago.</b></input>
 			</p>
 		</div>
 	</div>	
-<table class="table table-striped table-bordered table-hover cf" style="font-size:12px;">
+<table class="table table-striped table-bordered table-hover cf">
 <thead class="cf">
 	<tr>
-	<th class="text-center" style="width:7%;"> <input style="margin:0px;" type="checkbox"> Sel.</input></th>
+	<th class="text-center" style="width:7%;"> 
+		<input style="margin:0px;" type="checkbox"> Sel.</input>
+	</th>
 	<th class="text-center">Cuota-Año </th>
 	<th class="text-center">Fecha Vcto.</th>
 	<th class="text-center">Tipo de Cuota</th>
 	<th class="text-center">Valor Cuota dentro del plazo</th>
 	<th class="text-center">Total a pagar</th>
-	<th class="text-center">Estado</th>	
+	<th class="text-center">Estado de <br>Contribuciones</th>	
 	</tr>
 </thead>
 <tbody>
@@ -235,7 +234,7 @@
 	<td data-title="Derecho" class="text-center">Reemplazo</td>
 	<td data-title="Contribución neta" style="text-align: right !important;" >$1.000.000</td>
 	<td data-title="Cuotas" class="text-center" data-toggle="modal" data-target="#myModal"><a href="#" onclick="myModal">$1.000.500</a></td>
-	<td data-title="Estado" class="text-center alert alert-danger">Vencido</td>
+	<td data-title="Estado" class="text-center"><p class="atrasado"><b>Atrasado</b></p></td>
 	</tr>
 	<tr>
 	<td> <div class="aaa">Anual </div><input style="margin:0px;" type="checkbox"> </input></td>
@@ -244,7 +243,7 @@
 	<td data-title="Derecho" class="text-center">Normal</td>
 	<td style="text-align: right !important;" data-title="Contribución neta">$1.000.000</td>
 	<td data-title="Cuotas" class="text-center" data-toggle="modal" data-target="#myModal"><a href="#" onclick="myModal">$1.000.500</a></td>
-	<td data-title="Estado" class="text-center alert alert-success">Vigente</td>
+	<td data-title="Estado" class="text-center"><p class="aldia"><b>Al día</b></p></td>
 	</tr>
 	
 	<tr>
@@ -254,7 +253,7 @@
 	<td data-title="Derecho" class="text-center">Normal</td>
 	<td style="text-align: right !important;" data-title="Contribución neta">$1.000.000</td>
 	<td data-title="Cuotas" class="text-center" data-toggle="modal" data-target="#myModal"><a href="#" onclick="myModal">$1.000.500</a></td>
-	<td data-title="Estado" class="text-center alert alert-success">Vigente</td>
+	<td data-title="Estado" class="text-center"><p class="aldia"><b>Al día</b></p></td>
 	</tr>
 	
 	<tr>
@@ -264,7 +263,7 @@
 	<td data-title="Derecho" class="text-center">Normal</td>
 	<td style="text-align: right !important;" data-title="Contribución neta">$1.000.000</td>
 	<td data-title="Cuotas" class="text-center" data-toggle="modal" data-target="#myModal"><a href="#" onclick="myModal">$1.000.500</a></td>
-	<td data-title="Estado" class="text-center alert alert-success">Vigente</td>
+	<td data-title="Estado" class="text-center"><p class="aldia"><b>Al día</b></p></td>
 	</tr>
 	
 	<tr>
@@ -274,53 +273,50 @@
 	<td data-title="Derecho" class="text-center">Normal</td>
 	<td style="text-align: right !important;" data-title="Contribución neta">$1.000.000</td>
 	<td data-title="Cuotas" class="text-center" data-toggle="modal" data-target="#myModal"><a href="#" onclick="myModal">$1.000.500</a></td>
-	<td data-title="Estado" class="text-center alert alert-success">Vigente</td>
+	<td data-title="Estado" class="text-center"><p class="aldia"><b>Al día</b></p></td>
 	</tr>
 	
 
 </tbody>
 </table>
-</div>
-	<div class="header">
+
+	<div class="row" style="margin:0px;">
 		<div class="col-md-12 box-header">
-				.&nbsp;&nbsp;<span class="derecha">Total de contribuciones a pagar $ <input type="text" class="text_control" style="height:25px;"/> </span>
+				<span class="derecha">Total de contribuciones a pagar $ <input type="text" class="text_control" style="height:25px;"/> </span>
 		</div>
-	</div>
-	<div class="col-md-12">	
-	<div class="header">
-		<nav class="navbar-primary" style="background:#f5f5f5 !important">
-		<div class="alingboton">
-		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-			<button class="btn btn-default" onclick="window.location='home-work-bbrr.html'"> Volver al listado</button>
-		</p>
-		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-			<button class="btn boton-default" onclick=""> Pagar</button>
-		</p>
-		</div>
-		</nav>
-	</div>
-	</div>
+	</div>	
+	
+<div class="row alingboton">
+	<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+		<button class="btn btn-default" onclick="window.location='home-work-bbrr.html'"> Volver al listado</button>
+	</p>
+	<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+		<button class="btn boton-default" onclick=""> Pagar</button>
+	</p>
+</div>
+
 	<p>
-        <div style="font-size:0.9em;">
+    <div style="font-size:0.9em;">
 		Leyenda
 		<ul>
-		<li><b>P. Anual</b>: Seleccion de cuotas anuales de una propiedad, y adicionalmente puede agregar las cuotas vencidas</li>
-		<li><b>Todas</b>: Selecciona todas las cuotas de una propiedad</li>
-		<li><b>Vencidas y próximas a vencer</b>: Selección de cuotas vencidas y las cuotas vigentes proximas a vencer</li>		
+		<!--li><b>P. Anual</b>: Seleccion de cuotas anuales de una propiedad, y adicionalmente puede agregar las cuotas vencidas</li-->
+		<!--li><b>Todas</b>: Selecciona todas las cuotas de una propiedad</li-->
+		<!--li><b>Vencidas y próximas a vencer</b>: Selección de cuotas vencidas y las cuotas vigentes proximas a vencer</li-->		
 		<li><b>Nº. Cuota - Año</b>: Indica el número correlativo de la cuota de cada año (4 cuotas anuales o 2 cuotas semestrales)</li>
 		<li><b>Tipo de Cuota</b>: Normal; Suplementario (Por recalculo se aplican contribuciones adicionales ); Reemplazo (Por recalculo se reemplazan  cuotas emitidas previamente)</li>
 		<li><b>Valor cuota dentro del plazo</b>: Es la cuota de contribución, inlcuyendo sobre tasa y cuota de aseo municipal </li>
 		<li><b>Total a pagar</b>: Al valor cuota dentro del plazo, se le agregar las multas e intereses, menos los abono y condonaciones de multas e intereses</li>
 		</ul>
-		</div>
-	</p>
-	
 	</div>
+	</p>
+
+</div>	
+</div>
 
 
 
-          </div>  <!-- cierra div class='container'> de script que contiene mostrar() -->
-       </div>     <!-- cierra <div class='web-sii cuerpo'> de script que contiene mostrar()  -->
+  </div>  <!-- cierra div class='container'> de script que contiene mostrar() -->
+</div>     <!-- cierra <div class='web-sii cuerpo'> de script que contiene mostrar()  -->
        <!-- FIN CUERPO -->
         
 		

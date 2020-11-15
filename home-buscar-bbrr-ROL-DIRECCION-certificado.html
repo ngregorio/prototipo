@@ -99,9 +99,8 @@
            <ol class="breadcrumb" id="miga">
 			<li><a href="home.html">Home</a></li>
 			<li><a href="home-menu.html">Servicios online</a></li>
-			<li><a href="home-menu-ava.html">Avalúos y Contribuciones de bienes raíces</a></li>
-			<li><a href="home-work-contribuciones.html">Contribuciones</a></li>
-			<li class="active">Pagar Contribuciones</li>
+			<li><a href="home-menu-ava.html">Bienes Raices -Avalúos y Contribuciones de bienes raíces</a></li>
+			<li class="active">Certificados de Avalúo</li>
 			</ol>
         </div>
         <!-- FIN RASTRO MIGA -->
@@ -286,14 +285,14 @@ o la dirección, luego seleccionar el botón "Buscar".
 					</div>
 			</div>			
 			
-		<div class="col-sm-12">
-		
+		<div class="col-sm-12" style="padding:0px;">
+		<hr class="hr_titlex" style="margin:5px 0;">
 		<div class="alingboton">
 		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
 			<button class="btn btn-default" type="button" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
 		</p>
 		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-			<button class="btn boton-default" type="submit"> Buscar </button>
+			<button class="btn boton-default" type="submit" style="padding-left:25px;padding-right:25px;"> Buscar </button>
 		</p>
 		</div>
 		
@@ -511,12 +510,13 @@ o la dirección, luego seleccionar el botón "Buscar".
 			</div>
 				
 		<div class="col-sm-12" style="padding:0px;">
+			<hr class="hr_titlex" style="margin:5px 0;">
 			<div class="alingboton">
 			<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
 				<button class="btn btn-default" type="button" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
 			</p>
 			<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-				<button class="btn boton-default" type="submit"> Buscar </button>
+				<button class="btn boton-default" type="submit" style="padding-left:25px;padding-right:25px;"> Buscar </button>
 			</p>
 			</div>
 		</div>		
@@ -632,28 +632,24 @@ o la dirección, luego seleccionar el botón "Buscar".
 </p>
 <hr class="hr_bottom">
 
-		<div class="header"  style="margin-top:1px;">
-			<nav class="navbar-primary" style="background:#fff !important;">
-				<div class="alingboton">
-				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<button class="btn btn-default" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
-				</p>
-				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<button class="btn boton-agregar" onclick="descargarPdf();"> Descargar Certificado</button>
-				</p>
-				<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-					<div id="contenido" class="alingboton">
-					<input id="idMail" name="idMail" type="text" placeholder="Introduce el mail" id="exampleInput2" class="form-control">
-					<i class="fa fa-azul fa-question-circle box_tooltip float_right">
-					<div class="tooltip"> El certificado será enviado al correo ingresado.</div>
-					</i>
-					</input>
-					</div> 
-					<button class="btn boton-default"  onclick="enviarMail();"> Enviar por mail </button>
-				</p>
-				</div>
-			</nav>
-		</div>
+<div class="row alingboton">
+	<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+		<button class="btn btn-default" onclick="window.location='home-menu-ava.html#avaluo'"> Volver al menú</button>
+	</p>
+	<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+		<button class="btn boton-agregar" onclick="descargarPdf();"> Descargar Certificado</button>
+	</p>
+	<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
+		<div id="contenido" class="alingboton">
+		<input id="idMail" name="idMail" type="text" placeholder="Introduce el mail" id="exampleInput2" class="form-control2">
+		<i class="fa fa-azul fa-question-circle box_tooltip float_right">
+		<div class="tooltip"> El certificado será enviado al correo ingresado.</div>
+		</i>
+		</input>
+		</div> 
+		<button class="btn boton-default"  onclick="enviarMail();"> Enviar por mail </button>
+	</p>
+</div>
 
 		<br>
 		<div class="row col-md-12" id="divMail" style="padding-right:0px;margin-right:0px;">
