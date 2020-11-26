@@ -68,7 +68,7 @@
 .filtro{
 	font-size:12px;
 	margin:0px !important;
-	padding:5px 0px 0px 0px !important;
+	padding:5px 0px 5px 0px !important;
 	border:1px solid #ccc;"
 }
 .text_control{
@@ -80,7 +80,7 @@
 
 .long_text_control{
 	width: 100%;
-    height: 30px;
+    height: 28px; /***30px****/
     padding: 6px 12px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -300,6 +300,9 @@ span.anio_reavaluo {
 .derecha{
 	float: right; 
 }
+.izquierda{
+	float: left; 
+}
 
 .my-card-der{
 	float: right; 
@@ -380,6 +383,69 @@ Fondo caja: #f5f5f5
 	background-color: #f5f5f5;
 	color: #000;
     border-bottom: 8px solid #002c48;
+}
+
+.my-header-bbrr {
+    /*padding: .75rem 1.25rem;*/
+	padding: 10px 15px 5px 15px;
+    /*background-color: #f5f5f5;0f69b4 0064a0 002c48*/
+	background-color: #f5f5f5;
+	color: #000;
+    border-bottom: 8px solid #ffc000;
+}
+
+.my-header-ot {
+    /*padding: .75rem 1.25rem;*/
+	padding: 10px 15px 5px 15px;
+    /*background-color: #f5f5f5;0f69b4 0064a0 002c48*/
+	background-color: #f5f5f5;
+	color: #000;
+    border-bottom: 8px solid #eb510d;
+}
+
+.my-header-ot-cerradas {
+    /*padding: .75rem 1.25rem;*/
+	padding: 10px 15px 5px 15px;
+    /*background-color: #f5f5f5;0f69b4 0064a0 002c48*/
+	background-color: #f5f5f5;
+	color: #000;
+    border-bottom: 8px solid #00B050;
+}
+
+.my-header-notificaciones {
+    /*padding: .75rem 1.25rem;*/
+	padding: 10px 15px 5px 15px;
+    /*background-color: #f5f5f5;0f69b4 0064a0 002c48*/
+	background-color: #f5f5f5;
+	color: #000;
+    border-bottom: 8px solid #0f69b4;
+}
+.my-header-contribuciones {
+    /*padding: .75rem 1.25rem;*/
+	padding: 10px 15px 5px 15px;
+    /*background-color: #f5f5f5;0f69b4 0064a0 002c48*/
+	background-color: #f5f5f5;
+	color: #000;
+    border-bottom: 8px solid #e22c2c;
+}
+
+.my-header-bam {
+    /*padding: .75rem 1.25rem;*/
+    /*padding: .75rem 1.25rem;*/
+	padding: 10px 15px 5px 15px;
+    /*background-color: #f5f5f5;0f69b4 0064a0 002c48  723e72*/
+	background-color: #f5f5f5;
+	color: #000;
+    border-bottom: 8px solid #eb510d;
+}
+
+.my-header-sobretasa {
+    /*padding: .75rem 1.25rem;*/
+	padding: 10px 15px 5px 15px;
+    /*background-color: #f5f5f5;0f69b4 0064a0 002c48*/
+	background-color: #f5f5f5;
+	color: #000;
+    border-bottom: 8px solid #6dc1d5;
 }
 
 .card-example {

@@ -148,47 +148,77 @@
 	</div>
 
 
-	<div style="border: 1px solid #ccc; background:#f5f5f5;">
-		<!--p class="my-subtitle">
-		A continuación se listan las propiedades registradss en el SII asociadas a su RUT al dd-mm-aaaa.
-		</p-->
-		<span class="derecha">Si desea buscar otras propiedades pinche <b><a href="home-buscar-bbrr-ROL-DIRECCION.html"> aqui. </a></b></span>
-		&nbsp;
+
+<div class="col-md-12" style="font-size:13px;padding-bottom:2px;padding-left:0px;padding-right:0px;">
+	<div class="col-md-2 my-header-bbrr text-md-center text-center">
+	  Bienes Raíces<br> <b>6</b>
 	</div>
+	<div class="col-md-2 my-header-ot-cerradas text-md-center text-center">
+	  <a href="sii-ficha.html" target="_blank" data-toggle="tooltip" title="Ver Solicitudes de bienes raíces">
+	  OT cerrada / Res.<br> <b>12 / 2</b>
+	  </a>
+	</div>
+	<!--div class="col-md-2 my-header-ot text-md-center text-center">
+	  OT en resolución:<br> 2
+	</div-->
+	<div class="col-md-2 my-header-notificaciones text-md-center text-center">
+	  <a href="sii-ficha.html" target="_blank" data-toggle="tooltip" title="Ver Notificaciones">
+	  Notificaciones<br> <b>1</b>
+	  </a>
+	</div>
+	<div class="col-md-2 my-header-contribuciones text-md-center text-center">
+	  <a href="home-work-cont-pagar.html" target="_blank" data-toggle="tooltip" title="Ver las contribuciones">
+	  Contribuciones<br> <b>Atrasado</b>
+	  </a>
+	</div>
+	<div class="col-md-2 my-header-sobretasa text-md-center text-center">
+	  <a href="sii-ficha.html" target="_blank" data-toggle="tooltip" title="Ver consulta de Sobretasa de Modernizci{on Tributaria">
+	  Sobretasa 7 bis<br> <b>SI</b>
+	  </a>
+	</div>
+	<div class="col-md-2 my-header-bam text-md-center text-center">
+	  BAM<br> <b>NO</b>
+	</div>
+</div>
+
 	
-	<!--/div-->
-	<hr class="hr_title" style="margin:5px 0;">
+
+<hr class="hr_title" style="margin:5px 0;">
 <div class="col-md-12 my-card-title">
 	<p class="text-center">LISTADO DE BIENES RAICES</p>
 </div>
+<div style="border: 1px solid #ccc; background:#f5f5f5;">
+	<span class="derecha">Si desea buscar otras propiedades pinche <b><a href="home-buscar-bbrr-ROL-DIRECCION.html"> aqui. </a></b></span>
+	&nbsp;
+</div>
 
-	<div class="col-md-12 alingboton filtro">
-		<div class="col-md-2">
-			<p><b>Total Registros: 6 </b></p>
-		</div>
-		<div class="col-md-3">
-			<p class="alingboton" style="font-size: 12px;"><b>Filtrar:</b>
-				<input id="searchText" class="form-control search-text" style="font-size: 12px;background:#fff;"> 
-			</p>
-		</div>
-		<div class="col-md-2">
-			<p><b>(Filtrados: 0)</b></p>
-		</div>
-		<div class="col-md-5" style="float:right">			
-			<form class="form-inline derecha">
-				<label><b>Total de registros por página:</b></label> 
-				<select class="form-control" style="font-size: 12px;background:#fff;" "name="pageSizeSelect" id="pageSizeSelect">
-				<option label="10" value="number:10"  selected="selected">10</option>
-				<option label="25" value="number:25">25</option>
-				<option label="50" value="number:50">50</option>
-				<option label="100" value="number:100">100</option>
-				<option label="500" value="number:500">500</option>
-				<option label="1000" value="number:1000">1000</option>
-				<option label="2000" value="number:2000">2000</option>
-				</select>
-			</form>
-		</div>
+<div class="col-md-12 alingboton filtro">
+	<div class="col-md-2">
+		<label><b>Total Registros: 6 </b></label>
 	</div>
+	<div class="col-md-3 alingboton">
+		<label><b>Filtrar:</b></label>
+		<input id="searchText" placeholder="Ingrese texto" class="form-control search-text"> 		
+	</div>
+	<div class="col-md-2">
+		<label><b>(Filtrados: 0)</b></label>
+	</div>
+	<div class="col-md-5" style="float:right">			
+		<form class="form-inline derecha">
+			<label><b>Total de registros por página:</b></label> 
+			<select class="form-control" style="font-size:12px;" name="pageSizeSelect" id="pageSizeSelect">
+			<option label="10" value="number:10"  selected="selected">10</option>
+			<option label="25" value="number:25">25</option>
+			<option label="50" value="number:50">50</option>
+			<option label="100" value="number:100">100</option>
+			<option label="500" value="number:500">500</option>
+			<option label="1000" value="number:1000">1000</option>
+			<option label="2000" value="number:2000">2000</option>
+			</select>
+		</form>
+	</div>
+</div>
+	
 
 	
 
@@ -366,7 +396,7 @@
 <div class="row" style="font-size:11px">
 	<div class="col-sm-5">
 	<div class="dataTables_info" id="direccionesVigentes_info" role="status" aria-live="polite">
-	<b>Mostrando  del 1 al 3 de un total de 3 registros</b>
+	<b>Mostrando  del 1 al 6 de un total de 6 registros</b>
 	</div>
 	</div>
 	<div class="col-sm-7" style="padding:0px;">
