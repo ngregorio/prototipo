@@ -475,7 +475,7 @@
 			<button class="btn btn-default" onclick="window.location='home-work-cont-pagar.html'" style="padding-left:25px;padding-right:25px;"> Volver</button>
 		</p>
 		<p class="text-center" style="padding-top:5px; padding-left:15px; !important" >
-			<button class="btn boton-default" onclick="" style="padding-left:25px;padding-right:25px;"> Pagar</button>
+			<button class="btn boton-default" onclick="volver();" style="padding-left:25px;padding-right:25px;"> Pagar</button>
 		</p>
 		</div>
 	</div>
@@ -619,6 +619,11 @@ $(document).ready(function(){
 </script>
 
 <script>
+function volver(){
+	alert("Se ha pagado las cuotas seleccionadas");
+	window.location.href="home-work-cont-pagado.html";
+}
+
 function getTotal(objSelector)
 {
     var total = 0;
