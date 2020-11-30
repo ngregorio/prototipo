@@ -568,7 +568,7 @@ o la dirección, luego seleccionar el botón "Buscar".
 	<th style="vertical-align:middle" >Valor Pagado</th>	
 	</tr>
 </thead>
-<tbody>
+<tbody id="IdTableSearch">
 	<tr>
 	<td> <input type="checkbox" id="br1"> </input></td>
 	<td data-title="fecha pago" class="text-center"><p class="aldia"><b>30-04-2019</b></p></td>
@@ -704,6 +704,17 @@ o la dirección, luego seleccionar el botón "Buscar".
         
        <!-- PIE -->
        <script type="text/javascript">mostrarPie()</script>
+<script>
+$(document).ready(function(){
+  $("#searchText").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#IdTableSearch tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>	   
+	   
 <script>
 var $tbl = $('#IdTable');
 var $bodychk = $tbl.find('tbody input:checkbox');

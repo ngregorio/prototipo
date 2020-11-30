@@ -236,7 +236,7 @@
 	<th class="text-center" >Valor Pagado</th>	
 	</tr>
 </thead>
-<tbody>
+<tbody id="IdTableSearch">
 	<tr>
 	<td> <input type="checkbox" id="br1"> </input></td>	
 	<td data-title="cuota-año" class="text-center">1-2020</td>
@@ -387,7 +387,16 @@
 </div-->
 
 
-
+<script>
+$(document).ready(function(){
+  $("#searchText").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#IdTableSearch tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 
 
 <script>

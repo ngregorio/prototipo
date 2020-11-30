@@ -201,8 +201,8 @@
 	<th class="text-center" >Pagos en el SII</th>
 	</tr>
 </thead>
-<tbody>
 
+<tbody id="IdTableSearch">
 	<tr>
 	<td> <input type="checkbox" id="br1"> </input></td>
 	<td data-title="Comuna" >ANTOFAGASTA</td>
@@ -424,6 +424,16 @@ function isEmail(email) {
     return regex.test(email);
 }
 </script>	
+<script>
+$(document).ready(function(){
+  $("#searchText").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#IdTableSearch tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 <!----- la checkbok madre debe tener el id selectALL----->
 <!--script>	
 $(document).ready(function() {
