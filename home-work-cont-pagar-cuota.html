@@ -160,17 +160,17 @@
 	<div class="col-md-12 box-header">
 		<div class="col-md-4 my-small-card">
 			<p style="margin:5px 0;color:#0f69b4;">
+			<input id="idTodas" type="checkbox" onChange='chkTodas(this);'> <b>Todas las cuotas para pago.</b></input>
+			</p>
+		</div>
+		<div class="col-md-4 my-small-card">
+			<p style="margin:5px 0;color:#0f69b4;">
 			<input id="idPagoAnual" type="checkbox" onChange='chkPagoAnual(this);'> <b>Todas del Pago Anual.</b></input>
 			</p>
 		</div>
 		<div class="col-md-4 my-small-card">
 			<p style="margin:5px 0;color:#0f69b4;">
 			<input id="idPorVencer" type="checkbox" onChange='chkPorVencer(this);'> <b>Sólo cuotas próximas a vencer.</b></input>
-			</p>
-		</div>
-		<div class="col-md-4 my-small-card">
-			<p style="margin:5px 0;color:#0f69b4;">
-			<input id="idTodas" type="checkbox" onChange='chkTodas(this);'> <b>Todas las cuotas para pago.</b></input>
 			</p>
 		</div>
 	</div>	
@@ -211,8 +211,8 @@
 	<th class="text-center" rowspan="2"> 
 	<input id="selectAll" name="selectAll" type="checkbox" onclick="chAll(this);" >
 	<span data-toggle="tooltip" title="Pago anual de contribuciones"> Sel.</span></input></th>
-	<th class="text-center" rowspan="2"> ROL </th>
-	<th class="text-center" rowspan="2">Comuna </th>
+	<th class="text-center" rowspan="2">Comuna</th>
+	<th class="text-center" rowspan="2">ROL</th>
 	<th class="text-center" rowspan="2">Dirección </th>
 	<th class="text-center" rowspan="2">Nº Cuota-Año </th>
 	<th class="text-center" rowspan="2">Fecha Vcto.</th>
@@ -484,8 +484,8 @@
 		<b>Leyenda</b>
 		<ul style="font-size:13px;">
 		<li><b>Sel.</b>: Seleccion de cuotas de una propiedad</li>
-		<li><b>Nº. Cuota - Año</b>: Indica el número correlativo de la cuota de cada año (4 cuotas anuales o 2 cuotas semestrales)</li>
-		<li><b>TC</b>: Tipo de cuota: N=Normal; S=Suplementario (Por recalculo se aplican Contribuciones adicionales ); R=Reemplazo (Por recalculo se aplican Reemplazos de cuotas emitidas previamente)</li>
+		<li><b>Nº Cuota - Año</b>: Indica el número correlativo de la cuota de cada año (4 cuotas anuales o 2 cuotas semestrales)</li>
+		<li><b>Tipo Cuota</b>: Tipo de cuota: N=Normal; S=Suplementario (Por recalculo se aplican Contribuciones adicionales ); R=Reemplazo (Por recalculo se aplican Reemplazos de cuotas emitidas previamente)</li>
 		</ul>
 		</p>
 
