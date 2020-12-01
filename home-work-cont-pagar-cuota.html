@@ -815,37 +815,37 @@ $(function() {
 			}
 		}else if(!t){
 		 if(!f) {		
-			if($(this).attr('id')=="normal1" && !$(this).prop("checked") ){
+			if(($(this).attr('id')=="normal1" || $(this).attr('id')=="anual12") && !$(this).prop("checked") ){
 				//alert("Esta cuota es parte del pago anual, por lo cual no se puede pagar individualmente");
 				$(this).closest('tr').removeClass("highlight");
 				$(this).prop('checked', false);
-				$("#anual12").prop( "checked", false );
-				$("#anual12").closest('tr').removeClass("highlight");
+				//$("#anual12").prop( "checked", false );
+				//$("#anual12").closest('tr').removeClass("highlight");
 				$("#anual13").prop( "checked", false );
 				$("#anual13").closest('tr').removeClass("highlight");
 				$("#anual14").prop( "checked", false );
 				$("#anual14").closest('tr').removeClass("highlight");
 				getTotal($(".chkcuota:checked"));
 			}
-			if($(this).attr('id')=="normal2" && !$(this).prop("checked") ){
+			if(($(this).attr('id')=="normal2" || $(this).attr('id')=="anual22")&& !$(this).prop("checked") ){
 				//alert("Esta cuota es parte del pago anual, por lo cual no se puede pagar individualmente");
 				$(this).closest('tr').removeClass("highlight");
 				$(this).prop('checked', false);
-				$("#anual22").prop( "checked", false );
-				$("#anual22").closest('tr').removeClass("highlight");
+				//$("#anual22").prop( "checked", false );
+				//$("#anual22").closest('tr').removeClass("highlight");
 				$("#anual23").prop( "checked", false );
 				$("#anual23").closest('tr').removeClass("highlight");
 				$("#anual24").prop( "checked", false );
 				$("#anual24").closest('tr').removeClass("highlight");
 				getTotal($(".chkcuota:checked"));
 			}
+			/*
 			if($(this).attr('id')=="anual12" && $(this).prop("checked")){
 				alert("Esta cuota es parte del pago anual, por lo cual no se puede pagar individualmente");
 				$(this).closest('tr').removeClass("highlight");
 				$(this).prop('checked', false);
 				getTotal($(".chkcuota:checked"));
 			}else if($(this).attr('id')=="anual12" && !$(this).prop("checked") ){
-				//alert("Esta cuota es parte del pago anual, por lo cual no se puede pagar individualmente");
 				$(this).closest('tr').removeClass("highlight");
 				$(this).prop('checked', false);
 				$("#anual13").prop( "checked", false );
@@ -853,7 +853,7 @@ $(function() {
 				$("#anual14").prop( "checked", false );
 				$("#anual14").closest('tr').removeClass("highlight");
 				getTotal($(".chkcuota:checked"));
-			}
+			}*/
 			if($(this).attr('id')=="anual13" && $(this).prop("checked")){
 				alert("Esta cuota es parte del pago anual, por lo cual no se puede pagar individualmente");
 				$(this).closest('tr').removeClass("highlight");
@@ -884,14 +884,13 @@ $(function() {
 				$("#anual13").closest('tr').removeClass("highlight");				
 				getTotal($(".chkcuota:checked"));
 			}
-				///
+			/*
 			if($(this).attr('id')=="anual22" && $(this).prop("checked")){
 				alert("Esta cuota es parte del pago anual, por lo cual no se puede pagar individualmente");
 				$(this).closest('tr').removeClass("highlight");
 				$(this).prop('checked', false);
 				getTotal($(".chkcuota:checked"));
 			}else if($(this).attr('id')=="anual22" && !$(this).prop("checked") ){
-				//alert("Esta cuota es parte del pago anual, por lo cual no se puede pagar individualmente");
 				$(this).closest('tr').removeClass("highlight");
 				$(this).prop('checked', false);
 				$("#anual23").prop( "checked", false );
@@ -899,7 +898,7 @@ $(function() {
 				$("#anual24").prop( "checked", false );
 				$("#anual24").closest('tr').removeClass("highlight");				
 				getTotal($(".chkcuota:checked"));
-			}
+			}*/
 			if($(this).attr('id')=="anual23" && $(this).prop("checked")){
 				alert("Esta cuota es parte del pago anual, por lo cual no se puede pagar individualmente");
 				$(this).closest('tr').removeClass("highlight");
