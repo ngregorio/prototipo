@@ -85,11 +85,11 @@ function imprimeRutEncabezado(){
 function imprimeCerrarSesion(){
    document.write("<a href='" + urlCerrarSesion + "'>Cerrar Sesi&oacute;n</a>");
 }
-
+/*
 document.write("<link href='https://zeusr.sii.cl/admin/responsive/css/bootstrap-sii.min.css' rel='stylesheet'>\n");
 document.write("<link href='https://zeusr.sii.cl/admin/responsive/css/general.css' rel='stylesheet'>\n");
 document.write("<link href='https://zeusr.sii.cl/admin/responsive/css/estilos.css' rel='stylesheet'>\n");
-
+*/
 function mostrar(par){
 	document.write("<!-- CABECERA MOVIL-->\n");
 	document.write("<div class='web-sii cabecera Fixed hidden-sm hidden-md hidden-lg'>\n");
