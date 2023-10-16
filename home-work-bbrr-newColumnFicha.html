@@ -335,7 +335,7 @@
 			<!--112A62--->
 			<div class="my-card-block text-center" style="background-color:#22A19F;color:#FFF;">
 				<b>CONTRIBUCIONES</b>
-				 <span class="derecha" data-toggle="modal" data-target="#myModalCartas">
+				 <span class="derecha" data-toggle="modal" data-target="#myModalContribuciones">
 				 <a href="#" data-toggle="tooltip" title="Ver historial de contribuciones" onclick="myModalCartas">				 
 				 Ver&nbsp;&nbsp;
 				 <i class="fa fa-external-link fa-azul" style="font-size:16px;" aria-hidden="true"></i>
@@ -464,11 +464,15 @@
 			</div>
 			<div class="my-card-block text-center" style="background-color:#414141;color:#FFF;">
 
-				 <a href="#" data-toggle="tooltip" title="Ver otros propietarios" onclick="myModalMatriz">
+
+			<span data-toggle="modal" data-target="#myModalMultipropietarios">
 				<span style="color:#FFF;">Juan Alejandro Gonzalez Rojas </span>
-					&nbsp;&nbsp;<i class="fa fa-external-link fa-azul" style="font-size:16px;" aria-hidden="true"></i>
+				<a  style="color:#fff !important;" href="#" onclick="myModalMultipropietarios" data-toggle="tooltip" title="Ver otros propietarios">
+				&nbsp;<i class="fa fa-external-link fa-blue derecha" style="font-size:16px;" aria-hidden="true"></i>
 				</a>
-					</span>
+			</span>				
+				
+				
 			</div>
 			<div class="my-card-block text-center" style="background-color:#414141;color:#FFF;">
 				Dirección de contacto:<br>&nbsp;<span class="" style="color:#eb510d;">Av. Vicuña Mackena 12345442232</span>
@@ -1641,11 +1645,173 @@
     </div>
  </div>
 
+
 <!----------------------Modal HISTORIAL DE RE-AVALUO-------------------->  	
 
 <div class="modal fade" id="myModalCartas" role="dialog">
     <div class="modal-dialog" style="width:860px !important;">    
       <!-- Modal content-->
+      <div class="modal-content">
+		<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+			
+		<div class="col-md-12 my-header text-md-center text-center">
+		   DETALLE DE AVALÚO Y HISTORIAL DE RE-AVALUOS
+		</div>  
+		</div>
+		
+		<div class="modal-body" style="padding:1px !important;">
+		<div class="web-sii cuerpo">
+		<div class="panel-body">
+		<div id="no-more-tables">
+
+		<div class="col-md-12" style="padding-right:2px;">
+	
+		<div class="my-card col-md-6">
+			<div class="my-card-header-b text-md-center">
+			  AVALUO FISCAL <small class="derecha"> Vigente del 1er semestre 2018</small>
+			</div>  
+			<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+				Avalúo del Terreno : <span class="derecha"  style="color:#002c48;">$40.000.000</span>
+			</div>
+			<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+				Uso Exclusivo: <span class="derecha" style="color:#002c48;">$0</span>
+			</div>
+			<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+				Avalúo de la Construcción : <span class="derecha" style="color:#002c48;">$60.000.000</span>
+			</div>
+			<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+				Prorrateo B. común 1: <span class="derecha" style="color:#002c48;">$1.000.000</span>
+			</div>
+			<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+				Prorrateo B. común 2: <span class="derecha" style="color:#002c48;">$500.000</span>
+			</div>
+			<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+				<b>Global : <span class="derecha"  style="color:#002c48;">$0</span></b>
+			</div>
+			<div class="my-card-footer">
+				<b>Avalúo Total : <span class="derecha"  style="color:#002c48;">$101.500.000</span></b>
+			</div>
+			<div class="my-card-block">
+				<b>Avalúo Exento : <span class="derecha" style="color:#eb510d;">-$1.500.000</span></b>
+			</div>
+			<div class="my-card-footer">
+				<b>AVALUO AFECTO : <span class="derecha" style="color:#002c48;">$100.000.000</span></b>
+			</div>
+			
+		</div>
+		
+		<div class="my-card col-md-6">
+			<div class="my-card-header-b text-md-center">
+			  DETALLE DE EXENCION 
+			</div>  
+			<div class="my-card-block">
+				DFL-2 : <span class="derecha"  style="color:#002c48;">35%</span>
+			</div>
+			<div class="my-card-block">
+				Fecha de término: <span class="derecha" style="color:#002c48;">31-12-2025</span>
+			</div>
+			<br>
+			<br>
+			<div class="my-card alert alert-warning" style="font-size:0.9em;">
+
+				<p style="padding-right:0px;padding-right:0px;margin-right:0px;">
+					<b>Información</b>
+					<ul style="font-size:13px">
+						<li>Último re-avalúo realizado <i> 2018 NO AGRICOLA </i> 	
+						</li>
+					</ul>
+				</p>
+			</div>			
+		</div>	
+		</div>
+
+		
+
+
+			<div class="col-md-12 my-card-title">
+				<p class="text-center">HISTORIAL DE RE-AVALUOS</p>
+			</div>
+
+			<table class="table table-striped table-bordered table-hover cf">
+			<thead class="cf">
+				<tr>
+				<th class="text-center">Año de re-avalúo</th>
+				<th class="text-center">Carta de Re-avalúo</th>
+				<th class="text-center">Fecha de reavaluo</th>
+				<th class="text-center">Fecha Modificación</th>
+				<th class="text-center">Vigencia desde</th>
+				<th class="text-center">Avalúo Previo <br>($)</th>
+				<th class="text-center">Avalúo Posterior <br>($)</th>
+				<th class="text-center">Contribución <br>Total Previo ($)</th>
+				<th class="text-center">Contribución <br>Total Posterior ($)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td data-title="nro. del documento" class="text-center">RE-AVALUO NO AGRICOLA 2018</td>
+				<td data-title="Documento" class="text-center">
+					<a href="#" data-toggle="tooltip" title="Descargar documento" data-placement="bottom"><img src="./img/pdf-icon.png" width="20" height="20" alt=""/></a>
+				</td>
+				<td data-title="nro. del documento" class="text-center">12-12-2018</td>
+				<td data-title="Tipo del documento" class="text-center">-</td>
+				<td data-title="Tipo del documento" class="text-center">1er semestre 2020</td>
+				<td data-title="nro. del documento" style="text-align: right !important;">15.000.000</td>
+				<td data-title="Fecha del documento" style="text-align: right !important;">16.000.000</td>
+				<td data-title="nro. del documento" style="text-align: right !important;">25.000</td>
+				<td data-title="Fecha del documento" style="text-align: right !important;">27.000</td>
+				</tr>
+				<tr>
+				<td data-title="nro. del documento" class="text-center">RE-AVALUO NO AGRICOLA 2016</td>
+				<td data-title="Documento" class="text-center">
+					<a href="#" data-toggle="tooltip" title="Descargar documento" data-placement="bottom"><img src="./img/pdf-icon.png" width="20" height="20" alt=""/></a>
+				</td>
+				<td data-title="nro. del documento" class="text-center">12-12-2016</td>
+				<td data-title="Tipo del documento" class="text-center">31-06-2017</td>
+				<td data-title="Tipo del documento" class="text-center">No Vigente</td>
+				<td data-title="nro. del documento" style="text-align: right !important;">12.000.000</td>
+				<td data-title="Fecha del documento" style="text-align: right !important;">13.000.000</td>
+				<td data-title="nro. del documento" style="text-align: right !important;">18.000</td>
+				<td data-title="Fecha del documento" style="text-align: right !important;">15.000</td>
+				</tr>
+
+				<tr>
+				<td data-title="nro. del documento" class="text-center">RE-AVALUO NO AGRICOLA 2014</td>
+				<td data-title="Documento" class="text-center">
+					<a href="#" data-toggle="tooltip" title="Descargar documento" data-placement="bottom"><img src="./img/pdf-icon.png" width="20" height="20" alt=""/></a>
+				</td>
+				<td data-title="nro. del documento" class="text-center">12-12-2014</td>
+				<td data-title="Tipo del documento" class="text-center">-</td>
+				<td data-title="Tipo del documento" class="text-center">No Vigente</td>
+				<td data-title="nro. del documento" style="text-align: right !important;">10.000.000</td>
+				<td data-title="Fecha del documento" style="text-align: right !important;">11.000.000</td>
+				<td data-title="nro. del documento" style="text-align: right !important;">10.000</td>
+				<td data-title="Fecha del documento" style="text-align: right !important;">12.000</td>
+				</tr>
+
+			</tbody>
+			</table>		
+
+		</div>
+		</div>
+		</div>
+		</div>
+	 
+	
+        <div class="modal-footer" style="align-items: center;">
+			<p class="text-center" style="margin-bottom:0px;">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			</p>		  
+        </div>
+      </div>
+      
+    </div>
+ </div>
+<!----------------------Modal HISTORIAL DE RE-AVALUO-------------------->  	
+
+<!--div class="modal fade" id="myModalCartas" role="dialog">
+    <div class="modal-dialog" style="width:860px !important;">    
+      
       <div class="modal-content">
 		<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
 		<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -1741,7 +1907,7 @@
       </div>
       
     </div>
- </div>
+ </div-->
 		
 <!----------------------Modal ULTIMA MODIFICACION-AVALUO-------------------->  	
 
@@ -2396,12 +2562,401 @@
     </div>
  </div>		
 
+<!----------------------Modal MULTIPROPIETARIOS DEL BIEN RAIZ-------------------->  	
 
-<!----------------------Modal CONTRIBUCION DEL BIEN RAIZ-------------------->  	
+<div class="modal fade" id="myModalMultipropietarios" role="dialog">
+    <div class="modal-dialog" style="width:1080px !important;">    
+      <!-- Modal content-->
+      <div class="modal-content">
+		<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+			
+		<div class="col-md-12 my-header text-md-center text-center">
+		   PROPIETARIOS DEL BIEN RAÍZ
+		</div>  
+		</div>
+		
+		<div class="modal-body" style="padding:1px !important;">
+		<div class="web-sii cuerpo">
+		<div class="panel-body">
+		<div id="no-more-tables">
+
+	<div class="col-md-12 alingboton filtro">
+		<div class="col-md-2">
+			<p><b>Total Registros: 6 </b></p>
+		</div>
+		<div class="col-md-3">
+			<p class="alingboton" style="font-size: 12px;"><b>Filtrar:</b>
+				<input id="searchText" class="form-control search-text" style="font-size: 12px;background:#fff;"> 
+			</p>
+		</div>
+		<div class="col-md-2">
+			<p><b>(Filtrados: 0)</b></p>
+		</div>
+		<div class="col-md-5" style="float:right">			
+			<form class="form-inline derecha">
+				<label><b>Total de registros por página:</b></label> 
+				<select class="form-control" style="font-size: 12px;background:#fff;" "name="pageSizeSelect" id="pageSizeSelect">
+				<option label="10" value="number:10"  selected="selected">10</option>
+				<option label="25" value="number:25">25</option>
+				<option label="50" value="number:50">50</option>
+				<option label="100" value="number:100">100</option>
+				<option label="500" value="number:500">500</option>
+				<option label="1000" value="number:1000">1000</option>
+				<option label="2000" value="number:2000">2000</option>
+				</select>
+			</form>
+		</div>
+	</div>
+
+	
+
+<table class="table table-striped table-bordered table-hover cf">
+<thead class="cf">
+	<tr>
+	<!--th class="text-center" rowspan="2">RUT</th-->
+	<th class="text-center" rowspan="2">Nombre </th>
+	<th class="text-center" rowspan="2">% de derecho </th>
+	<th class="text-center" colspan="3">Datos de la inscripción </th>
+	<th class="text-center" rowspan="2">Fecha de Inscripción</th>
+
+	</tr>
+	<tr>
+	<th class="text-center">Fojas</th>
+	<th class="text-center">Número </th>
+	<th class="text-center">Año </th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+	<!--td data-title="Rol">12.354.666-1</td-->
+	<td data-title="Comuna">Esteban Eduardo Gonzalez Ramirez</td>
+	<td data-title="Derecho"  class="text-center"><b>33,33%</b></td>
+	<td style="text-align: right !important;" data-title="Fojas">12345</td>
+	<td style="text-align: right !important;" data-title="Numero">345</td>
+	<td style="text-align: right !important;" data-title="Año">1990</td>
+	<td style="text-align: center !important;" data-title="Año">12-11-1990</td>
+	</tr>
+	
+	<tr>
+	<!--td data-title="Rol">12.354.632-6</td-->
+	<td data-title="Comuna">Roberto Adrian Gonzalez Ramirez</td>
+	<td data-title="Derecho"  class="text-center"><b>33,33%</b></td>
+	<td style="text-align: right !important;" data-title="Fojas">12345</td>
+	<td style="text-align: right !important;" data-title="Numero">345</td>
+	<td style="text-align: right !important;" data-title="Año">1990</td>
+	<td style="text-align: center !important;" data-title="Año">12-11-1990</td>
+	</tr>
+
+	<tr>
+	<!--td data-title="Rol">12.626.355-k</td---->
+	<td data-title="Comuna"><strong>Juan Roberto Gonzalez Ramirez</strong></td>
+	<td data-title="Derecho"  class="text-center"><b>33,33%</b></td>
+	<td style="text-align: right !important;" data-title="Fojas">12345</td>
+	<td style="text-align: right !important;" data-title="Numero">345</td>
+	<td style="text-align: right !important;" data-title="Año">1990</td>
+	<td style="text-align: center !important;" data-title="Año">12-11-1990</td>
+	</tr>
+
+</tbody>
+</table>
+
+<div class="row" style="font-size:11px">
+	<div class="col-sm-5">
+	<div class="dataTables_info" id="direccionesVigentes_info" role="status" aria-live="polite">
+	<b>Mostrando  del 1 al 5 de un total de 5 registros</b>
+	</div>
+	</div>
+	<div class="col-sm-6" style="padding:5px 0px 5px 0px !important;">
+		<div class="dataTables_paginate paging_simple_numbers derecha" id="direccionesVigentes_paginate" style="font-size:13px;">
+
+		<ul class="pagination" style="margin:2px 0px;">
+			<li class="previous" id="direccionesVigentes_previous" style="color:#000;">
+				<a href="">Anterior</a>
+			</li>
+			<li class="active">
+				<a href="">1</a>
+			</li>
+			<li class="paginate_button">
+				<a href="">2</a>
+			</li>
+			<li class="next" id="direccionesVigentes_next" style="color:#000;">
+				<a href="">Siguiente</a>
+			</li>
+		</ul>
+		
+		</div>
+	</div>
+</div>
+			
+			
+		</div>
+		</div>
+		</div>
+		</div>	 
+	
+        <div class="modal-footer" style="align-items: center;">
+			<p class="text-center" style="margin-bottom:0px;">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			</p>		  
+        </div>
+      </div>
+      
+    </div>
+ </div>					
+ 
+
+
+<!----------------------Modal AVALUO Y CONTRBUCIONES-------------------->  	
 
 <div class="modal fade" id="myModalContribuciones" role="dialog">
-    <div class="modal-dialog" style="width:920px !important;">    
+    <div class="modal-dialog" style="width:1080px !important;">    
       <!-- Modal content-->
+      <div class="modal-content">
+		<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>			
+		<div class="col-md-12 my-header text-md-center text-center">
+		   DETALLE DE CUOTAS E HISTORIAL DE CONTRIBUCIONES 
+		</div>  
+		</div>
+		
+		<div class="modal-body" style="padding:1px !important;">
+		<div class="web-sii cuerpo">
+		<div class="panel-body">
+		<div id="no-more-tables">
+
+		
+			<div class="col-md-12">				
+				<div class="col-md-6" style="padding-left:2px;">
+					<div class="my-card">
+						<div class="my-card-header-b text-md-center">
+						  DETALLE DE CUOTAS <span class="derecha">Valores al X semestre del AAAA</span>
+						</div>  
+						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+							Cuota Neta : <span class="derecha"  style="color:#002c48;">$34.000</span>
+						</div>
+						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+							Sobretasa SNE : <span class="derecha" style="color:#002c48;">$0</span>
+						</div>
+						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+							0.025% avalúo afecto: <span class="derecha" style="color:#002c48;">$500</span>
+						</div>
+						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+							Sobretasa 0.275%: <span class="derecha" style="color:#002c48;">$0</span>
+						</div>
+						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+							Cuota Aseo Municipal : <span class="derecha"  style="color:#002c48;">$500</span>
+						</div>
+						<div class="my-card-footer text-muted">
+							<b>VALOR CUOTA: <span class="derecha"  style="color:#002c48;">$35.000</span></b>
+						</div>
+						<div class="my-card-block text-muted">
+							<b>Informado por TGR</b>
+						</div>
+						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+							Abono: <span class="derecha" style="color:#eb510d;">-$0</span>
+						</div>
+						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+							Reajuste: <span class="derecha"  style="color:#002c48;">$0</span>
+						</div>
+						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+							Intereses: <span class="derecha"  style="color:#002c48;">$0</span>
+						</div>
+						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
+							<b>Condonación : <span class="derecha" style="color:#eb510d;">-$0</span></b>
+						</div>
+						<div class="my-card-footer">
+							<b>TOTAL A PAGAR : <span class="derecha" style="color:#002c48;">$35.000</span></b>
+						</div>
+					</div>
+				</div>
+								
+				<div class="col-md-6" style="padding-left:2px;">
+					<div class="my-card alert alert-warning" style="font-size:0.9em;">
+
+						<p style="padding-right:0px;padding-right:0px;margin-right:0px;">
+							<b>Importante!</b>
+							Para las propiedades que aumentan sus contribuciones en más de un 25% respecto al giro del semestre anterior al reavalúo, y cuya cuota trimestral
+reavaluada es superior a $n.nnn ($n.nnnn al 1 de enero de 2003), se establece un procedimiento de <b>Alza Gradual</b>.
+						</p>
+					</div>
+					<br>
+					<div class="my-card" style="font-size:0.9em;">
+						<p style="font-size:13px;">
+						<b>Leyenda detalle de Contribuciones</b>
+						<ul>
+							<li><b>SNE</b>: Sitio no edificado</li>
+							<li><b>TGR</b>: Tesoreria General de la Republica</li>
+							<li><b>Prorrateo B Común</b>: Prorrateo de avaluo de un bien común</li>
+						</ul>
+						</p>
+					</div>
+					<br>
+					<div class="my-card" style="font-size:0.9em;">					
+						<p style="font-size:13px;">
+						<b>Leyenda Historial de Contribuciones</b>
+						<ul style="font-size:13px;">
+							<li><b>TC (Tipo de Cuota)</b>: <br><br>
+								&nbsp;&nbsp;N=<b>Normal</b>: Cuotas emitidas cada semestre; <br>
+								&nbsp;&nbsp;A=<b>Alza Gradual</b>: Cuotas emitidas con un reajuste de 10% máximo; <br> 
+								&nbsp;&nbsp;S=<b>Suplementario</b>: Por recalculo del avalúo se aplican Contribuciones adicionales; <br>
+								&nbsp;&nbsp;R=<b>Reemplazo</b>: Por recalculo del avalúo se aplican rebajas a las cuotas emitidas previamente.
+							</li>
+						</ul>
+						</p>
+					</div>
+		
+				</div>
+			</div>
+		<p>&nbsp;</p>
+			<div class="col-md-12 my-card-title" style="float:none">
+				<p class="text-center">HISTORIAL DE CONTRIBUCIONES</p>
+			</div>
+
+			<table class="table table-striped table-bordered table-hover cf">
+			<thead class="cf">
+				<tr>
+				<th class="text-center" rowspan="2">Año-Cuota </th>
+				<th class="text-center" rowspan="2">Fecha Vcto.</th>
+				<th class="text-center" rowspan="2">TC</th>
+				<th class="text-center" rowspan="2">Contr. Neta</th>
+				<th class="text-center" colspan="3">Sobretasa</th>
+				<th class="text-center" rowspan="2">(+) Aseo Mun.</th>
+				<th class="text-center" colspan="3">Informado por TGR</th>
+				<th class="text-center" rowspan="2">Total</th>
+				<th class="text-center" rowspan="2">Estado</th>
+				</tr>
+				<tr>	
+				<th class="text-center">(+) SNE</th>
+				<th class="text-center">(+) 0,275%</th>
+				<th class="text-center">(+) 0,025%</th>
+				
+				<th class="text-center">(-) Abono TGR</th>
+				<th class="text-center">(+) Int. y multa</th>
+				<th class="text-center">(-) Cond.</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<!--td data-title="Destino">Habitacional</td-->
+				<!--td class="alert alert-warning" style="text-align: right !important;" data-title="Año"><strong>12.356.548-k</strong></td-->
+				<td data-title="Derecho" class="text-center">1-2020</td>
+				<td data-title="Derecho" class="text-center">30-04-2020</td>
+				<td data-title="Derecho" class="text-center">A</td>
+				<td data-title="Avaluo" class="a-derecha">$10.000</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$500</td>
+				<td data-title="Avaluo" class="a-derecha">-$0</td>
+				<td data-title="Avaluo" class="a-derecha">$1.500</td>
+				<td data-title="Avaluo" class="a-derecha">-$1.500</td>
+				<td data-title="Cuotas" class="a-derecha">$10.500</td>
+				<td data-title="Avaluo" class="text-center porpagar">Por Pagar</td>
+				</tr>
+				
+				<tr>
+				<td data-title="Derecho" class="text-center">1-2020</td>
+				<td data-title="Derecho" class="text-center">30-04-2020</td>
+				<td data-title="Derecho" class="text-center">N</td>
+				<td data-title="Avaluo" class="a-derecha">$10.000</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$500</td>
+				<td data-title="Avaluo" class="a-derecha">-$0</td>
+				<td data-title="Avaluo" class="a-derecha">$1.500</td>
+				<td data-title="Avaluo" class="a-derecha">-$1.500</td>
+				<td data-title="Cuotas" class="a-derecha">$10.500</td>
+				<td data-title="Avaluo" class="text-center pagado">Pagado</td>
+				</tr>
+				
+				<tr>
+				<td data-title="Derecho" class="text-center">1-2020</td>
+				<td data-title="Derecho" class="text-center">30-04-2019</td>
+				<td data-title="Derecho" class="text-center">S</td>
+				<td data-title="Avaluo" class="a-derecha">$10.000</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$500</td>
+				<td data-title="Avaluo" class="a-derecha">-$0</td>
+				<td data-title="Avaluo" class="a-derecha">$1.500</td>
+				<td data-title="Avaluo" class="a-derecha">-$1.500</td>
+				<td data-title="Cuotas" class="a-derecha">$10.500</td>
+				<td data-title="Avaluo" class="text-center pagado">Pagado</td>
+				</tr>
+				
+				<tr>
+				<td data-title="Derecho" class="text-center">1-2020</td>
+				<td data-title="Derecho" class="text-center">30-04-2019</td>
+				<td data-title="Derecho" class="text-center">S</td>
+				<td data-title="Avaluo" class="a-derecha">$10.000</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$500</td>
+				<td data-title="Avaluo" class="a-derecha">-$0</td>
+				<td data-title="Avaluo" class="a-derecha">$1.500</td>
+				<td data-title="Avaluo" class="a-derecha">-$1.500</td>
+				<td data-title="Cuotas" class="a-derecha">$10.500</td>
+				<td data-title="Avaluo" class="text-center pagado">Pagado</td>
+				</tr>
+				
+				<tr>
+				<td data-title="Derecho" class="text-center">1-2020</td>
+				<td data-title="Derecho" class="text-center">30-04-2019</td>
+				<td data-title="Derecho" class="text-center">N</td>
+				<td data-title="Avaluo" class="a-derecha">$10.000</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$500</td>
+				<td data-title="Avaluo" class="a-derecha">-$0</td>
+				<td data-title="Avaluo" class="a-derecha">$1.500</td>
+				<td data-title="Avaluo" class="a-derecha">-$1.500</td>
+				<td data-title="Cuotas" class="a-derecha">$10.500</td>
+				<td data-title="Avaluo" class="text-center pagado">Pagado</td>
+				</tr>
+				
+				<tr>
+				<td data-title="Derecho" class="text-center">1-2020</td>
+				<td data-title="Derecho" class="text-center">30-04-2019</td>
+				<td data-title="Derecho" class="text-center">N</td>
+				<td data-title="Avaluo" class="a-derecha">$1.000.000</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$0</td>
+				<td data-title="Avaluo" class="a-derecha">$500</td>
+				<td data-title="Avaluo" class="a-derecha">-$0</td>
+				<td data-title="Avaluo" class="a-derecha">$1.500</td>
+				<td data-title="Avaluo" class="a-derecha">-$1.500</td>
+				<td data-title="Cuotas" class="a-derecha">$1.000.500</td>
+				<td data-title="Avaluo" class="text-center pagado">Pagado</td>
+				</tr>
+			</tbody>
+			</table>		
+
+			
+		</div>
+		</div>
+		</div>
+        </div>
+		
+        <div class="modal-footer" style="align-items: center;">
+			<p class="text-center" style="margin-bottom:0px;">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			</p>		  
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!----------------------Modal CONTRIBUCION DEL BIEN RAIZ-------------------->  	
+
+<!--div class="modal fade" id="myModalContribuciones" role="dialog">
+    <div class="modal-dialog" style="width:920px !important;">    
+      
       <div class="modal-content">
 		<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
 		<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -2550,7 +3105,7 @@
       </div>
       
     </div>
- </div>		
+ </div-->		
 			
 			
  
