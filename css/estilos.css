@@ -280,7 +280,7 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:15px;line
 .web-sii .table-responsive .dataTables_wrapper{margin-bottom:30px;}
 .web-sii .table-responsive .dataTables_scrollBody table{border-bottom:0;margin-bottom:0;}
 /*.web-sii .table > thead > tr > th, .web-sii .table > tbody > tr > th, .web-sii .table > tfoot > tr > th, .web-sii .table > thead > tr > th{border:1px solid #CCCCCC;background:#ededed;color:#002c48;font-weight:bold;vertical-align: middle !important;}*/
-.web-sii .table > thead > tr > th, .web-sii .table > tbody > tr > th, .web-sii .table > tfoot > tr > th, .web-sii .table > thead > tr > th{border:1px solid #c1bfbf;background:#9d9b9b;color:#fff;font-weight:bold;vertical-align: middle !important;}
+.web-sii .table > thead > tr > th, .web-sii .table > tbody > tr > th, .web-sii .table > tfoot > tr > th, .web-sii .table > thead > tr > th{border:1px solid #c1bfbf;background:#435772;color:#fff;font-weight:bold;vertical-align: middle !important;}
 .web-sii .table-responsive{color:#706f6f;}
 .web-sii .table > tbody > tr > td, .web-sii .table > tfoot > tr > td, .web-sii .table > thead > tr > td{color:#706f6f;}
 .web-sii table.dataTable tbody > tr.selected, .web-sii table.dataTable tbody > tr > .selected{color:#fff;background:#0061a0;}
