@@ -796,40 +796,39 @@
 <p class="espacio">&nbsp;</p>
 
 	<div class="my-xcard">
-		<div class="my-card-header text-md-center" style="background-color:#67ba4b;color:#000;">
+		<div class="my-card-header text-md-center" style="background-color:#227AA1;color:#FFF;">
 		   <h2>BENEFICIOS </h2><!--span class="my-card-der">(c)</span-->
 		</div>  
-			<div class="my-card-group" style="background-color:#E3F4E0;color:#000;">
+			<div class="my-card-group" style="background-color:#E6F3FB;color:#000;">
 			<div class="my-card-group-block">
 				 EXENCIONES: DLF-2
-				 <span class="derecha" style="color:#00B050;" data-toggle="modal" data-target="#myModalExencion">
+				 <span class="derecha" style="color:#00B050;" data-toggle="modal" data-target="#myModalDefExencion">
 				 SI
-				 <a href="#" data-toggle="tooltip" title="Consultar exención DFL_2" onclick="myModalExencion">
+				 <a href="#" data-toggle="tooltip" title="Consultar exención" onclick="myModalDefExencion">
 				 
 				 &nbsp;&nbsp;<i class="fa fa-external-link fa-azul" style="font-size:16px;" aria-hidden="true"></i>
 				 </a></span> 
 			 </div>
 			 <div class="my-card-group-block">
 				 BENEFICIO DEL ADUILTO MAYOR (BAM)
-				 <span class="derecha" style="color:#E22C2C;">
+				 <span class="derecha" style="color:#E22C2C;" data-toggle="modal" data-target="#myModalDefBAM">
 				 NO
-				 <a href="" data-toggle="tooltip" title="Consultar BAM">
+				 <a href="#" data-toggle="tooltip" title="Consultar BAM"  onclick="myModalDefBAM">
 				 
 				 &nbsp;&nbsp;<i class="fa fa-external-link fa-azul" style="font-size:16px;" aria-hidden="true"></i>
 				 </a></span>
 			</div>
 			 <div class="my-card-group-block">
 				 ALZA GRADUAL DE CONTRIBUCIONES
-				 <span class="derecha" style="color:#00B050;">
+				 <span class="derecha" style="color:#00B050;" data-toggle="modal" data-target="#myModalDefAlza">
 				 SI
-				 <a href="" data-toggle="tooltip" title="Consultar Beneficio de Alza Gradual">
+				 <a href="#" data-toggle="tooltip" title="Consultar Beneficio de Alza Gradual"  onclick="myModalDefAlza">>
 				 
 				 &nbsp;&nbsp;<i class="fa fa-external-link fa-azul" style="font-size:16px;" aria-hidden="true"></i>
 				 </a></span>
 			</div>
 			</div>			
 	</div>
-
 
 <p class="espacio">&nbsp;</p>
 <p class="espacio">&nbsp;</p>
@@ -1203,6 +1202,125 @@
 <!--------------------------------------           MODALES         ------------------------------->			
 <!---*******************************************************************************************-->
 
+<div class="modal fade" id="myModalDefExencion" role="dialog">
+    <div class="modal-dialog" style="width:760px !important;">    
+      <!-- Modal content-->
+      <div class="modal-content">
+		<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>			
+		<div class="col-md-12 text-center">
+		   <h3>EXENCIÓN </h3>
+		</div>  
+		</div>
+		
+		<div class="modal-body" style="padding:1px !important;">
+		<div class="web-sii cuerpo">
+		<div class="panel-body">
+		<div id="no-more-tables">
+
+		<div class="col-md-12" style="padding-left:2px;">
+			<div class="my-card alert alert-info" style="font-size:1.5em;">
+			<p style="padding-right:0px;padding-right:0px;margin-right:0px;text-align:justify;">
+			Usted cuenta con el Beneficio por definir texto.
+			</p>
+			</div>		
+		</div>		
+			
+		</div>
+		</div>
+		</div>
+        </div>
+		
+        <div class="modal-footer" style="background-color:#fff;align-items: center;">
+			<p class="text-center" style="margin-bottom:0px;">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			</p>		  
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+<div class="modal fade" id="myModalDefBAM" role="dialog">
+    <div class="modal-dialog" style="width:760px !important;">    
+      <!-- Modal content-->
+      <div class="modal-content">
+		<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>			
+		<div class="col-md-12 text-center">
+		   <h3>BENEFICIO DEL ADULTO MAYOR </h3>
+		</div>  
+		</div>
+		
+		<div class="modal-body" style="padding:1px !important;">
+		<div class="web-sii cuerpo">
+		<div class="panel-body">
+		<div id="no-more-tables">
+
+		<div class="col-md-12" style="padding-left:2px;">
+			<div class="my-card alert alert-info" style="font-size:1.5em;">
+			<p style="padding-right:0px;padding-right:0px;margin-right:0px;text-align:justify;">
+			Usted cuenta con el Beneficio adulto mayor, dado el cumplimiento de los requisitos que benefician a los Adulyos Mayores Vulnerables Economicamente,
+			la contribución se encuentra rebajada para el primer semestre del año xxxx según detalle indicado en su carta de re-avalúo, situación que será evaluada en agosto de cada año de acuerdo a la legislación vigente.
+			</p>
+			</div>		
+		</div>		
+			
+		</div>
+		</div>
+		</div>
+        </div>
+		
+        <div class="modal-footer" style="background-color:#fff;align-items: center;">
+			<p class="text-center" style="margin-bottom:0px;">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			</p>		  
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+<div class="modal fade" id="myModalDefAlza" role="dialog">
+    <div class="modal-dialog" style="width:760px !important;">    
+      <!-- Modal content-->
+      <div class="modal-content">
+		<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>			
+		<div class="col-md-12 text-center">
+		   <h3>BENEFICIO DE ALZA GRADUAL</h3>
+		</div>  
+		</div>
+		
+		<div class="modal-body" style="padding:1px !important;">
+		<div class="web-sii cuerpo">
+		<div class="panel-body">
+		<div id="no-more-tables">
+
+		<div class="col-md-12" style="padding-left:2px;">
+			<div class="my-card alert alert-info" style="font-size:1.5em;">
+			<p style="padding-right:0px;padding-right:0px;margin-right:0px;text-align:justify;">
+			Usted cuenta con el Beneficio alza gradual, que es un beneficio automático en el pago de contribuciones, luego de un proceso de reavalúo, que genera un aumento en las contribuciones en más de un 25%, respecto al semestre anterior al reavalúo. Parte con un incremento del 25%, en el primer semestre, para continuar con un incremento del 10% + IPC semestral, por un máximo de 7 semestres o hasta alcanzar la cuota correspondiente.
+			</p>
+			</div>		
+		</div>		
+			
+		</div>
+		</div>
+		</div>
+        </div>
+		
+        <div class="modal-footer" style="background-color:#fff;align-items: center;">
+			<p class="text-center" style="margin-bottom:0px;">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			</p>		  
+        </div>
+      </div>
+      
+    </div>
+  </div>  
 
 <!----------------------Modal AVALUO Y CONTRBUCIONES-------------------->  	
 
@@ -1562,9 +1680,9 @@
 			</div>
 			
 <div class="row">
-		<div class="col-sm-6">
+		<div class="col-sm-6" style="padding-right:0px;">
 		<div class="my-card">
-			<div class="my-card-header-b text-md-center">
+			<div class="my-card-header-b text-md-center" >
 			  Decreto de propiedad abandonada, pozos lastreros y otros 
 			</div>  
 			<div class="my-card-block">
@@ -1583,7 +1701,7 @@
 			</div>
 		</div>	
 		</div>	
-		<div class="col-sm-6">
+		<div class="col-sm-6"  style="padding-left:0px;">
 		<div class="my-card">
 			<div class="my-card-header-b text-md-center">
 			  Decreto de eliminación sobretasa, sne, prop. abandonada, pozos lastreros y otros 
@@ -3149,7 +3267,7 @@
 				</div>
 								
 				<div class="col-md-6" style="padding-left:2px;">
-					<div class="my-card alert alert-warning" style="font-size:0.9em;">
+					<!--div class="my-card alert alert-warning" style="font-size:0.9em;">
 
 						<p style="padding-right:0px;padding-right:0px;margin-right:0px;">
 							<b>Importante!</b>
@@ -3160,7 +3278,7 @@ reavaluada es superior a $n.nnn ($n.nnnn al 1 de enero de 2003), se establece un
 						<p style="padding-right:0px;padding-right:0px;margin-right:0px;">
 						El beneficio de alza gradual, consiste en no inicar cobrando el total del incremente en la cuota de contricbución, sino que se inicia con un incremento del 25% de la cuota en el primer semestre posterior al re-avalúo, para continuar con un incremento del 10% + IPC semestral, por un máximo de 7 semestres o hasta alcanzar la cuota correspondiente.
 						</p>
-					</div>
+					</div-->
 					<br>
 					<div class="my-card" style="font-size:0.9em;">
 						<p style="font-size:13px;">
