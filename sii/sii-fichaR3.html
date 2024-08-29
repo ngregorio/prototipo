@@ -493,8 +493,23 @@
 					 Condición: No registra
 					 </div>
 				</div>			
-			</div>		
+				<div class="my-card-group">
+					<div class="my-card-footer " data-toggle="modal" data-target="#myModalDocumentos">
+					&nbsp;<span class="derecha">
+					 <a href="#" style="color:#FFF;" onclick="myModalDocumentos" title="Ver otros documentos">
+					 Ver otros documentos 
+					 <i class="fa fa-external-link fa-naranja" style="font-size:16px;" aria-hidden="true"></i>
+					 </a>
+					<span>
+					</div>
+				</div>
+			</div>					
+
+			
 		</div>
+		
+		
+		
 
 		<p class="espacio-doble">&nbsp;</p>
 		<p class="espacio-doble">&nbsp;</p>
@@ -1104,7 +1119,53 @@
 
 		<p class="espacio-doble">&nbsp;</p>
 	
-	
+		<div class="col-md-12 my-card-title" style="float:none">
+			<p class="text-center">CONTRIBUCIONES POR PERIODO</p>
+		</div>
+		<div id="no-more-tables">						
+		<table class="table table-striped table-bordered table-hover cf">
+		<thead class="cf">
+			<tr>
+			<th class="text-center" style="vertical-align:middle">Nro. de cuota-año</th>
+			<th class="text-center" style="vertical-align:middle">Contribución girada</th>
+			<th class="text-center" style="vertical-align:middle">Nueva contribución <br>(No girada)</th>
+			<th class="text-center" style="vertical-align:middle">Diferencia de contribución</th>				
+			</tr>
+		</thead>			
+					<tbody>
+					<tr>
+					<td class="text-center">1-2024</td>
+					<td class="text-center">163.000</td>
+					<td class="text-center">0</td>
+					<td class="text-center">0</td>
+					</tr>
+					<tr>
+					<td class="text-center">2-2023</td>
+					<td class="text-center">163.000</td>
+					<td class="text-center">0</td>
+					<td class="text-center">0</td>
+					</tr>
+					<tr>
+					<td class="text-center">1-2023</td>
+					<td class="text-center">163.000</td>
+					<td class="text-center">0</td>
+					<td class="text-center">0</td>
+					</tr>
+					<tr>
+					<td class="text-center">2-2022</td>
+					<td class="text-center">163.000</td>
+					<td class="text-center">0</td>
+					<td class="text-center">0</td>
+					</tr>
+					</tbody>
+		</table>	
+		<p>(*) Los montos de contribuciones son semestrales y se encuentran actualziados a moneda actual, no inlcuye cuota de aseo municipal</p>
+		<p>(**) Si la diferencia de contribución es positiva, dicho monto se cobrara como Sumplemetnario, en el caso que se anegativo se realziara operación de reemplazo.</p>
+		</div>	
+
+
+		<p class="espacio-doble">&nbsp;</p>
+		
 		<div class="col-md-12 my-card-title" style="float:none">
 			<p class="text-center">CUOTAS VIGENTES DE CONTRIBUCIÓN</p>
 		</div>
@@ -1309,6 +1370,294 @@
 <!---*******************************************************************************************-->
 <!--------------------------------------           MODALES         ------------------------------->			
 <!---*******************************************************************************************-->
+
+<div class="modal fade" id="myModalDocumentos" role="dialog">
+    <div class="modal-dialog" style="width:860px !important;">    
+      <!-- Modal content-->
+      <div class="modal-content">
+		<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+			
+		<div class="col-md-12 my-header text-md-center text-center">
+		   OTROS DOCUMENTOS
+		</div>  
+		</div>
+				
+		<div class="modal-body" style="padding:1px !important;">
+		<div class="web-sii cuerpo">
+		<div class="panel-body">
+		<div id="no-more-tables">	   
+		
+			<p class="my-text">
+			Los documentos municipales asociados a su propiedad registrados en el SII son los siguientes:
+			</p>
+		
+			<div class="col-md-12 my-card-title">
+				<p class="text-center">
+				 DOCUMENTOS DISPONIBLES 
+				</p>
+			</div>
+			<div class="col-md-12 alingboton filtro">
+				<div class="col-md-2">
+					<label><b>Total Registros: 6 </b></label>
+				</div>
+				<div class="col-md-3 form-group has-search">
+					<!--label><b>Filtrar:</b></label-->
+					  <!--div class="form-group has-search"-->
+						<span class="fa fa-search form-control-feedback"></span>
+						<input id="searchText" placeholder="Ingrese texto" class="form-control search-text"> 		
+						<!--input type="text" class="form-control" placeholder="Search"-->
+					  <!--/div-->
+				</div>
+				
+				<div class="col-md-2">
+					<label><b>(Filtrados: 0)</b></label>
+				</div>
+				<div class="col-md-5" style="float:right">			
+					<form class="form-inline derecha">
+						<label><b>Total de registros por página:</b></label> 
+						<select class="form-control" style="font-size:12px;" name="pageSizeSelect" id="pageSizeSelect">
+						<option label="10" value="number:10"  selected="selected">10</option>
+						<option label="25" value="number:25">25</option>
+						<option label="50" value="number:50">50</option>
+						<option label="100" value="number:100">100</option>
+						<option label="500" value="number:500">500</option>
+						<option label="1000" value="number:1000">1000</option>
+						<option label="2000" value="number:2000">2000</option>
+						</select>
+					</form>
+				</div>
+			</div>
+
+			<table class="table table-striped table-bordered table-hover cf">
+			<thead class="cf">
+				<tr>
+				<th class="text-center">Fecha Docto.</th>
+				<th class="text-center">Nro. de documento </th>
+				<th class="text-center">Tipo Documento  </th>
+				<th class="text-center">Nro. OT</th>
+				<th class="text-center">Observación</th>
+				<th class="text-center">Documento</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td data-title="Fecha del documento" class="text-center">30-04-2020</td>
+				<td data-title="nro. del documento" class="text-center">-</td>
+				<td data-title="Fecha del documento" class="text-center">Certificado de Dominio Vigente</td>
+				<td data-title="Fecha del documento" class="text-center">
+					<a href="" data-toggle="tooltip" title="Ver OT" ><b>2466211 </b></a>
+					</td>
+				<td data-title="Fecha del documento" class="text-center">Archivo subido por ...</td>
+				<td data-title="Tipo del documento" class="text-center">
+					<a href="#" data-toggle="tooltip" title="Documento"><img src="../img/pdf-icon.png" width="20" height="20" alt=""/></a>
+				</td>
+				</tr>
+				
+				<tr>
+				<td data-title="Fecha del documento" class="text-center">30-02-2020</td>
+				<td data-title="nro. del documento" class="text-center">-</td>
+				<td data-title="Fecha del documento" class="text-center">Certificado de Numero Municipal</td>
+				<td data-title="Fecha del documento" class="text-center">
+					<a href="" data-toggle="tooltip" title="Ver OT"><b> 214632</b></a>
+					</td>
+				<td data-title="Fecha del documento" class="text-center">Archivo subido por ...</td>
+				<td data-title="Tipo del documento" class="text-center">
+					<a href="#" data-toggle="tooltip" title="Documento"><img src="../img/pdf-icon.png" width="20" height="20" alt=""/></a>
+				</td>
+				</tr>
+				
+				<tr>
+				<td data-title="Fecha del documento" class="text-center">30-04-2019</td>
+				<td data-title="nro. del documento" class="text-center">A24205544</td>
+				<td data-title="Fecha del documento" class="text-center">Resolución</td>
+				<td data-title="Fecha del documento" class="text-center">
+					<a href="" data-toggle="tooltip" title="Ver Movimiento"><b>2064244</b></a>
+				</td>
+				<td data-title="Fecha del documento" class="text-center">Archivo subido por ...</td>
+				<td data-title="Tipo del documento" class="text-center">
+					<a href="#" data-toggle="tooltip" title="Documento"><img src="../img/pdf-icon.png" width="20" height="20" alt=""/></a>
+				</td>
+				</tr>
+
+				<tr>
+				<td data-title="Fecha del documento" class="text-center">30-04-2020</td>
+				<td data-title="nro. del documento" class="text-center">PA334420</td>
+				<td data-title="Fecha del documento" class="text-center">Petición de antecedentes</td>
+				<td data-title="Fecha del documento" class="text-center">
+					<a href="" data-toggle="tooltip" title="Ver OT"><b>2064244</b></a>
+				</td>
+				<td data-title="Fecha del documento" class="text-center">Archivo subido por ...</td>
+				<td data-title="Tipo del documento" class="text-center">
+					<a href="#" data-toggle="tooltip" title="Documento"><img src="../img/pdf-icon.png" width="20" height="20" alt=""/></a>
+				</td>
+				</tr>
+			</tbody>
+			</table>
+		<div class="col-sm-12" style="font-size:11px">
+			<div class="col-sm-5">
+			<div class="dataTables_info" id="direccionesVigentes_info" role="status" aria-live="polite">
+			<b>Mostrando  del 1 al 5 de un total de 5 registros</b>
+			</div>
+			</div>
+			<div class="col-sm-7" style="padding:0px;">
+				<div class="dataTables_paginate paging_simple_numbers derecha" id="direccionesVigentes_paginate" style="font-size:13px;">
+
+				<ul class="pagination" style="margin:2px 0;">
+					<li class="previous" id="direccionesVigentes_previous" style="color:#000;">
+						<a href="">Anterior</a>
+					</li>
+					<li class="active">
+						<a href="">1</a>
+					</li>
+					<li class="paginate_button">
+						<a href="">2</a>
+					</li>
+					<li class="next" id="direccionesVigentes_next" style="color:#000;">
+						<a href="">Siguiente</a>
+					</li>
+				</ul>
+				
+				</div>
+			</div>
+		</div>		
+
+			<p class="espacio">&nbsp;</p>
+			
+			<div class="col-md-12 my-card-title">
+				<p class="text-center">
+				 CARPETA ELECTRONICA 
+				</p>
+			</div>
+			<div class="col-md-12 alingboton filtro">
+				<div class="col-md-2">
+					<label><b>Total Registros: 6 </b></label>
+				</div>
+				<div class="col-md-3 form-group has-search">
+					<!--label><b>Filtrar:</b></label-->
+					  <!--div class="form-group has-search"-->
+						<span class="fa fa-search form-control-feedback"></span>
+						<input id="searchText" placeholder="Ingrese texto" class="form-control search-text"> 		
+						<!--input type="text" class="form-control" placeholder="Search"-->
+					  <!--/div-->
+				</div>
+				
+				<div class="col-md-2">
+					<label><b>(Filtrados: 0)</b></label>
+				</div>
+				<div class="col-md-5" style="float:right">			
+					<form class="form-inline derecha">
+						<label><b>Total de registros por página:</b></label> 
+						<select class="form-control" style="font-size:12px;" name="pageSizeSelect" id="pageSizeSelect">
+						<option label="10" value="number:10"  selected="selected">10</option>
+						<option label="25" value="number:25">25</option>
+						<option label="50" value="number:50">50</option>
+						<option label="100" value="number:100">100</option>
+						<option label="500" value="number:500">500</option>
+						<option label="1000" value="number:1000">1000</option>
+						<option label="2000" value="number:2000">2000</option>
+						</select>
+					</form>
+				</div>
+			</div>
+
+			<table class="table table-striped table-bordered table-hover cf">
+			<thead class="cf">
+				<tr>
+				<th class="text-center">Fecha Docto.</th>
+				<th class="text-center">Nro. Documento  </th>
+				<th class="text-center">Tipo Documento  </th>
+				<th class="text-center">Observación</th>
+				<th class="text-center">Documento</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td data-title="Fecha del documento" class="text-center">23-04-2019</td>
+				<td data-title="Fecha del documento" class="text-center">2466211</td>
+				<td data-title="Fecha del documento" class="text-center">Certificado de Dominio Vigente</td>
+				<td data-title="nro. del documento" class="text-center">-</td>
+				<td data-title="Tipo del documento" class="text-center">
+					<a href="#" data-toggle="tooltip" title="Documento"><img src="../img/pdf-icon.png" width="20" height="20" alt=""/></a>
+				</td>
+				</tr>
+				
+				<tr>
+				<td data-title="Fecha del documento" class="text-center">13-02-2019</td>
+				<td data-title="Fecha del documento" class="text-center">214632</td>
+				<td data-title="Fecha del documento" class="text-center">Certificado de Numero Municipal</td>
+				<td data-title="nro. del documento" class="text-center">-</td>
+				<td data-title="Tipo del documento" class="text-center">
+					<a href="#" data-toggle="tooltip" title="Documento"><img src="../img/pdf-icon.png" width="20" height="20" alt=""/></a>
+				</td>
+				</tr>
+				
+				<tr>
+				<td data-title="Fecha del documento" class="text-center">30-07-2019</td>
+				<td data-title="nro. del documento" class="text-center">A24205544</td>
+				<td data-title="Fecha del documento" class="text-center">Plano</td>
+				<td data-title="nro. del documento" class="text-center">-</td>
+				<td data-title="Tipo del documento" class="text-center">
+					<a href="#" data-toggle="tooltip" title="Documento"><img src="../img/pdf-icon.png" width="20" height="20" alt=""/></a>
+				</td>
+				</tr>
+
+				<tr>
+				<td data-title="Fecha del documento" class="text-center">30-06-2019</td>
+				<td data-title="nro. del documento" class="text-center">PA334420</td>
+				<td data-title="Fecha del documento" class="text-center">Plano</td>
+				<td data-title="nro. del documento" class="text-center">-</td>
+				<td data-title="Tipo del documento" class="text-center">
+					<a href="#" data-toggle="tooltip" title="Documento"><img src="../img/pdf-icon.png" width="20" height="20" alt=""/></a>
+				</td>
+				</tr>
+			</tbody>
+			</table>
+		<div class="col-sm-12" style="font-size:11px">
+			<div class="col-sm-5">
+			<div class="dataTables_info" id="direccionesVigentes_info" role="status" aria-live="polite">
+			<b>Mostrando  del 1 al 5 de un total de 5 registros</b>
+			</div>
+			</div>
+			<div class="col-sm-7" style="padding:0px;">
+				<div class="dataTables_paginate paging_simple_numbers derecha" id="direccionesVigentes_paginate" style="font-size:13px;">
+
+				<ul class="pagination" style="margin:2px 0;">
+					<li class="previous" id="direccionesVigentes_previous" style="color:#000;">
+						<a href="">Anterior</a>
+					</li>
+					<li class="active">
+						<a href="">1</a>
+					</li>
+					<li class="paginate_button">
+						<a href="">2</a>
+					</li>
+					<li class="next" id="direccionesVigentes_next" style="color:#000;">
+						<a href="">Siguiente</a>
+					</li>
+				</ul>
+				
+				</div>
+			</div>
+		</div>		
+
+		</div>	
+
+		</div>
+		</div>
+		</div>
+	 
+	
+        <div class="modal-footer" style="align-items: center;">
+			<p class="text-center" style="margin-bottom:0px;">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			</p>		  
+        </div>
+      </div>
+      
+    </div>
+ </div>
+
 
 <!----------------------Documentos municipales-------------------->  	
 
