@@ -122,12 +122,13 @@
 <div class="panel-body" style="padding-left:0px;padding-right:0px;">
 
 	<div class="col-md-12  ">
-		 <h2>ANTECEDENTES DEL BIEN RAÍZ </h2>
-		 <hr style="margin-top:0px;margin-bottom:0px;">
+		<h2>ANTECEDENTES DEL BIEN RAÍZ </h2>
+		<hr style="margin-top:0px;margin-bottom:0px;">
+		<p class="espacio-doble">AVALÚO EN PESOS DEL PRIMER SEMESTRE 2025</p>
 	</div>
 
 	
-<p class="espacio-doble">&nbsp;</p>
+
 
 <div class="row">
 
@@ -514,7 +515,7 @@
 				 ALZA GRADUAL DE CONTRIBUCIONES
 				 <span class="derecha" style="color:#00B050;" data-toggle="modal" data-target="#myModalDefAlza">
 				 SI
-				 <a href="#" data-toggle="tooltip" title="Consultar Beneficio de Alza Gradual"  onclick="myModalDefAlza">>
+				 <a href="#" data-toggle="tooltip" title="Consultar Beneficio de Alza Gradual"  onclick="myModalDefAlza">
 				 
 				 &nbsp;&nbsp;<i class="fa fa-external-link fa-azul" style="font-size:16px;" aria-hidden="true"></i>
 				 </a></span>
@@ -1556,7 +1557,7 @@
 	<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
 		<button type="button" class="close" data-dismiss="modal">&times;</button>
 		<div class="col-md-12 text-center">
-			<h3>DETALLE DE AVALÚO</h3>
+			<h3>DETALLE DE AVALÚO FISCAL</h3>
 			<hr style="margin-top:0px;margin-bottom:0px;">
 		</div>  
 	</div>
@@ -1582,7 +1583,7 @@
 				<div class="col-md-12" style="padding:0px;">
 				<div class="col-md-3 btnx text-center" style="background-color:#DFE6EA;color:#000;">
 					<h5>Avalúo de terreno </h5> 
-					<h2 style="margin-bottom: 5px !important;">$0</h2>
+					<h2 style="margin-bottom: 5px !important;">$15.000.000</h2>
 					<a href="javascript:showTerreno();" style="color:#000 !important;">
 					<small style="margin-bottom: 5px !important;">Ver detalle</small>
 					</a>
@@ -1592,7 +1593,7 @@
 				</div>
 				<div class="col-md-3 btnx text-center" style="padding-left:5px;padding-right:5px;background-color:#DFE6EA;color:#000;">
 					<h5>Avalúo de construcción</h5>					
-					<h2 style="margin-bottom: 5px !important;">$150.000.000</h2>
+					<h2 style="margin-bottom: 5px !important;">$100.000.000</h2>
 					<a href="javascript:showConstruccion();" style="color:#000 !important;">
 					<small style="margin-bottom: 5px !important;">Ver detalle</small>
 					</a>
@@ -1602,7 +1603,7 @@
 				</div>
 				<div class="col-md-3 btnx text-center" style="padding-left:5px;padding-right:5px;background-color:#DFE6EA;color:#000;">
 					<h5>3,5% Avalúo bien común</h5>					
-					<h2 style="margin-bottom: 5px !important;">$150.000.000</h2>
+					<h2 style="margin-bottom: 5px !important;">$50.000.000</h2>
 					<a href="javascript:showBiencomun();" style="color:#000 !important;">
 					<small style="margin-bottom: 5px !important;">Ver detalle</small>
 					</a>
@@ -1615,9 +1616,219 @@
 			</div>
 			<div class="col-md-3 btnx text-center" style="background-color:#DFE6EA;color:#000;padding:3px;">
 				<h5>Avalúo fiscal<br>total </h5>
-				<h2 style="margin-bottom: 5px !important;">$175.638.702</h2>
+				<h2 style="margin-bottom: 5px !important;">$165.000.000</h2>
 			</div>		
 	   </div>	
+
+
+
+		<p>&nbsp;</p>
+		
+	    <!----AVALUO DE TERRENO----------->
+		<div class="my-card" id="terreno" name="terreno">
+			<div class="col-md-12" style="background-color:#C5d7e1;">
+				<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
+					&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle de avalúo de terreno</b></span>&nbsp;
+					<button type="button" class="derecha" style="font-size:14px !important;background-color:#002C48;color:#FFF !important;" onClick="showTerreno();"> [Cerrar detalle de cálculo X]
+					</button>			
+				</p>			  
+			</div>
+			
+			
+			<table class="table table-striped table-bordered table-hover cf">
+			<thead class="cf" style="font-size:14px;"> 
+				<tr>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">Nro.<br>línea</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Valor unitario de <br> terreno para <br> Área Homogénea</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Superficie <br> de terreno (m2)</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Coeficiente <br> guía </th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Coeficiente <br>de terreno</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">=</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Avalúo de <br>la línea</th>
+				</tr>
+			</thead>
+			<tbody style="font-size:15px;">
+				<tr>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="vuc">1</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="vuc">$634.447 
+					<br><a href=""data-toggle="tooltip" title="Ver muestras de operaciones del Área Homogénea" >HBB123 <i class="fa fa-external-link fa-azul" style="font-size:14px;" aria-hidden="true"></i>				</a></td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">68</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="ce">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">=</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp">15.000.000</td>
+				</tr>				
+				<tr>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp"><b>Avalúo de Terreno</b></td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">=</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp"><b>15.000.000</b></td>
+				</tr>				
+			</tbody>
+			</table>
+				
+		</div>
+		
+		<!--------------->
+	    <!----AVLUO DE CONSTRUCCION----------->
+		<div class="my-card" id="construccion" name="construccion">
+			<div class="col-md-12" style="background-color:#C5d7e1;">
+				<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
+					&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle de avalúo de construcciones</b></span>&nbsp;
+					<button type="button" class="derecha" style="font-size:14px !important;background-color:#002C48;color:#FFF !important;" onClick="showConstruccion();"> [Cerrar detalle de cálculo X]
+					</button>			
+				</p>			  
+			</div>
+			
+			
+			<table class="table table-striped table-bordered table-hover cf">
+			<thead class="cf" style="font-size:14px;"> 
+				<tr>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">Nro. <br> línea</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Valor unitario de <br> la construcción</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Superficie <br>construida (m2 o m3)</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Factor de <br>condicion especial</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Depreciación de <br>la construcción</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Factor de <br>localización comunal</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Coeficiente<br>comercial</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">=</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Avalúo de <br>la línea</th>
+				</tr>
+				<!--tr>
+					<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">( Avalúo Afecto</th>
+					<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">x</th>
+					<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Tasa de <br> impuesto )</th>
+					<th class="text-center" colspan="3" style="font-weight:normal;background-color:#a7bacd;color:#163E64;border-width:0px !important;border-radius:5px;">Sobretasa de <br> beneficio fiscal de 0,025%</th>
+					<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#dee8ef;color:#000;border-width:0px !important;border-radius:5px;">+</th>
+					<th class="text-center" colspan="3" style="font-weight:normal;background-color:#a7bacd;color:#163E64;border-width:0px !important;border-radius:5px;">Sobretasa de <br> SNE 100% de tasa vigente</th>
+				</tr-->
+			</thead>
+			<tbody style="font-size:15px;">
+				<tr>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="linea">1</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="vuc">$4.634.447</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">68</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="ce">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="fc">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="cc">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">=</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="cc">40.000.000</td>
+				</tr>
+				<tr>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="linea">2</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="vuc">$1.634.447</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">68</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="ce">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="fc">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="cc">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">=</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="cc">3.000.000</td>
+				</tr>
+				<tr>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="linea">3</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="vuc">$1.634.447</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">68</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="ce">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="fc">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="cc">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">=</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="cc">30.000.000</td>
+				</tr>
+				
+				<tr>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp"><b>Avalúo de <br>Construcción</b></td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">=</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp"><b>100.000.000</b</td>
+				</tr>				
+				
+			</tbody>
+			</table>
+				
+		</div>
+		<!----------------------->
+		
+	    <!----AVALUO BIEN COMUN----------->
+		<div class="my-card" id="biencomun" name="biencomun">
+			<div class="col-md-12" style="background-color:#C5d7e1;">
+				<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
+					&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle del % de prorrateo de avalúo de bien común</b></span>&nbsp;
+					<button type="button" class="derecha" style="font-size:14px !important;background-color:#002C48;color:#FFF !important;" onClick="showBiencomun();"> [Cerrar detalle de cálculo X]
+					</button>			
+				</p>			  
+			</div>
+			
+			
+			<table class="table table-striped table-bordered table-hover cf">
+			<thead class="cf" style="font-size:14px;"> 
+				<tr>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Avalúo del Bien Común</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Factor del prorrateo</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">=</th>
+					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Avalúo prorrateado <br>de bien común</th>
+				</tr>
+			</thead>
+			<tbody style="font-size:15px;">
+				<tr>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="vuc">$2.634.447</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">0,6%</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">=</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">50.000.000</td>
+				</tr>				
+			</tbody>
+			</table>
+				
+		</div>
+		<!------------------>		
+
+
 
 		
 		<p class="espacio">&nbsp;</p>
@@ -1632,7 +1843,7 @@
 	   <div class="col-md-12" style="border: 1px solid #ccc;padding:5px;background-color:#efe2e2;">
 			<div class="col-md-3 btnx text-center" style="background-color:#0a5695;color:#fff;">
 				<h5>Avalúo fiscal <br>total </h5>
-				<h2>$185.638.702</h2>
+				<h2>$165.000.000</h2>
 			</div>
 			<div class="col-md-1">
 				<h1><b>&nbsp;&nbsp;-</b></h1>
@@ -1646,138 +1857,11 @@
 			</div>
 			<div class="col-md-4 btnx text-center" style="background-color:#FF6600;color:#fff;">
 				<h5>Avalúo <br>afecto</h5>
-				<h2>$160.638.702</h2>
+				<h2>$140.000.000</h2>
 			</div>
 		
 	   </div>
 
-		<p>&nbsp;</p>
-		
-	    <!----AVLUJO DE TERRENO----------->
-		<div class="my-card" id="terreno" name="terreno">
-			<div class="col-md-12" style="background-color:#F5F5F5;">
-				<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
-					&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle de avalúo de terreno</b></span>&nbsp;
-					<button type="button" class="derecha close" style="color:#00F !important;opacity:0.8 !important;" onClick="showConstruccion();"> [Cerrar X]
-					</button>			
-				</p>			  
-			</div>
-			
-			
-			<table class="table table-striped table-bordered table-hover cf">
-			<thead class="cf" style="font-size:14px;"> 
-				<tr>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Valor unitario de <br> de terreno para <br> Área Homogénea</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Superficie <br> de terreno</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Coeficiente <br> guía </th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Coeficiente <br>de terreno</th>
-				</tr>
-			</thead>
-			<tbody style="font-size:15px;">
-				<tr>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="vuc">$634.447</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">68</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="ce">1,00</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp">1,00</td>
-				</tr>				
-			</tbody>
-			</table>
-				
-		</div>
-		
-		<!--------------->
-	    <!----AVLUJO DE CONSTRUCCION----------->
-		<div class="my-card" id="construccion" name="construccion">
-			<div class="col-md-12" style="background-color:#F5F5F5;">
-				<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
-					&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle de avalúo de construcciones</b></span>&nbsp;
-					<button type="button" class="derecha close" style="color:#00F !important;opacity:0.8 !important;" onClick="showConstruccion();"> [Cerrar X]
-					</button>			
-				</p>			  
-			</div>
-			
-			
-			<table class="table table-striped table-bordered table-hover cf">
-			<thead class="cf" style="font-size:14px;"> 
-				<tr>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Valor unitario de <br> la construcción</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Superficie <br>construida</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Factor de <br>condicion especial</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Depreciación de <br>la construcción</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Factor de <br>localización comunal</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Coeficiente<br>comercial</th>
-				</tr>
-				<!--tr>
-					<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">( Avalúo Afecto</th>
-					<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">x</th>
-					<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Tasa de <br> impuesto )</th>
-					<th class="text-center" colspan="3" style="font-weight:normal;background-color:#a7bacd;color:#163E64;border-width:0px !important;border-radius:5px;">Sobretasa de <br> beneficio fiscal de 0,025%</th>
-					<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#dee8ef;color:#000;border-width:0px !important;border-radius:5px;">+</th>
-					<th class="text-center" colspan="3" style="font-weight:normal;background-color:#a7bacd;color:#163E64;border-width:0px !important;border-radius:5px;">Sobretasa de <br> SNE 100% de tasa vigente</th>
-				</tr-->
-			</thead>
-			<tbody style="font-size:15px;">
-				<tr>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="vuc">$634.447</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">68</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="ce">1,00</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp">1,00</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="fc">1,00</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="cc">1,00</td>
-				</tr>
-				
-			</tbody>
-			</table>
-				
-		</div>
-		<!----------------------->
-		
-	    <!----Bien Comun----------->
-		<div class="my-card" id="biencomun" name="biencomun">
-			<div class="col-md-12" style="background-color:#F5F5F5;">
-				<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
-					&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle del % de prorrateo de avalúo de bien común</b></span>&nbsp;
-					<button type="button" class="derecha close" style="color:#00F !important;opacity:0.8 !important;" onClick="showConstruccion();"> [Cerrar X]
-					</button>			
-				</p>			  
-			</div>
-			
-			
-			<table class="table table-striped table-bordered table-hover cf">
-			<thead class="cf" style="font-size:14px;"> 
-				<tr>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Avalúo del Bien Común</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;">x</th>
-					<th class="text-center" style="font-weight:normal;background-color:#F2F8FB;color:#000;border-width:0px !important;border-radius:5px !important;">Factor del prorrateo</th>
-				</tr>
-			</thead>
-			<tbody style="font-size:15px;">
-				<tr>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="vuc">$634.447</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">0,6%</td>
-				</tr>				
-			</tbody>
-			</table>
-				
-		</div>
-		<!------------------>		
 		
 		
 	</div>
@@ -2956,7 +3040,7 @@ function closeAlert()
 		<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
 		<button type="button" class="close" data-dismiss="modal">&times;</button>			
 		<div class="col-md-12 text-center">
-		   <h3>DETALLE DE CÁLCULO DE CUOTAS DE CONTRIBUCIONES</h3>
+		   <h3>DETALLE DE CUOTAS DE CONTRIBUCIONES</h3>
 		</div>  
 		</div>
 		
@@ -2964,11 +3048,7 @@ function closeAlert()
 		<div class="web-sii cuerpo">
 		<div class="panel-body">
 		<div id="no-more-tables">
-		
-			<p class="espacio">&nbsp;</p>	
-			<p class="espacio">&nbsp;</p>	
-			<p class="espacio">&nbsp;</p>	
-		
+				
 			<!--table class="table table-striped table-hover cf" style="border-bottom-width:0px !important;">
 			<thead class="cf" style="font-size:15px;">
 				<tr>
@@ -3021,31 +3101,38 @@ function closeAlert()
 			</table-->
 
 			<p class="espacio">&nbsp;</p>	
-			<p class="espacio">&nbsp;</p>	
 		
 			<div class="col-md-12">				
 				<div class="col-md-6" style="padding-left:2px;">
 					<div class="my-card">
-						<div class="my-card-header-b text-md-center">
-						  DETALLE DE CUOTAS <span class="derecha">Valores al X semestre del AAAA</span>
+						<div class="my-card-header-b text-md-center" style="background-color:#002C48;">
+						  DETALLE DE LA CUOTA <span class="derecha">Valores al X semestre del AAAA</span>
 						</div>  
 						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
-							Cuota Neta : <span class="derecha"  style="color:#002c48;">$34.000</span>
+							Cuota Neta : <span class="derecha"  style="color:#002c48;">$6.043.537</span>
 						</div>
 						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
-							Sobretasa SNE : <span class="derecha" style="color:#002c48;">$0</span>
+							Sobretasa SNE : <span class="derecha" style="color:#002c48;">$6.043.537</span>
 						</div>
 						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
-							0.025% avalúo afecto: <span class="derecha" style="color:#002c48;">$500</span>
+							0.025% avalúo afecto: <span class="derecha" style="color:#002c48;">$122.836</span>
 						</div>
 						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
 							Sobretasa 0.275%: <span class="derecha" style="color:#002c48;">$0</span>
 						</div>
 						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
-							<i>Cuota Aseo Municipal :</i> <span class="derecha"  style="color:#002c48;">$500</span>
+							<i>Cuota Aseo Municipal :</i> <span class="derecha"  style="color:#002c48;">$21.021</span>
 						</div>
-						<div class="my-card-footer text-muted">
-							<b>VALOR CUOTA: <span class="derecha"  style="color:#002c48;">$35.000</span></b>
+						<div class="my-card-footer">
+
+							<b>VALOR CUOTA: <span class="derecha"  style="color:#002c48;">$12.230.931</span></b>
+
+						</div>
+						<div class="my-card-footer">
+							&nbsp;
+							<a class="derecha" href="javascript:showCuotacontribucion();">
+							<small style="margin-bottom: 5px !important;">Ver detalle de cálculo del Valor de cuota</small>
+							</a>
 						</div>
 						<div class="my-card-block text-muted">
 							<b>Informado por TGR</b>
@@ -3069,12 +3156,6 @@ function closeAlert()
 				</div>
 								
 				<div class="col-md-6" style="padding-left:2px;">
-					<br>
-					<div class="my-card" style="font-size:0.9em;background-color: #efe3af">
-						<p style="font-size:13px;padding:5px;">
-						De acuerdo con la Ley 21.713 de Cumplimiento Tributario, desde el 1° de enero del 2025, se aplicará a las cuotas vencidas un interés diario. En el detalle de cuotas no se incluye el interés por cuota vencida, este valor lo verá reflejado al momento de pagar.
-						</p>
-					</div>
 					<div class="my-card" style="font-size:0.9em;">
 						<p style="font-size:13px;">
 						<b>Leyenda detalle de Contribuciones</b>
@@ -3090,11 +3171,18 @@ function closeAlert()
 						</p>
 					</div>
 					<br>
+					<br>
+					<div class="my-card" style="font-size:0.9em;background-color: #efe3af">
+						<p style="font-size:13px;padding:5px;">
+						<!--De acuerdo con la Ley 21.713 de Cumplimiento Tributario, desde el 1° de enero del 2025, se aplicará a las cuotas vencidas un interés diario. En el detalle de cuotas no se incluye el interés por cuota vencida, este valor lo verá reflejado al momento de pagar.-->
+						De acuerdo con la Ley  21.713 de Cumplimiento Tributario, desde el 1° de enero del 2025, se aplicará a las cuotas vencidas un interés diario <b>(Informado por TGR)</b>.
+						</p>
+					</div>
 		
 				</div>
 			</div>
 		
-			<div class="col-md-12" style="padding-left:2px;">
+			<!--div class="col-md-12" style="padding-left:2px;">
 				<div class="col-md-12 my-card" style="font-size:0.9em;background-color:#efe3af;">
 					<p class="derecha" data-toggle="modal" data-target="#myModalUltimaContribuciones" style="font-size:0.9em;background-color:#efe3af;">
 					<a href="#" data-toggle="tooltip" style="color:#002C48 !important;"title="Ver detalle de cuota de contribuciones" onclick="myModalUltimaContribuciones">
@@ -3103,12 +3191,289 @@ function closeAlert()
 					</a>
 					</p>
 				</div>
-			</div>
+			</div-->
 			
-		</div>
+					<p class="espacio">&nbsp;</p>
+					<p class="espacio">&nbsp;</p>
+			
+		<!----CALCULO DE CUOTA DE CONTRIBUCIIONES----------->
+				<div class="my-card" id="cuotacontribucion" name="cuotacontribucion">
+					<div class="col-md-12"  style="background-color:#002C48;color:#FFF;">
+						<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
+							&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle de cálculo de VALOR CUOTA de contribuciones</b></span>&nbsp;
+							<button type="button" class="derecha" style="font-size:14px !important;background-color:#002C48;color:#FFF !important;" onClick="showCuotacontribucion();"> [Cerrar detalle de cálculo X]
+							</button>			
+						</p>			  
+					</div>
+					
+					<div class="col-md-12">			
+						<div class="my-small-card-group">
+							<div class="my-small-card">
+								<strong class="text-center" style="padding-bottom:5px;">CONTRIBUCIÓN NETA</strong>
+								
+								<div class="my-card-group">
+									<div class="col-md-5 my-card-group-block" style="background-color:#DEE8EF;color:#645F5F;border-radius:5px !important;border:0px !important;">
+										<p class="text-center" style="margin:0px;">Avalúo afecto<br><span style="color:#000;">1.965.377.936</span></p>
+									</div>
+									<div class="col-md-2 my-small-card">
+										<p class="text-center" style="margin:0px;padding-top:10px;">x</p>
+									</div>
+									<div class="col-md-5 my-card-group-block" style="background-color:#DEE8EF;color:#645F5F;border-radius:5px !important;">
+										<p class="text-center" style="margin:0px;">Tasa de impuesto <br><span style="color:#000;">1,230%</span></p>
+									</div>
+								</div>						
+							</div>
+							<div class="col-md-1 my-small-card">
+								<strong class="text-center">&nbsp;</strong>
+								<div class="my-card-group">
+									<div class="my-card-group-block" style="border:0px !important;">
+										<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:-15px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
+									</div>						
+									<div class="my-card-group-block" style="border-bottom:0px !important;border-left:0px !important;border-right:0px !important;">
+										&nbsp;
+									</div>						
+								</div>						
+							</div>
+
+							<div class="my-small-card">
+								<small style="padding-bottom:5px; font-size:70%;">CONTRIBUCIÓN NETA ANUAL <span class="derecha">CUOTA NETA</span></small>
+								
+								<div class="my-card-group">
+									<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;">
+										<p class="text-center" style="margin:0px;color:#000;"><u>24.174.149</u><br><span style="color:#000;"> 4</span></p>
+									</div>
+									<div class="col-md-2 my-small-card">
+										<p class="text-center" style="margin:0px;padding-top:10px;">=</p>
+									</div>
+									<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border:0px !important;">
+										<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">6.043.537</p>
+									</div>
+								</div>						
+							</div>
+
+						</div>			
+					</div>	
+
+
+					<div class="col-md-12">			
+						<div class="my-small-card-group">
+							<div class="my-small-card">
+								<strong class="text-center" style="padding-bottom:5px;">SOBRETASA DE SNE 100% DE TASA VIGENTE</strong>
+								
+								<div class="my-card-group">
+									<div class="col-md-5 my-card-group-block" style="background-color:#DEE8EF;color:#645F5F;border-radius:5px !important;border:0px !important;">
+										<p class="text-center" style="margin:0px;">Avaluo afecto <br><span style="color:#000;">1.965.377.936</span></p>
+									</div>
+									<div class="col-md-2 my-small-card">
+										<p class="text-center" style="margin:0px;padding-top:10px;">x</p>
+									</div>
+									<div class="col-md-5 my-card-group-block" style="background-color:#DEE8EF;color:#645F5F;border-radius:5px !important;">
+										<p class="text-center" style="margin:0px;">100% Tasa de impuesto: <span style="color:#000;">1.230%</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 my-small-card">
+								<strong class="text-center">&nbsp;</strong>
+								<div class="my-card-group">
+									<div class="my-card-group-block" style="border:0px !important;">
+										<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:-15px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
+									</div>						
+									<div class="my-card-group-block" style="border-bottom:0px !important;border-left:0px !important;border-right:0px !important;">
+										&nbsp;
+									</div>						
+								</div>						
+							</div>
+							<div class="my-small-card">
+								<small style="padding-bottom:5px; font-size:70%;">SOBRETASA SNE ANUAL <span class="derecha">SOBRETASA SNE TRIMESTRAL</span></small>
+								
+								<div class="my-card-group">
+									<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;">
+										<p class="text-center" style="margin:0px;color:#000;"><u>24.174.149</u><br><span style="color:#000;"> 4</span></p>
+									</div>
+									<div class="col-md-2 my-small-card">
+										<p class="text-center" style="margin:0px;padding-top:10px;">=</p>
+									</div>
+									<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border:0px !important;">
+										<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">6.043.537</p>
+									</div>
+								</div>						
+							</div>
+						</div>			
+					</div>		
+
+
+					<div class="col-md-12">			
+						<div class="my-small-card-group">
+							<div class="my-small-card">
+								<strong class="text-center" style="padding-bottom:5px;">SOBRETASA DE BENEFICIO FISCAL DE 0.025%</strong>
+								
+								<div class="my-card-group">
+									<div class="col-md-5 my-card-group-block" style="background-color:#DEE8EF;color:#645F5F;border-radius:5px !important;border:0px !important;">
+										<p class="text-center" style="margin:0px;">Avaluo afecto <br> <span style="color:#000;">1.965.377.936</span></p>
+									</div>
+									<div class="col-md-2 my-small-card">
+										<p class="text-center" style="margin:0px;padding-top:10px;">x</p>
+									</div>
+									<div class="col-md-5 my-card-group-block" style="background-color:#DEE8EF;color:#645F5F;border-radius:5px !important;">
+										<p class="text-center" style="margin:0px;vertical-align:center;"><span style="color:#000;">0.025% <br>&nbsp;</span></p>
+									</div>
+								</div>
+								
+							</div>
+							<div class="col-md-1 my-small-card">
+								<strong class="text-center">&nbsp;</strong>
+								<div class="my-card-group">
+									<div class="my-card-group-block" style="border:0px !important;">
+										<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:-15px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
+									</div>						
+									<div class="my-card-group-block" style="border-bottom:0px !important;border-left:0px !important;border-right:0px !important;">
+										&nbsp;
+									</div>						
+								</div>						
+							</div>
+							<div class="my-small-card">
+								<small style="padding-bottom:5px;font-size:70%;">SOBRETASA FISCAL ANUAL <span class="derecha">SOBRETASA FISCAL TRIMESTRAL</span></small>
+								
+								<div class="my-card-group">
+									<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;">
+										<p class="text-center" style="margin:0px;color:#000;"><u>491.344</u><br><span style="color:#000;"> 4</span></p>
+									</div>
+									<div class="col-md-2 my-small-card">
+										<p class="text-center" style="margin:0px;padding-top:10px;">=</p>
+									</div>
+									<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border:0px !important;">
+										<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#000;">122.836</p>
+									</div>
+								</div>						
+							</div>
+						</div>			
+					</div>		
+
+					<div class="col-md-12">			
+						<div class="my-small-card-group">
+							<div class="my-small-card">
+								<strong class="text-center" style="padding-bottom:5px;color:#0F69AF;">&nbsp;</strong>
+								
+								<div class="my-card-group">
+									<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+										<p class="text-center" style="margin:0px;">&nbsp;</p>
+									</div>
+									<div class="col-md-2 my-small-card">
+										<p class="text-center" style="margin:0px;">&nbsp;</p>
+									</div>
+									<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+										<p class="text-center" style="margin:0px;vertical-align:center;">&nbsp;</p>
+									</div>
+								</div>
+								
+							</div>
+							<div class="col-md-1 my-small-card">
+								<strong class="text-center">&nbsp;</strong>
+								<div class="my-card-group">
+									<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</div>						
+								</div>						
+								<div class="my-card-group">
+									<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</div>						
+								</div>						
+							</div>
+							<div class="my-small-card">
+								<div class="my-card-group">
+									<small style="border:0px !important;padding-bottom:5px; font-size:70%;"><span class="derecha">CUOTA DE ASEO MUNICIPAL</span></small>
+									<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;border:0px;">
+										<p class="text-center" style="margin:0px;">&nbsp;</p>
+									</div>
+									<div class="col-md-2 my-small-card">
+										<p class="text-center" style="margin:0px;padding-top:10px;">&nbsp;</p>
+									</div>
+									<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border-bottom:4px !important;border-top:0px !important;">
+										<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">21.021</p>
+									</div>
+								</div>			
+
+							</div>
+						</div>			
+					</div>		
+
+
+					<div class="col-md-12">			
+						<div class="my-small-card-group">
+							<div class="my-small-card">
+								<div class="my-card-group">
+									<div class="my-card-group-block" style="border:0px !important;">
+										&nbsp;
+									</div>						
+								</div>
+							</div>
+							<div class="col-md my-small-card">
+								<div class="my-card-group">
+									<div class="my-card-group-block" style="border-radius:5px !important;background-color:#414141;color:#FFF;">
+										<strong class="text-center">VALOR CUOTA</strong>								
+									</div>						
+								</div>						
+							</div>
+							<div class="col-md-2 my-small-card">
+								<div class="my-card-group">
+									<div class="my-card-group-block" style="border-radius:5px !important; color:#FFF;">
+										<strong class="text-center">=</strong>								
+									</div>						
+								</div>						
+							</div>
+							<div class="my-small-card">
+								<div class="my-card-group">
+									<div class="my-card-group-block" style="border-radius:5px !important;background-color:#414141;color:#FFF;">
+										
+										<strong class="derecha">12.230.931</strong>
+									</div>						
+								</div>
+							</div>
+						</div>			
+					</div>				
+				<!------------------>
+					
+
+				<div class="col-md-12" style="padding-left:2px;">
+					<br>
+					<div class="my-card" style="font-size:0.9em;">
+						<p style="font-size:13px;">
+						<b>Mensajes explicativos por posibles diferencias entre el VALOR CUOTA girado y el VALOR CUOTA cálculado en esta sección</b>
+						<ul>
+							<li><b>CUOTAS DE REEMPLAZO / SUPLEMENTARIO Artículo 19 Ley 17.235</b>
+							Corresponden a rebajas o aumentos en el monto de las contribuciones, originados por modificaciones en el catastro físico de los bienes raíces. Estas variaciones no se reflejan en las cuotas normales de contribuciones, por lo que se generan dos nuevas cuotas extraordinarias, con vencimientos en los meses de julio y diciembre. Dichas cuotas se aplican conforme a la retroactividad máxima vigente de tres años, según corresponda.
+							</li>
+
+							<li><b>BENEFICIO DEL ALZA GRADUAL DE CONTRIBUCIONES Artículo 3 Ley 17.235</b>
+							Si como resultado de un proceso de reavalúo, el monto de sus contribuciones aumenta en más de un 25% respecto del semestre anterior, se le aplicará un beneficio que atenúa dicho incremento. Este beneficio consiste en que las primeras dos cuotas se incrementarán solo en un 25% respecto de lo girado en el semestre anterior. Las cuotas siguientes aumentarán un 10% adicional en cada período, hasta alcanzar el monto total que correspondería sin el beneficio, o hasta que se realice un nuevo proceso de reavalúo
+							</li>
+							
+							<li><b>BENEFICIO DE REBAJA DE CONTRIBUCIONES PARA EL ADULTO MAYOR (BAM) Ley 20.732</b>
+							Este beneficio consiste en una rebaja del 50% o 100% en las cuotas de contribuciones para adultos mayores que sean propietarios de una vivienda con destino habitacional. El porcentaje de rebaja depende del nivel de ingresos anuales del beneficiario. El beneficio se aplica a las cuotas del segundo semestre del año en curso y del primer semestre del año siguiente, siempre que se cumplan los requisitos establecidos por la ley.
+							</li>
+							<li><b>PREDIOS TOMADOS O URSURPADOS ILEGALMENTE Resolución exenta N° 144, 15 de diciembre de 2023</b>
+							Los dueños de propiedades ocupadas ilegalmente pueden solicitar una rebaja de hasta un 95% en sus contribuciones, según el porcentaje de terreno afectado. Para ello, deben ingresar a sii.cl y presentar una Solicitud de Modificación Catastral, adjuntando la denuncia y otros documentos que acrediten la ocupación.
+							</li>
+							
+							<li><b>MODELO C / MODIFICACIÓN DE GIRO DE CONTRIBUCIONES</b>
+							Corresponde a una modificación en la cuota normal de contribuciones, originada por un aumento o disminución excepcional en su monto. Estas variaciones pueden deberse a situaciones extraordinarias, como catástrofes, recálculos, o modificaciones en cuotas fuera del período de retroactividad máxima de tres años. El objetivo de esta modificación es corregir o regularizar las cuotas previamente emitidas.
+							</li>													
+						
+						</ul>
+						</p>
+					</div>
+					<br>
+		
+				</div>
+
+					
+					
+				</div>
 		</div>
 		</div>
         </div>
+		</div>
 		
         <div class="modal-footer" style="background-color:#fff;align-items: center;">
 			<p class="text-center" style="margin-bottom:0px;">
@@ -3119,7 +3484,19 @@ function closeAlert()
       
     </div>
   </div>
-
+<script>
+$("#cuotacontribucion").hide();
+function showCuotacontribucion()
+{	
+	if($("#cuotacontribucion").is(':hidden'))
+	{
+		$("#cuotacontribucion").show();		
+	}else
+	{
+		$("#cuotacontribucion").hide();		
+	}
+}
+</script>
 <!----------------------------NUEVA propuesta de contribuciones----------------------->
 <!----------------------------NUEVA propuesta de contribuciones----------------------->
 <!----------------------------NUEVA propuesta de contribuciones----------------------->
@@ -3278,6 +3655,11 @@ function closeAlert()
   </div>
 
 
+
+
+
+
+
 <!----------------------------ULTIMA propuesta de contribuciones----------------------->
 <!----------------------------ULTIMA propuesta de contribuciones----------------------->
 <!----------------------------ULTIMA propuesta de contribuciones----------------------->
@@ -3288,7 +3670,7 @@ function closeAlert()
 		<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
 		<button type="button" class="close" data-dismiss="modal">&times;</button>			
 		<div class="col-md-12 text-center">
-		   <h3>DETALLE DE CÁLCULO DE CUOTAS DE CONTRIBUCIONES</h3>
+		   <p>DETALLE DE CÁLCULO DE CUOTAS DE CONTRIBUCIONES</p>
 		</div>  
 		</div>
 		
@@ -3297,13 +3679,10 @@ function closeAlert()
 		<div class="panel-body">
 		<div id="no-more-tables">
 		
-			<p class="espacio">&nbsp;</p>	
-			<p class="espacio">&nbsp;</p>	
-			<p class="espacio">&nbsp;</p>	
+			<!--p class="espacio">&nbsp;</p>	
 			<div class="my-card-header" style="background-color:#DEE8EF !important;padding:5px;border-radius:5px;">
 			<p class="text-center" style="color:#000;"> <b>FORMULA DE CÁLCULO DE CONTRIBUCIONES</b></p>
-			</div>
-			<p class="espacio">&nbsp;</p>	
+			</div-->
 			<p class="espacio">&nbsp;</p>	
 
 
@@ -3509,17 +3888,25 @@ function closeAlert()
 							</div>						
 						</div>
 					</div>
-					<div class="col-md-1 my-small-card">
+					<div class="col-md my-small-card">
 						<div class="my-card-group">
-							<div class="my-card-group-block" style="border-radius:5px !important;">
-								&nbsp;
+							<div class="my-card-group-block" style="border-radius:5px !important;background-color:#414141;color:#FFF;">
+								<strong class="text-center">TOTAL CUOTA DE CONTRIBUCION TRIMESTRAL</strong>								
+							</div>						
+						</div>						
+					</div>
+					<div class="col-md-2 my-small-card">
+						<div class="my-card-group">
+							<div class="my-card-group-block" style="border-radius:5px !important; color:#FFF;">
+								<strong class="text-center">=</strong>								
 							</div>						
 						</div>						
 					</div>
 					<div class="my-small-card">
 						<div class="my-card-group">
 							<div class="my-card-group-block" style="border-radius:5px !important;background-color:#414141;color:#FFF;">
-								<strong class="text-center">TOTAL CUOTA DE CONTRIBUCION TRIMESTRAL</strong><span class="text-center derecha">10.000</span>								
+								&nbsp;<br>
+								<strong class="derecha">35.000</strong>
 							</div>						
 						</div>
 					</div>
