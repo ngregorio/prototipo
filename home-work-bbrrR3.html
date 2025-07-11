@@ -771,14 +771,6 @@
 		<div class="panel-body">
 		<div id="no-more-tables">
 		
-			<p class="espacio">&nbsp;</p>	
-			<p class="espacio">&nbsp;</p>	
-			<p class="espacio">&nbsp;</p>	
-		
-
-			<p class="espacio">&nbsp;</p>	
-			<p class="espacio">&nbsp;</p>	
-		
 			<div class="col-md-12">				
 				<div class="col-md-6" style="padding-left:2px;">
 					<div class="my-card">
@@ -786,23 +778,29 @@
 						  DETALLE DE CUOTAS <span class="derecha">Valores al X semestre del AAAA</span>
 						</div>  
 						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
-							Cuota Neta : <span class="derecha"  style="color:#002c48;">$34.000</span>
+							Cuota Neta : <span class="derecha"  style="color:#002c48;">$4.183.885</span>
 						</div>
 						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
 							Sobretasa SNE : <span class="derecha" style="color:#002c48;">$0</span>
 						</div>
 						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
-							0.025% avalúo afecto: <span class="derecha" style="color:#002c48;">$500</span>
+							0.025% avalúo afecto: <span class="derecha" style="color:#002c48;">$92.387</span>
 						</div>
 						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
 							Sobretasa 0.275%: <span class="derecha" style="color:#002c48;">$0</span>
 						</div>
 						<div class="my-card-block" style="padding:5px 10px 5px 15px;">
-							<i>Cuota Aseo Municipal :</i> <span class="derecha"  style="color:#002c48;">$500</span>
+							<i>Cuota Aseo Municipal :</i> <span class="derecha"  style="color:#002c48;">$26.001</span>
 						</div>
 						<div class="my-card-footer text-muted">
-							<b>VALOR CUOTA: <span class="derecha"  style="color:#002c48;">$35.000</span></b>
+							<b>VALOR CUOTA: <span class="derecha"  style="color:#002c48;">$4.302.273</span></b>
 						</div>
+						<div class="my-card-footer">
+							&nbsp;
+							<a class="derecha" href="javascript:showCuotacontribucion();">
+							<small style="margin-bottom: 5px !important;">Ver detalle de cálculo del Valor de cuota</small>
+							</a>
+						</div>						
 						<div class="my-card-block text-muted">
 							<b>Informado por TGR</b>
 						</div>
@@ -819,7 +817,7 @@
 							<b>Condonación : <span class="derecha" style="color:#eb510d;">-$0</span></b>
 						</div>
 						<div class="my-card-footer">
-							<b>TOTAL A PAGAR : <span class="derecha" style="color:#002c48;">$35.000</span></b>
+							<b>TOTAL A PAGAR : <span class="derecha" style="color:#002c48;">$4.302.273</span></b>
 						</div>
 					</div>
 				</div>
@@ -850,7 +848,7 @@
 				</div>
 			</div>
 		
-			<div class="col-md-12" style="padding-left:2px;">
+			<!--div class="col-md-12" style="padding-left:2px;">
 				<div class="col-md-12 my-card" style="font-size:0.9em;background-color:#efe3af;">
 					<p class="derecha" data-toggle="modal" data-target="#myModalUltimaContribuciones" style="font-size:0.9em;background-color:#efe3af;">
 					<a href="#" data-toggle="tooltip" style="color:#002C48 !important;"title="Ver detalle de cuota de contribuciones" onclick="myModalUltimaContribuciones">
@@ -859,7 +857,275 @@
 					</a>
 					</p>
 				</div>
-			</div>
+			</div-->
+					<p class="espacio">&nbsp;</p>
+					<p class="espacio">&nbsp;</p>
+			
+		<!----CALCULO DE CUOTA DE CONTRIBUCIIONES----------->
+				<div class="my-card" id="cuotacontribucion" name="cuotacontribucion">
+					<div class="col-md-12"  style="background-color:#002C48;color:#FFF;">
+						<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
+							&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle de cálculo de VALOR CUOTA de contribuciones</b></span>&nbsp;
+							<button type="button" class="derecha" style="font-size:14px !important;background-color:#002C48;color:#FFF !important;" onClick="showCuotacontribucion();"> [Cerrar detalle de cálculo X]
+							</button>			
+						</p>			  
+					</div>
+					
+
+
+			<div class="col-md-12"  style="padding-left:5px;padding-right:5px;">			
+				<div class="my-small-card-group">
+					
+					<div class="col-md-4 my-small-card" style="padding-right:5px;">
+						<strong class="text-center" style="padding-bottom:5px;">CONTRIBUCIÓN NETA RANGO 1</strong>
+						<table class="table table-striped table-hover cf">
+						<thead class="cf" style="font-size:15px;"> 
+							<tr>
+								<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">(Monto Cambio <br>de tasa</th>
+								<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">-</th>
+								<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Avalúo exento <br> habitacional )</th>
+								<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">x</th>
+								<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Tasa impuesto<br> minimo </th>
+							</tr>
+						</thead>
+						<tbody style="font-size:15px;">
+							<tr>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Afecto">(207.288.476</td>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">-</td>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">58.040.782)</td>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">0,893%</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+
+					<div class="col-md-4 my-small-card" style="padding-left:5px;">
+						<strong class="text-center" style="padding-bottom:5px;">CONTRIBUCIÓN NETA RANGO 2</strong>
+						<table class="table table-striped table-hover cf">  	  
+						<thead class="cf" style="font-size:15px;"> 
+							<tr>
+								<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;"><br>(Avaluo total<br>&nbsp;</th>
+								<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">-</th>
+								<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Monto cambio<br> de tasa)</th>
+								<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">x</th>
+								<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Tasa impuesto<br> máxima </th>
+							</tr>
+						</thead>
+						<tbody style="font-size:15px;">
+							<tr>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Afecto">(1.685.480.199</td>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">-</td>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">207.288.476)</td>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">1,042%</td>
+							</tr>
+						</tbody>
+						</table>		
+					
+					</div>
+
+
+					<div class="col-md-1 my-small-card" style="padding-left:0px !important;padding-right:0px !important;">
+						<strong class="text-center">&nbsp;</strong>
+						<div class="my-card-group">
+							<div class="my-card-group-block" style="border:0px !important;padding-left:0px !important;padding-right:0px !important;">
+								<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:-15px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
+							</div>						
+						</div>						
+					</div>
+
+					<div class="col-md-3 my-small-card">
+						<small style="padding-bottom:5px; font-size:70%;text-align:left;">C. NETA ANUAL <span class="derecha">C. NETA TRIMESTRAL</span></small>
+						
+						<div class="my-card-group">
+							<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;">
+								<p class="text-center" style="margin:0px;color:#163E64;"><u>16.735.540</u><br><span style="color:#163E64;"> 4</span></p>
+							</div>
+							<div class="col-md-2 my-small-card">
+								<p class="text-center" style="margin:0px;padding-top:10px;">=</p>
+							</div>
+							<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border:0px !important;">
+								<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">4.183.885</p>
+							</div>
+						</div>						
+					</div>
+
+				</div>			
+			</div>	
+
+
+			<div class="col-md-12">			
+				<div class="my-small-card-group">
+					<div class="col-md-8 my-small-card">
+						<strong class="text-center" style="padding-bottom:5px;">SOBRETASA DE BENEFICIO FISCAL 0,025%</strong>
+						<table class="table table-striped table-hover cf">  	  
+						<thead class="cf" style="font-size:15px;"> 
+							<tr>
+								<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">(Avaluo total</th>
+								<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">-</th>
+								<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Monto cambio de tasa)</th>
+								<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">x</th>
+								<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">0,025% </th>
+							</tr>
+						</thead>
+						<tbody style="font-size:15px;">
+							<tr>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Afecto">(1.685.480.199</td>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">-</td>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">207.288.476)</td>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+							<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">0,025%</td>
+							</tr>
+						</tbody>
+						</table>		
+					
+
+					</div>
+					<div class="col-md-1 my-small-card">
+						<strong class="text-center">&nbsp;</strong>
+						<div class="my-card-group">
+							<div class="my-card-group-block" style="border:0px !important;">
+								<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:-15px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
+							</div>						
+						</div>						
+					</div>
+					<div class="col-md-3 my-small-card">
+						<small style="padding-bottom:5px; font-size:70%;">SOBRETASA ANUAL <span class="derecha">SOBRETASA TRIMESTRAL</span></small>
+						
+						<div class="my-card-group">
+							<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;">
+								<p class="text-center" style="margin:0px;color:#163E64;"><u>369.548</u><br><span style="color:#163E64;"> 4</span></p>
+							</div>
+							<div class="col-md-2 my-small-card">
+								<p class="text-center" style="margin:0px;padding-top:10px;">=</p>
+							</div>
+							<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border:0px !important;">
+								<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">92.387</p>
+							</div>
+						</div>						
+					</div>
+				</div>			
+			</div>		
+
+
+
+			<div class="col-md-12">			
+				<div class="my-small-card-group">
+					<div class="my-small-card">
+						<strong class="text-center" style="padding-bottom:5px;color:#0F69AF;">&nbsp;</strong>
+						
+						<div class="my-card-group">
+							<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+								<p class="text-center" style="margin:0px;">&nbsp;</p>
+							</div>
+							<div class="col-md-2 my-small-card">
+								<p class="text-center" style="margin:0px;">&nbsp;</p>
+							</div>
+							<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+								<p class="text-center" style="margin:0px;vertical-align:center;">&nbsp;</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-md-1 my-small-card">
+						<strong class="text-center">&nbsp;</strong>
+						<div class="my-card-group">
+							<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>						
+						</div>						
+						<div class="my-card-group">
+							<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</div>						
+						</div>						
+					</div>
+					<div class="my-small-card">
+						<div class="my-card-group">
+							<small style="border:0px !important;padding-bottom:5px; font-size:70%;"><span class="derecha">CUOTA DE ASEO MUNICIPAL</span></small>
+							<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;border:0px;">
+								<p class="text-center" style="margin:0px;">&nbsp;</p>
+							</div>
+							<div class="col-md-2 my-small-card">
+								<p class="text-center" style="margin:0px;padding-top:10px;">&nbsp;</p>
+							</div>
+							<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border-bottom:4px !important;border-top:0px !important;">
+								<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">26.001</p>
+							</div>
+						</div>			
+
+					</div>
+				</div>			
+			</div>		
+
+
+			<div class="col-md-12">			
+				<div class="my-small-card-group">
+					<div class="my-small-card">
+						<div class="my-card-group">
+							<div class="my-card-group-block" style="border:0px !important;">
+								&nbsp;
+							</div>						
+						</div>
+					</div>
+					<div class="col-md-1 my-small-card">
+						<div class="my-card-group">
+							<div class="my-card-group-block" style="border-radius:5px !important;">
+								&nbsp;
+							</div>						
+						</div>						
+					</div>
+					<div class="my-small-card">
+						<div class="my-card-group">
+							<div class="my-card-group-block" style="border-radius:5px !important;background-color:#414141;color:#FFF;">
+								<strong class="text-center">TOTAL CUOTA DE CONTRIBUCION TRIMESTRAL</strong><span class="text-center derecha">4.302.273</span>								
+							</div>						
+						</div>
+					</div>
+				</div>			
+			</div>	
+			
+			<p class="espacio">&nbsp;</p>	
+			<p class="espacio">&nbsp;</p>	
+			<p class="espacio">&nbsp;</p>				
+				<!------------------>
+					
+
+				<div class="col-md-12" style="padding-left:2px;">
+					<br>
+					<div class="my-card" style="font-size:0.9em;">
+						<p style="font-size:13px;">
+						<b>Mensajes explicativos por posibles diferencias entre el VALOR CUOTA girado y el VALOR CUOTA cálculado en esta sección</b>
+						<ul>
+							<li><b>CUOTAS DE REEMPLAZO / SUPLEMENTARIO Artículo 19 Ley 17.235</b>
+							Corresponden a rebajas o aumentos en el monto de las contribuciones, originados por modificaciones en el catastro físico de los bienes raíces. Estas variaciones no se reflejan en las cuotas normales de contribuciones, por lo que se generan dos nuevas cuotas extraordinarias, con vencimientos en los meses de julio y diciembre. Dichas cuotas se aplican conforme a la retroactividad máxima vigente de tres años, según corresponda.
+							</li>
+
+							<li><b>BENEFICIO DEL ALZA GRADUAL DE CONTRIBUCIONES Artículo 3 Ley 17.235</b>
+							Si como resultado de un proceso de reavalúo, el monto de sus contribuciones aumenta en más de un 25% respecto del semestre anterior, se le aplicará un beneficio que atenúa dicho incremento. Este beneficio consiste en que las primeras dos cuotas se incrementarán solo en un 25% respecto de lo girado en el semestre anterior. Las cuotas siguientes aumentarán un 10% adicional en cada período, hasta alcanzar el monto total que correspondería sin el beneficio, o hasta que se realice un nuevo proceso de reavalúo
+							</li>
+							
+							<li><b>BENEFICIO DE REBAJA DE CONTRIBUCIONES PARA EL ADULTO MAYOR (BAM) Ley 20.732</b>
+							Este beneficio consiste en una rebaja del 50% o 100% en las cuotas de contribuciones para adultos mayores que sean propietarios de una vivienda con destino habitacional. El porcentaje de rebaja depende del nivel de ingresos anuales del beneficiario. El beneficio se aplica a las cuotas del segundo semestre del año en curso y del primer semestre del año siguiente, siempre que se cumplan los requisitos establecidos por la ley.
+							</li>
+							<li><b>PREDIOS TOMADOS O URSURPADOS ILEGALMENTE Resolución exenta N° 144, 15 de diciembre de 2023</b>
+							Los dueños de propiedades ocupadas ilegalmente pueden solicitar una rebaja de hasta un 95% en sus contribuciones, según el porcentaje de terreno afectado. Para ello, deben ingresar a sii.cl y presentar una Solicitud de Modificación Catastral, adjuntando la denuncia y otros documentos que acrediten la ocupación.
+							</li>
+							
+							<li><b>MODELO C / MODIFICACIÓN DE GIRO DE CONTRIBUCIONES</b>
+							Corresponde a una modificación en la cuota normal de contribuciones, originada por un aumento o disminución excepcional en su monto. Estas variaciones pueden deberse a situaciones extraordinarias, como catástrofes, recálculos, o modificaciones en cuotas fuera del período de retroactividad máxima de tres años. El objetivo de esta modificación es corregir o regularizar las cuotas previamente emitidas.
+							</li>													
+						
+						</ul>
+						</p>
+					</div>
+					<br>
+		
+				</div>
+
+				
+
 			
 		</div>
 		</div>
@@ -876,6 +1142,19 @@
     </div>
   </div>
 
+<script>
+$("#cuotacontribucion").hide();
+function showCuotacontribucion()
+{	
+	if($("#cuotacontribucion").is(':hidden'))
+	{
+		$("#cuotacontribucion").show();		
+	}else
+	{
+		$("#cuotacontribucion").hide();		
+	}
+}
+</script>
 
 <!----------------------------ULTIMA propuesta de contribuciones----------------------->
 <!----------------------------ULTIMA propuesta de contribuciones----------------------->
