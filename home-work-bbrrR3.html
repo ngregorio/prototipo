@@ -859,20 +859,513 @@
 					</p>
 				</div>
 			</div-->
-					<p class="espacio">&nbsp;</p>
-					<p class="espacio">&nbsp;</p>
-			
-		<!----CALCULO DE CUOTA DE CONTRIBUCIIONES----------->
-				<div class="my-card" id="cuotacontribucion" name="cuotacontribucion">
-					<div class="col-md-12"  style="background-color:#002C48;color:#FFF;">
-						<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
-							&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle de cálculo de VALOR CUOTA de contribuciones</b></span>&nbsp;
-							<button type="button" class="derecha" style="font-size:14px !important;background-color:#002C48;color:#FFF !important;" onClick="showCuotacontribucion();"> [Cerrar detalle de cálculo X]
-							</button>			
-						</p>			  
-					</div>
-					
 
+			<!----CALCULO DE CUOTA DE CONTRIBUCIIONES----------->
+
+			<p class="espacio">&nbsp;</p>	
+			<p class="espacio">&nbsp;</p>	
+			<p class="espacio">&nbsp;</p>				
+			
+			<!---------- COMERCIO-------->
+			1. ROL no Agrícola con destino diferente al Habitacional o Sitio eriazo.
+			<div class="my-card" id="cuotacontribucionx" name="cuotacontribucionx">
+				<div class="col-md-12"  style="background-color:#002C48;color:#FFF;">
+					<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
+						&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle de cálculo de VALOR CUOTA de contribuciones</b></span>&nbsp;
+						<button type="button" class="derecha" style="font-size:14px !important;background-color:#002C48;color:#FFF !important;" onClick="showCuotacontribucion();"> [Cerrar detalle de cálculo X]
+						</button>			
+					</p>			  
+				</div>
+					
+				<div class="col-md-12"  style="padding-left:5px;padding-right:5px;">			
+					<div class="my-small-card-group">
+						
+						<div class="col-md-7 my-small-card" style="padding-right:5px;">
+							<strong class="text-center" style="padding-bottom:5px;">CONTRIBUCIÓN NETA</strong>
+							<table class="table table-striped table-hover cf">
+							<thead class="cf" style="font-size:15px;"> 
+								<tr>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Avalúo afecto</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">x</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Tasa impuesto</th>
+								</tr>
+							</thead>
+							<tbody style="font-size:15px;">
+								<tr>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Afecto">100.000.000</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">1,042%</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+
+						<div class="col-md-1 my-small-card">
+							<strong class="text-center">&nbsp;</strong>
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border:0px !important;">
+									<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:-15px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
+								</div>						
+							</div>						
+						</div>
+
+						<div class="col-md-4 my-small-card">
+							<small style="padding-bottom:5px; font-size:70%;text-align:left;">C. NETA ANUAL <span class="derecha">C. NETA TRIMESTRAL</span></small>
+							
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;">
+									<p class="text-center" style="margin:0px;color:#163E64;"><u>1.042.000</u><br><span style="color:#163E64;"> 4</span></p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;padding-top:10px;">=</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">260.500</p>
+								</div>
+							</div>						
+						</div>
+
+					</div>			
+				</div>	
+
+				<div class="col-md-12" style="padding-left:5px;padding-right:5px;">			
+					<div class="my-small-card-group">
+						<div class="col-md-7 my-small-card" style="padding-right:5px;">
+							<strong class="text-center" style="padding-bottom:5px;">SOBRETASA DE BENEFICIO FISCAL 0,025%</strong>
+							<table class="table table-striped table-hover cf">  	  
+							<thead class="cf" style="font-size:15px;"> 
+								<tr>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Avaluo Afecto</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">x</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;"> Sobretasa beneficio fiscal 0,025% </th>
+								</tr>
+							</thead>
+							<tbody style="font-size:15px;">
+								<tr>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Afecto">100.000.000</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">0,025%</td>
+								</tr>
+							</tbody>
+							</table>		
+						
+						</div>
+						<div class="col-md-1 my-small-card">
+							<strong class="text-center">&nbsp;</strong>
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border:0px !important;">
+									<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:-15px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
+								</div>						
+							</div>						
+						</div>
+						<div class="col-md-4 my-small-card">
+							<small style="padding-bottom:5px; font-size:70%;">SOBRETASA ANUAL <span class="derecha">SOBRETASA TRIMESTRAL</span></small>
+							
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;">
+									<p class="text-center" style="margin:0px;color:#163E64;"><u>25.000</u><br><span style="color:#163E64;"> 4</span></p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;padding-top:10px;">=</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">6.250</p>
+								</div>
+							</div>						
+						</div>
+					</div>			
+				</div>		
+
+				<div class="col-md-12">			
+					<div class="my-small-card-group">
+						<div class="my-small-card">
+							<strong class="text-center" style="padding-bottom:5px;color:#0F69AF;">&nbsp;</strong>
+							
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;">&nbsp;</p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;">&nbsp;</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;vertical-align:center;">&nbsp;</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-md-1 my-small-card">
+							<strong class="text-center">&nbsp;</strong>
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</div>						
+							</div>						
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</div>						
+							</div>						
+						</div>
+						<div class="my-small-card">
+							<div class="my-card-group">
+								<small style="border:0px !important;padding-bottom:5px; font-size:70%;"><span class="derecha">CUOTA DE ASEO MUNICIPAL</span></small>
+								<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;border:0px;">
+									<p class="text-center" style="margin:0px;">&nbsp;</p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;padding-top:10px;">&nbsp;</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border-bottom:4px !important;border-top:0px !important;">
+									<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">6.000</p>
+								</div>
+							</div>			
+
+						</div>
+					</div>			
+				</div>		
+
+				<div class="col-md-12">			
+					<div class="my-small-card-group">
+						<div class="my-small-card">
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border:0px !important;">
+									&nbsp;
+								</div>						
+							</div>
+						</div>
+						<div class="col-md-1 my-small-card">
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border-radius:5px !important;">
+									&nbsp;
+								</div>						
+							</div>						
+						</div>
+						<div class="my-small-card">
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border-radius:5px !important;background-color:#414141;color:#FFF;">
+									<strong class="text-center">TOTAL CUOTA DE CONTRIBUCION TRIMESTRAL</strong><span class="text-center derecha">272.750</span>								
+								</div>						
+							</div>
+						</div>
+					</div>			
+				</div>				
+			</div>
+			<!------------------> <!------------------> <!------------------>
+			<!------------------> <!------------------> <!------------------>					
+
+			<p class="espacio">&nbsp;</p>	
+			<p class="espacio">&nbsp;</p>	
+			<p class="espacio">&nbsp;</p>				
+			
+			<!---------- HABITACIONAL-------->
+			b) ROL con destino habitacional con avalúo mayor al monto de exención general habitacional y menor igual al monto de cambio de tasa.
+			<div class="my-card" id="cuotacontribucionx" name="cuotacontribucionx">
+				<div class="col-md-12"  style="background-color:#002C48;color:#FFF;">
+					<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
+						&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle de cálculo de VALOR CUOTA de contribuciones</b></span>&nbsp;
+						<button type="button" class="derecha" style="font-size:14px !important;background-color:#002C48;color:#FFF !important;" onClick="showCuotacontribucion();"> [Cerrar detalle de cálculo X]
+						</button>			
+					</p>			  
+				</div>
+					
+				<div class="col-md-12"  style="padding-left:5px;padding-right:5px;">			
+					<div class="my-small-card-group">
+						
+						<div class="col-md-7 my-small-card" style="padding-right:5px;">
+							<strong class="text-center" style="padding-bottom:5px;">CONTRIBUCIÓN NETA</strong>
+							<table class="table table-striped table-hover cf">
+							<thead class="cf" style="font-size:15px;"> 
+								<tr>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">(Avalúo total</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">-</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Avalúo exento habitacional)</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">x</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Tasa impuesto</th>
+								</tr>
+							</thead>
+							<tbody style="font-size:15px;">
+								<tr>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Afecto">(100.486.104</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">-</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">47.360.490)</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">0,893%</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+
+						<div class="col-md-1 my-small-card">
+							<strong class="text-center">&nbsp;</strong>
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border:0px !important;">
+									<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:-15px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
+								</div>						
+							</div>						
+						</div>
+
+						<div class="col-md-4 my-small-card">
+							<small style="padding-bottom:5px; font-size:70%;text-align:left;">C. NETA ANUAL <span class="derecha">C. NETA TRIMESTRAL</span></small>
+							
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;">
+									<p class="text-center" style="margin:0px;color:#163E64;"><u>474.412</u><br><span style="color:#163E64;"> 4</span></p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;padding-top:10px;">=</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">118.603</p>
+								</div>
+							</div>						
+						</div>
+
+					</div>			
+				</div>	
+
+
+				<div class="col-md-12">			
+					<div class="my-small-card-group">
+						<div class="my-small-card">
+							<strong class="text-center" style="padding-bottom:5px;color:#0F69AF;">&nbsp;</strong>
+							
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;">&nbsp;</p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;">&nbsp;</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;vertical-align:center;">&nbsp;</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-md-1 my-small-card">
+							<strong class="text-center">&nbsp;</strong>
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</div>						
+							</div>						
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</div>						
+							</div>						
+						</div>
+						<div class="my-small-card">
+							<div class="my-card-group">
+								<small style="border:0px !important;padding-bottom:5px; font-size:70%;"><span class="derecha">CUOTA DE ASEO MUNICIPAL</span></small>
+								<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;border:0px;">
+									<p class="text-center" style="margin:0px;">&nbsp;</p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;padding-top:10px;">&nbsp;</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border-bottom:4px !important;border-top:0px !important;">
+									<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">6.000</p>
+								</div>
+							</div>			
+
+						</div>
+					</div>			
+				</div>		
+
+				<div class="col-md-12">			
+					<div class="my-small-card-group">
+						<div class="my-small-card">
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border:0px !important;">
+									&nbsp;
+								</div>						
+							</div>
+						</div>
+						<div class="col-md-1 my-small-card">
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border-radius:5px !important;">
+									&nbsp;
+								</div>						
+							</div>						
+						</div>
+						<div class="my-small-card">
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border-radius:5px !important;background-color:#414141;color:#FFF;">
+									<strong class="text-center">TOTAL CUOTA DE CONTRIBUCION TRIMESTRAL</strong><span class="text-center derecha">124.603</span>								
+								</div>						
+							</div>
+						</div>
+					</div>			
+				</div>				
+			</div>
+
+
+			<!------------------> <!------------------> <!------------------>
+			<!------------------> <!------------------> <!------------------>					
+
+			<p class="espacio">&nbsp;</p>	
+			<p class="espacio">&nbsp;</p>	
+			<p class="espacio">&nbsp;</p>				
+			
+			<!---------- HABITACIONAL-------->
+			c) ROL con destino habitacional con avalúo menor igual al monto de cambio de tasa y con avalúo exento (Por ej DFL2 del 50%) mayor al monto de exención general habitacional. 
+			<div class="my-card" id="cuotacontribucionx" name="cuotacontribucionx">
+				<div class="col-md-12"  style="background-color:#002C48;color:#FFF;">
+					<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
+						&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle de cálculo de VALOR CUOTA de contribuciones</b></span>&nbsp;
+						<button type="button" class="derecha" style="font-size:14px !important;background-color:#002C48;color:#FFF !important;" onClick="showCuotacontribucion();"> [Cerrar detalle de cálculo X]
+						</button>			
+					</p>			  
+				</div>
+					
+				<div class="col-md-12"  style="padding-left:5px;padding-right:5px;">			
+					<div class="my-small-card-group">
+						
+						<div class="col-md-7 my-small-card" style="padding-right:5px;">
+							<strong class="text-center" style="padding-bottom:5px;">CONTRIBUCIÓN NETA</strong>
+							<table class="table table-striped table-hover cf">
+							<thead class="cf" style="font-size:15px;"> 
+								<tr>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">(Avalúo total</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">-</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Avalúo exento)</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">x</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Tasa impuesto</th>
+								</tr>
+							</thead>
+							<tbody style="font-size:15px;">
+								<tr>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Afecto">(163.000.922</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">-</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">81.500.461)</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">0,893%</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+
+						<div class="col-md-1 my-small-card">
+							<strong class="text-center">&nbsp;</strong>
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border:0px !important;">
+									<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:-15px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
+								</div>						
+							</div>						
+						</div>
+
+						<div class="col-md-4 my-small-card">
+							<small style="padding-bottom:5px; font-size:70%;text-align:left;">C. NETA ANUAL <span class="derecha">C. NETA TRIMESTRAL</span></small>
+							
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;">
+									<p class="text-center" style="margin:0px;color:#163E64;"><u>727.800</u><br><span style="color:#163E64;"> 4</span></p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;padding-top:10px;">=</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">181.950</p>
+								</div>
+							</div>						
+						</div>
+
+					</div>			
+				</div>	
+
+
+				<div class="col-md-12">			
+					<div class="my-small-card-group">
+						<div class="my-small-card">
+							<strong class="text-center" style="padding-bottom:5px;color:#0F69AF;">&nbsp;</strong>
+							
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;">&nbsp;</p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;">&nbsp;</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;vertical-align:center;">&nbsp;</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-md-1 my-small-card">
+							<strong class="text-center">&nbsp;</strong>
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</div>						
+							</div>						
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</div>						
+							</div>						
+						</div>
+						<div class="my-small-card">
+							<div class="my-card-group">
+								<small style="border:0px !important;padding-bottom:5px; font-size:70%;"><span class="derecha">CUOTA DE ASEO MUNICIPAL</span></small>
+								<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;border:0px;">
+									<p class="text-center" style="margin:0px;">&nbsp;</p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;padding-top:10px;">&nbsp;</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border-bottom:4px !important;border-top:0px !important;">
+									<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">6.000</p>
+								</div>
+							</div>			
+
+						</div>
+					</div>			
+				</div>		
+
+				<div class="col-md-12">			
+					<div class="my-small-card-group">
+						<div class="my-small-card">
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border:0px !important;">
+									&nbsp;
+								</div>						
+							</div>
+						</div>
+						<div class="col-md-1 my-small-card">
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border-radius:5px !important;">
+									&nbsp;
+								</div>						
+							</div>						
+						</div>
+						<div class="my-small-card">
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border-radius:5px !important;background-color:#414141;color:#FFF;">
+									<strong class="text-center">TOTAL CUOTA DE CONTRIBUCION TRIMESTRAL</strong><span class="text-center derecha">187.950</span>								
+								</div>						
+							</div>
+						</div>
+					</div>			
+				</div>				
+			</div>
+			<!------------------> <!------------------> <!------------------>					
+			
+		<p class="espacio">&nbsp;</p>
+		<p class="espacio">&nbsp;</p>
+			
+		<!----HABITACIONAL----------->
+		d) ROL con destino habitacional con avalúo mayor al monto de cambio de tasa. 
+		<div class="my-card" id="cuotacontribucion" name="cuotacontribucion">
+			<div class="col-md-12"  style="background-color:#002C48;color:#FFF;">
+				<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
+					&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle de cálculo de VALOR CUOTA de contribuciones</b></span>&nbsp;
+					<button type="button" class="derecha" style="font-size:14px !important;background-color:#002C48;color:#FFF !important;" onClick="showCuotacontribucion();"> [Cerrar detalle de cálculo X]
+					</button>			
+				</p>			  
+			</div>
 
 			<div class="col-md-12"  style="padding-left:5px;padding-right:5px;">			
 				<div class="my-small-card-group">
@@ -927,16 +1420,16 @@
 					</div>
 
 
-					<div class="col-md-1 my-small-card" style="padding-left:0px !important;padding-right:0px !important;">
+					<div class="col-md-1 my-small-card" style="padding-left:0px; padding-right:0px;">
 						<strong class="text-center">&nbsp;</strong>
 						<div class="my-card-group">
-							<div class="my-card-group-block" style="border:0px !important;padding-left:0px !important;padding-right:0px !important;">
-								<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:-15px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
+							<div class="my-card-group-block" style="border:0px !important;">
+								<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
 							</div>						
 						</div>						
 					</div>
 
-					<div class="col-md-3 my-small-card">
+					<div class="col-md-3 my-small-card" style="padding-left:0px; padding-right:0px;">
 						<small style="padding-bottom:5px; font-size:70%;text-align:left;">C. NETA ANUAL <span class="derecha">C. NETA TRIMESTRAL</span></small>
 						
 						<div class="my-card-group">
@@ -955,8 +1448,7 @@
 				</div>			
 			</div>	
 
-
-			<div class="col-md-12">			
+			<div class="col-md-12" style="padding-left:5px;padding-right:5px;">			
 				<div class="my-small-card-group">
 					<div class="col-md-8 my-small-card">
 						<strong class="text-center" style="padding-bottom:5px;">SOBRETASA DE BENEFICIO FISCAL 0,025%</strong>
@@ -983,15 +1475,15 @@
 					
 
 					</div>
-					<div class="col-md-1 my-small-card">
+					<div class="col-md-1 my-small-card" style="padding-left:0px; padding-right:0px;"> 
 						<strong class="text-center">&nbsp;</strong>
 						<div class="my-card-group">
 							<div class="my-card-group-block" style="border:0px !important;">
-								<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:-15px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
+								<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
 							</div>						
 						</div>						
 					</div>
-					<div class="col-md-3 my-small-card">
+					<div class="col-md-3 my-small-card" style="padding-left:0px; padding-right:0px;">
 						<small style="padding-bottom:5px; font-size:70%;">SOBRETASA ANUAL <span class="derecha">SOBRETASA TRIMESTRAL</span></small>
 						
 						<div class="my-card-group">
@@ -1008,8 +1500,6 @@
 					</div>
 				</div>			
 			</div>		
-
-
 
 			<div class="col-md-12">			
 				<div class="my-small-card-group">
@@ -1060,7 +1550,6 @@
 				</div>			
 			</div>		
 
-
 			<div class="col-md-12">			
 				<div class="my-small-card-group">
 					<div class="my-small-card">
@@ -1090,10 +1579,161 @@
 			<p class="espacio">&nbsp;</p>	
 			<p class="espacio">&nbsp;</p>	
 			<p class="espacio">&nbsp;</p>				
-				<!------------------>
-					
+			<!------------------>			<!------------------><!------------------>
 
-				<div class="col-md-12" style="padding-left:2px;">
+			<!------------------> <!------------------> <!------------------>
+			<!------------------> <!------------------> <!------------------>					
+
+			<p class="espacio">&nbsp;</p>	
+			<p class="espacio">&nbsp;</p>	
+			<p class="espacio">&nbsp;</p>				
+			
+			<!---------- HABITACIONAL-------->
+			4.- Fórmula de cálculo de contribuciones para ROLES de la serie agrícola
+			<div class="my-card" id="cuotacontribucionx" name="cuotacontribucionx">
+				<div class="col-md-12"  style="background-color:#002C48;color:#FFF;">
+					<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
+						&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Detalle de cálculo de VALOR CUOTA de contribuciones</b></span>&nbsp;
+						<button type="button" class="derecha" style="font-size:14px !important;background-color:#002C48;color:#FFF !important;" onClick="showCuotacontribucion();"> [Cerrar detalle de cálculo X]
+						</button>			
+					</p>			  
+				</div>
+					
+				<div class="col-md-12"  style="padding-left:5px;padding-right:5px;">			
+					<div class="my-small-card-group">
+						
+						<div class="col-md-7 my-small-card" style="padding-right:5px;">
+							<strong class="text-center" style="padding-bottom:5px;">CONTRIBUCIÓN NETA</strong>
+							<table class="table table-striped table-hover cf">
+							<thead class="cf" style="font-size:15px;"> 
+								<tr>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">(Avalúo total</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">-</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Avalúo exento agrícola)</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">x</th>
+									<th class="text-center" rowspan="2" style="font-weight:normal;font-weight:normal;background-color:#cbdfe8;color:#163E64;border-width:0px !important;border-radius:5px;">Tasa impuesto</th>
+								</tr>
+							</thead>
+							<tbody style="font-size:15px;">
+								<tr>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Afecto">(50.000.000</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">-</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">45.138.468)</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
+								<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="Tasa">0,400%</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+
+						<div class="col-md-1 my-small-card">
+							<strong class="text-center">&nbsp;</strong>
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border:0px !important;">
+									<p style="margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:-15px;padding-top:10px;padding-left:0px;padding-right:0px;">=</p>
+								</div>						
+							</div>						
+						</div>
+
+						<div class="col-md-4 my-small-card">
+							<small style="padding-bottom:5px; font-size:70%;text-align:left;">C. NETA ANUAL <span class="derecha">C. NETA TRIMESTRAL</span></small>
+							
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;">
+									<p class="text-center" style="margin:0px;color:#163E64;"><u>19.446</u><br><span style="color:#163E64;"> 4</span></p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;padding-top:10px;">=</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">4.862</p>
+								</div>
+							</div>						
+						</div>
+
+					</div>			
+				</div>	
+
+
+				<div class="col-md-12">			
+					<div class="my-small-card-group">
+						<div class="my-small-card">
+							<strong class="text-center" style="padding-bottom:5px;color:#0F69AF;">&nbsp;</strong>
+							
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;">&nbsp;</p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;">&nbsp;</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									<p class="text-center" style="margin:0px;vertical-align:center;">&nbsp;</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-md-1 my-small-card">
+							<strong class="text-center">&nbsp;</strong>
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</div>						
+							</div>						
+							<div class="my-card-group">
+								<div class="col-md-5 my-card-group-block" style="border-radius:5px !important;border:0px !important;">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</div>						
+							</div>						
+						</div>
+						<div class="my-small-card">
+							<div class="my-card-group">
+								<small style="border:0px !important;padding-bottom:5px; font-size:70%;"><span class="derecha">CUOTA DE ASEO MUNICIPAL</span></small>
+								<div class="col-md-5 my-card-group-block" style="color:#645F5F;border-radius:5px !important;border:0px;">
+									<p class="text-center" style="margin:0px;">&nbsp;</p>
+								</div>
+								<div class="col-md-2 my-small-card">
+									<p class="text-center" style="margin:0px;padding-top:10px;">&nbsp;</p>
+								</div>
+								<div class="col-md-5 my-card-group-block" style="background-color:#E9EAE8;color:#645F5F;border-radius:5px !important;border-bottom:4px !important;border-top:0px !important;">
+									<p class="text-center" style="margin:0px;padding-top:8px;padding-bottom:8px;color:#163E64;">6.000</p>
+								</div>
+							</div>			
+
+						</div>
+					</div>			
+				</div>		
+
+				<div class="col-md-12">			
+					<div class="my-small-card-group">
+						<div class="my-small-card">
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border:0px !important;">
+									&nbsp;
+								</div>						
+							</div>
+						</div>
+						<div class="col-md-1 my-small-card">
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border-radius:5px !important;">
+									&nbsp;
+								</div>						
+							</div>						
+						</div>
+						<div class="my-small-card">
+							<div class="my-card-group">
+								<div class="my-card-group-block" style="border-radius:5px !important;background-color:#414141;color:#FFF;">
+									<strong class="text-center">TOTAL CUOTA DE CONTRIBUCION TRIMESTRAL</strong><span class="text-center derecha">187.950</span>								
+								</div>						
+							</div>
+						</div>
+					</div>			
+				</div>				
+			</div>
+			<!------------------> <!------------------> <!------------------>	
+
+
+			<div class="col-md-12" style="padding-left:2px;">
 					<br>
 					<div class="my-card" style="font-size:0.9em;">
 						<p style="font-size:13px;">
@@ -1125,10 +1765,11 @@
 		
 				</div>
 
-				
-
-			
 		</div>
+
+
+		
+		
 		</div>
 		</div>
         </div>
@@ -1589,7 +2230,7 @@ $('.modal-child').on('hidden.bs.modal', function () {
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td-->
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp">1,00 
 					<br>
-					<a href="#myModalCoeficienteTerreno" data-toggle="modal" title="Ver avalúo exento"  onclick="myModalCoeficienteTerreno">
+					<a href="#myModalCoeficienteTerreno" data-toggle="modal" title="Ver Coeficiente de terreno"  onclick="myModalCoeficienteTerreno">
 					<small style="margin-bottom: 5px !important;">Ver detalle</small>
 					</a>				 
 				</td>
@@ -1663,7 +2304,7 @@ $('.modal-child').on('hidden.bs.modal', function () {
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">68
 					<br>
-					<a href="#myModalSuperficieConstruida" data-toggle="modal" title="Ver avalúo exento"  onclick="myModalSuperficieConstruida">
+					<a href="#myModalSuperficieConstruida" data-toggle="modal" title="Ver Superficie Construida"  onclick="myModalSuperficieConstruida">
 					<small style="margin-bottom: 5px !important;">Ver detalle</small>
 					</a>				 
 				</td>
@@ -1686,7 +2327,7 @@ $('.modal-child').on('hidden.bs.modal', function () {
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">68
 					<br>
-					<a href="#myModalSuperficieConstruida" data-toggle="modal" title="Ver avalúo exento"  onclick="myModalSuperficieConstruida">
+					<a href="#myModalSuperficieConstruida" data-toggle="modal" title="Ver Superficie Construida"  onclick="myModalSuperficieConstruida">
 					<small style="margin-bottom: 5px !important;">Ver detalle</small>
 					</a>				 
 				</td>
@@ -1709,7 +2350,7 @@ $('.modal-child').on('hidden.bs.modal', function () {
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">68
 					<br>
-					<a href="#myModalSuperficieConstruida" data-toggle="modal" title="Ver avalúo exento"  onclick="myModalSuperficieConstruida">
+					<a href="#myModalSuperficieConstruida" data-toggle="modal" title="Ver Superficie Construida"  onclick="myModalSuperficieConstruida">
 					<small style="margin-bottom: 5px !important;">Ver detalle</small>
 					</a>				 
 				</td>
