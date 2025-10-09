@@ -1064,12 +1064,12 @@
 		<th class="text-center">Dirección</th>
 		<th class="text-center">Destino</th>
 		<th class="text-center">RUT</th>
-		<th class="text-center">Nobre o Razón Social</th>
+		<!--th class="text-center">Nobre o Razón Social</th-->
 		<th class="text-center">
-			<span data-toggle="tooltip" title="% de Derecho de propiedad y F2890">% D°</span>
+			<span data-toggle="tooltip" title="% de Derecho de propiedad y F2890">% Derechos</span>
 		</th>
 		<th class="text-center">			
-			<span data-toggle="tooltip" title="BBRR Construido /Terreno o Suelo (m²) / Área Homogenea">Construido /Terreno o Suelo (m²)</span>
+			<span data-toggle="tooltip" title="BBRR Construido /Terreno o Suelo (m²) / Área Homogenea">Líneas</span>
 		</th>
 		<!--th class="text-center">AH</th-->
 		<th class="text-center">PreROL</th>
@@ -1077,9 +1077,9 @@
 			<span data-toggle="tooltip" title="BBRR en Copropiedad y Padre-Hijo">BBRR asoc.</span>
 		</th>
 		<th class="text-center">
-			<span data-toggle="tooltip" title="Avalúo fiscal / Avalúo exento / Alza gradual">Avalúo fiscal / Afecto</span>
+			<span data-toggle="tooltip" title="Avalúo fiscal / Avalúo exento / Alza gradual">Avalúo total / Exento</span>
 		</th>
-		<th class="text-center">Contrib. Trim.</th>
+		<th class="text-center">Contribución Trimestral</th>
 		<th class="text-center">
 			<span data-toggle="tooltip" title="EAC Consultado / VIgente ; Estado de movimientos">EAC C/V</span>
 		</th>
@@ -1098,7 +1098,7 @@
 		<td data-title="Dirección">PERDRO AGUIRRE CERDA 5502</td>
 		<td data-title="Destino">Habitacional</td>
 		<td data-title="RUT" class="a-derecha">12.142.785-k</td>
-		<td data-title="Dirección">Juan Gonzalez Gonzalez</td>
+		<!--td data-title="Dirección">Juan Gonzalez Gonzalez</td-->
 		<td data-title="Derecho" class="text-center">
 			<img src="../img/pdf-icon.png" width="20" height="20" alt=""/>
 			<span data-toggle="modal">100</span>
@@ -1122,14 +1122,36 @@
 			</a>
 		</td>
 		<td data-title="Avalúo Fiscal / Exención" class="a-derecha" data-toggle="modal" data-target="#myModalContribuciones">
-			<b>$40.000.000 </b>
-			<br> <b>$25.000</b>			
-			<br>
-			<a href="#" data-toggle="tooltip" onclick="myModalContribuciones" title="Ver items de contribuciones"><b>Ver detalle</b></a>
+			<span data-toggle="modal" data-target="#myModalAvaluo">
+			<a href="#" data-toggle="tooltip" title="Ver cálculo de avalúo fiscal" onclick="myModalAvaluo">
+				<i class="fa fa-calculator" style="font-size:16px;"></i>
+			</a>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<p class="derecha">
+				<b>$40.000.000 </b>
+				<br> <b>$25.000</b>			
+			</p>
+			</span>
+			<!--br>
+			<a href="#" data-toggle="tooltip" onclick="myModalContribuciones" title="Ver items de contribuciones"><b>Ver detalle</b></a-->
 		</td>
 		<td data-title="Contribución Semestral" class="a-derecha">		
-			<b>$12.500</b>
-			<p class="text-center atrasado"><b>Atrasado</b></p>
+			<span data-toggle="modal" data-target="#myModalContribuciones">
+			<a href="#" data-toggle="tooltip" title="Ver cálculo de cuota de contribuciones" onclick="myModalContribuciones">
+				<i class="fa fa-calculator" style="font-size:16px;"></i>
+			<!--i class="fa fa-external-link fa-azul" style="font-size:14px;" aria-hidden="true"></i-->
+			</a>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			
+			<p class="derecha" style="font-size:14px;"><b>$12.500</b></p>
+
+			</span>
+			<!--p class="text-center atrasado"><b>Atrasado</b></p-->
 		</td>
 		<td data-title="EAC Consultado / Vigente" class="text-center" data-toggle="modal" data-target="#myModalMovimientos">
 			11/12
@@ -1162,7 +1184,7 @@
 		<td data-title="Dirección">Las violetas 2245 </td>
 		<td data-title="Destino">Habitacional</td>
 		<td data-title="RUT" class="a-derecha">12.142.785-k</td>
-		<td data-title="Dirección">Juan Gonzalez Gonzalez</td>
+		<!--td data-title="Dirección">Juan Gonzalez Gonzalez</td-->
 		<td data-title="Derecho" class="text-center">
 			<img src="../img/pdf-icon.png" width="20" height="20" alt=""/>
 			<span data-toggle="modal" data-target="#myModalMultipropietarios">				
@@ -1195,16 +1217,39 @@
 			<b>Padre</b>
 			</a>
 		</td>
-		<td data-title="Avaluo Fiscal" class="a-derecha" data-toggle="modal" data-target="#myModalContribuciones">			
-			<b>$150.000.000</b>
-			<br><b> $35.000</b>
-			<br>
-			<a href="#" data-toggle="tooltip" onclick="myModalContribuciones" title="Ver items de contribuciones"><b>Ver detalle</b></a>
+		<td data-title="Avalúo Fiscal / Exención" class="a-derecha" data-toggle="modal" data-target="#myModalContribuciones">
+			<span data-toggle="modal" data-target="#myModalAvaluo">
+			<a href="#" data-toggle="tooltip" title="Ver cálculo de avalúo fiscal" onclick="myModalAvaluo">
+				<i class="fa fa-calculator" style="font-size:16px;"></i>
+			</a>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<p class="derecha" >
+				<b>$40.000.000 </b>
+				<br> <b>$25.000</b>			
+			</p>
+			</span>
+			<!--br>
+			<a href="#" data-toggle="tooltip" onclick="myModalContribuciones" title="Ver items de contribuciones"><b>Ver detalle</b></a-->
 		</td>
 		<td data-title="Contribución Semestral" class="a-derecha">		
-			<b>$30.500</b>
-			<p class="text-center pagado"><b>Pagado</b></p>
+			<span data-toggle="modal" data-target="#myModalContribuciones">
+			<a href="#" data-toggle="tooltip" title="Ver cálculo de cuota de contribuciones" onclick="myModalContribuciones">
+				<i class="fa fa-calculator" style="font-size:16px;"></i>
+			<!--i class="fa fa-external-link fa-azul" style="font-size:14px;" aria-hidden="true"></i-->
+			</a>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			
+			<p class="derecha" style="font-size:14px;"><b>$12.500</b></p>
+
+			</span>
+			<!--p class="text-center atrasado"><b>Atrasado</b></p-->
 		</td>
+
 		<td data-title="EAC Consultado / Vigente" class="text-center">11/12
 			<br>
 			<a href="#" data-toggle="tooltip" onclick="myModalMovimientos" title="Ver Estado de movimiento"><b>Ver mov.</b></a></td>
@@ -1235,7 +1280,7 @@
 		<td data-title="Dirección">Av Los Leones 2108   </td>
 		<td data-title="Destino">Estacionamiento</td>
 		<td data-title="RUT" class="a-derecha">12.142.785-k</td>
-		<td data-title="Dirección">Juan Gonzalez Gonzalez</td>
+		<!--td data-title="Dirección">Juan Gonzalez Gonzalez</td-->
 		<td data-title="Derecho" class="text-center">100
 			<br>			
 			<a href="#" data-toggle="tooltip" onclick="myModalF2890" title="Consultar F2890"><b>Ver F2890</b></a>				
@@ -1262,18 +1307,39 @@
 			<b>Coprop.</b>
 			</a>
 		</td>		
-		<td data-title="Avaluo Fiscal" class="a-derecha">			
-			<a href="sii-certificados.html" target="_blank" data-toggle="tooltip" title="Descargar certificado de avalúo">
-			<b>$10.000.000 </b>
-			</a>			
-			<br><b>$0</b>
-			<br>
-			<a href="#" data-toggle="tooltip" onclick="myModalContribuciones" title="Ver items de contribuciones"><b>Ver detalle</b></a>
+		<td data-title="Avalúo Fiscal / Exención" class="a-derecha" data-toggle="modal" data-target="#myModalContribuciones">
+			<span data-toggle="modal" data-target="#myModalAvaluo">
+			<a href="#" data-toggle="tooltip" title="Ver cálculo de avalúo fiscal" onclick="myModalAvaluo">
+				<i class="fa fa-calculator" style="font-size:16px;"></i>
+			</a>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<p class="derecha" >
+				<b>$40.000.000 </b>
+				<br> <b>$25.000</b>			
+			</p>
+			</span>
+			<!--br>
+			<a href="#" data-toggle="tooltip" onclick="myModalContribuciones" title="Ver items de contribuciones"><b>Ver detalle</b></a-->
 		</td>
 		<td data-title="Contribución Semestral" class="a-derecha">		
-			<b>$2.500</b>
-			<p class="text-center pagado"><b>Pagado</b></p>
+			<span data-toggle="modal" data-target="#myModalContribuciones">
+			<a href="#" data-toggle="tooltip" title="Ver cálculo de cuota de contribuciones" onclick="myModalContribuciones">
+				<i class="fa fa-calculator" style="font-size:16px;"></i>
+			<!--i class="fa fa-external-link fa-azul" style="font-size:14px;" aria-hidden="true"></i-->
+			</a>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			
+			<p class="derecha" style="font-size:14px;"><b>$12.500</b></p>
+
+			</span>
+			<!--p class="text-center atrasado"><b>Atrasado</b></p-->
 		</td>
+
 		<td data-title="EAC Consultado / Vigente" class="text-center">11/12
 			<br>
 			<a href="#" data-toggle="tooltip" onclick="myModalMovimientos" title="Ver Estado de movimiento"><b>Ver mov.</b></a></td>
@@ -1304,7 +1370,7 @@
 		<td data-title="Dirección">Santa Isabel 80</td>
 		<td data-title="Destino">Habitacional</td>
 		<td data-title="RUT" class="a-derecha">12.142.785-k</td>
-		<td data-title="Dirección">Juan Gonzalez Gonzalez</td>
+		<!--td data-title="Dirección">Juan Gonzalez Gonzalez</td-->
 		<td data-title="Derecho" class="text-center">100
 			<br>
 			<a href="#" data-toggle="tooltip" onclick="myModalF2890" title="Consultar F2890"><b>Ver F2890</b></a>			
@@ -1335,12 +1401,12 @@
 			<b>$250.000.000</b>
 			</a>
 			<br><b>$0</b>
-			<br>
-			<a href="#" data-toggle="tooltip" onclick="myModalContribuciones" title="Ver items de contribuciones"><b>Ver detalle</b></a>
+			<!--br>
+			<a href="#" data-toggle="tooltip" onclick="myModalContribuciones" title="Ver items de contribuciones"><b>Ver detalle</b></a-->
 		</td>
 		<td data-title="Contribución Semestral" class="a-derecha">		
 			<b>$98.500</b>
-			<p class="text-center porpagar"><b>Por Pagar</b></p>
+			<!--p class="text-center porpagar"><b>Por Pagar</b></p-->
 		</td>
 		<td data-title="EAC Consultado / Vigente" class="text-center">11/12
 			<br>
@@ -1372,7 +1438,7 @@
 		<td data-title="Dirección">PORTUGAL 228 BD 33</td>
 		<td data-title="Destino">BODEGA</td>
 		<td data-title="RUT" class="a-derecha">12.142.785-k</td>
-		<td data-title="Dirección">Juan Gonzalez Gonzalez</td>
+		<!--td data-title="Dirección">Juan Gonzalez Gonzalez</td-->
 		<td data-title="Derecho" class="text-center">100
 			<br>
 			<a href="#" data-toggle="tooltip" onclick="myModalF2890" title="Consultar F2890"><b>Ver F2890</b></a>			
@@ -1403,12 +1469,12 @@
 			<b>$1.000.000</b>
 			</a>
 			<br><b>$0</b>
-			<br>
-			<a href="#" data-toggle="tooltip" onclick="myModalContribuciones" title="Ver items de contribuciones"><b>Ver detalle</b></a>			
+			<!--br>
+			<a href="#" data-toggle="tooltip" onclick="myModalContribuciones" title="Ver items de contribuciones"><b>Ver detalle</b></a-->			
 		</td>
 		<td data-title="Contribución Semestral" class="a-derecha">		
 			<b>$500</b>
-			<p class="text-center porpagar"><b>Por Pagar</b></p>
+			<!--p class="text-center porpagar"><b>Por Pagar</b></p-->
 		</td>
 		<td data-title="EAC Consultado / Vigente" class="text-center">11/12
 			<br>
@@ -1440,7 +1506,7 @@
 		<td data-title="Dirección">Ramon Picarte 1936  </td>
 		<td data-title="Destino">Habitacional</td>
 		<td data-title="RUT" class="a-derecha">12.142.785-k</td>
-		<td data-title="Dirección">Juan Gonzalez Gonzalez</td>
+		<!--td data-title="Dirección">Juan Gonzalez Gonzalez</td-->
 		<td data-title="Derecho" class="text-center">100
 			<br>
 			<a href="#" data-toggle="tooltip" onclick="myModalF2890" title="Consultar F2890"><b>Ver F2890</b></a>			
@@ -1469,12 +1535,12 @@
 		<td data-title="Avaluo Fiscal" class="a-derecha">
 			<b>$40.000.000</b>
 			<br><b> $25.000</b>
-			<br>
-			<a href="#" data-toggle="tooltip" onclick="myModalContribuciones" title="Ver items de contribuciones"><b>Ver detalle</b></a>			
+			<!--br>
+			<a href="#" data-toggle="tooltip" onclick="myModalContribuciones" title="Ver items de contribuciones"><b>Ver detalle</b></a-->			
 		</td>
 		<td data-title="Contribución Semestral" class="a-derecha">		
 			<b>$12.500</b>
-			<p class="text-center porpagar"><b>Por Pagar</b></p>
+			<!--p class="text-center porpagar"><b>Por Pagar</b></p-->
 		</td>
 		<td data-title="EAC Consultado / Vigente" class="text-center">11/12
 			<br>
