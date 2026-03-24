@@ -2108,75 +2108,7 @@ $('.modal-child').on('hidden.bs.modal', function () {
     </div>
     </div>  
 	
- <script>
-$("#terreno").hide();
-$("#construccion").hide();
-$("#biencomun").hide();
-$("#descartadas").hide();
-function showTerreno()
-{	
-	if($("#terreno").is(':hidden'))
-	{
-		$("#terreno").show();		
-		$("#construccion").hide();
-		$("#biencomun").hide();
-	}else
-	{
-		$("#terreno").hide();		
-		$("#biencomun").hide();
-		$("#construccion").hide();
-	}
-}
-
-function showConstruccion()
-{	
-	if($("#construccion").is(':hidden'))
-	{
-		$("#terreno").hide();
-		$("#biencomun").hide();
-		$("#construccion").show();				
-	}else
-	{
-		$("#construccion").hide();
-		$("#terreno").hide();
-		$("#biencomun").hide();
-	}
-}
-
-function showBiencomun()
-{	
-	if($("#biencomun").is(':hidden'))
-	{
-		$("#terreno").hide();
-		$("#construccion").hide();
-		$("#biencomun").show();				
-	}else
-	{
-		$("#construccion").hide();
-		$("#terreno").hide();
-		$("#biencomun").hide();
-	}
-}
-
-function showDescartadas()
-{	
-	if($("#descartadas").is(':hidden'))
-	{
-		$("#descartadas").show();				
-	}else
-	{
-		$("#descartadas").hide();
-	}
-}
-
-
-function closeAlert()
-{
-	$("#divMail").hide();
-}
-
-</script>
-<!----------------------Modal HISTORIAL DE RE-AVALUO-------------------->  	
+ <!----------------------Modal HISTORIAL DE RE-AVALUO-------------------->  	
 
 <!----------------------Modal MUESTRAS DEL BIEN RAIZ-------------------->  	
 
@@ -4933,6 +4865,74 @@ function showCuotacontribucion()
     </div>
   </div>	
 			
+<script>
+$("#terreno").hide();
+$("#construccion").hide();
+$("#biencomun").hide();
+$("#descartadas").hide();
+function showTerreno()
+{	
+	if($("#terreno").is(':hidden'))
+	{
+		$("#terreno").show();		
+		$("#construccion").hide();
+		$("#biencomun").hide();
+	}else
+	{
+		$("#terreno").hide();		
+		$("#biencomun").hide();
+		$("#construccion").hide();
+	}
+}
+
+function showConstruccion()
+{	
+	if($("#construccion").is(':hidden'))
+	{
+		$("#terreno").hide();
+		$("#biencomun").hide();
+		$("#construccion").show();				
+	}else
+	{
+		$("#construccion").hide();
+		$("#terreno").hide();
+		$("#biencomun").hide();
+	}
+}
+
+function showBiencomun()
+{	
+	if($("#biencomun").is(':hidden'))
+	{
+		$("#terreno").hide();
+		$("#construccion").hide();
+		$("#biencomun").show();				
+	}else
+	{
+		$("#construccion").hide();
+		$("#terreno").hide();
+		$("#biencomun").hide();
+	}
+}
+
+function showDescartadas()
+{	
+	if($("#descartadas").is(':hidden'))
+	{
+		$("#descartadas").show();				
+	}else
+	{
+		$("#descartadas").hide();
+	}
+}
+
+
+function closeAlert()
+{
+	$("#divMail").hide();
+}
+
+</script>
 			
  
 <script>
