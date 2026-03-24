@@ -1667,7 +1667,7 @@ $('.modal-child').on('hidden.bs.modal', function () {
 				<tr>
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="vuc">1</td>
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="vuc">$634.447 
-					<br><a href=""data-toggle="tooltip" title="Ver muestras de operaciones del Área Homogénea" >HBB123 <i class="fa fa-external-link fa-azul" style="font-size:14px;" aria-hidden="true"></i>				</a>
+					<br><a href="#myModalMuestras" data-toggle="modal" title="Ver muestras de operaciones del Área Homogénea" onclick="myModalMuestras">HBB049 <i class="fa fa-external-link fa-azul" style="font-size:14px;" aria-hidden="true"></i></a>
 					</td>
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="sc">68</td>
@@ -1845,8 +1845,8 @@ $('.modal-child').on('hidden.bs.modal', function () {
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp"><b>Avalúo de <br>Construcción</b></td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">x</td>
-				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="cc">1,00</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">&nbsp;</td>
+				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="cc">&nbsp;</td>
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="x">=</td>
 				<td style="text-align: center !important;border-width:0px !important;padding-top:10px;padding-bottom:10px;color:#163E64 !important;" data-title="dp"><b>100.000.000</b></td>
 				</tr>				
@@ -2112,6 +2112,7 @@ $('.modal-child').on('hidden.bs.modal', function () {
 $("#terreno").hide();
 $("#construccion").hide();
 $("#biencomun").hide();
+$("#descartadas").hide();
 function showTerreno()
 {	
 	if($("#terreno").is(':hidden'))
@@ -2157,6 +2158,18 @@ function showBiencomun()
 	}
 }
 
+function showDescartadas()
+{	
+	if($("#descartadas").is(':hidden'))
+	{
+		$("#descartadas").show();				
+	}else
+	{
+		$("#descartadas").hide();
+	}
+}
+
+
 function closeAlert()
 {
 	$("#divMail").hide();
@@ -2164,6 +2177,387 @@ function closeAlert()
 
 </script>
 <!----------------------Modal HISTORIAL DE RE-AVALUO-------------------->  	
+
+<!----------------------Modal MUESTRAS DEL BIEN RAIZ-------------------->  	
+
+<div class="modal fade" id="myModalMuestras" role="dialog">
+    <div class="modal-dialog" style="width:1080px !important;">    
+      <!-- Modal content-->
+      <div class="modal-content">
+		<div class="modal-header" style="border:0px 0px 5px 0px !important;padding:5px 0px 0px 0px;">
+		<button type="button" class="close" data-dismiss="modal" style="font-size:25px;">&times;</button>
+			
+		<div class="col-md-12 text-center">
+		   <h3>Muestras de mercado consideradas para determinar el valor unitario del terreno</h3>
+		   	<hr style="margin-top:0px;margin-bottom:0px;">
+			<p>Para determinar el valor unitario de terreno del Área Homogénea se realiza un análisis territorial y de valores de mercado que contemplan registros de compraventas, tasaciones comerciales y/u otras fuentes de información, como instituciones o empresas relacionadas con el sector inmobiliario.</p>
+		</div>  
+		</div>
+		
+		<div class="modal-body" style="padding:1px !important;">
+		<div class="web-sii cuerpo">
+		<div class="panel-body">
+		<div id="no-more-tables">
+
+	<div class="col-md-12 alingboton filtro">
+		<div class="col-md-2">
+			<form class="form-inline derecha">
+				<label><b>Filtrar por:</b></label>
+			</form>	
+		</div>
+		<div class="col-md-2">
+				<input id="searchText" class="form-control search-text" style="font-size: 12px;background:#fff;"> 
+		</div>
+		<div class="col-md-2">
+			<p>&nbsp;</p>
+		</div>
+		<div class="col-md-6" style="float:right">			
+			<form class="form-inline derecha">
+				<label><b>Total de registros por página:</b></label> 
+				<select class="form-control" style="font-size: 12px;background:#fff;" "name="pageSizeSelect" id="pageSizeSelect">
+				<option label="10" value="number:10"  selected="selected">10</option>
+				<option label="25" value="number:25">25</option>
+				<option label="50" value="number:50">50</option>
+				<option label="100" value="number:100">100</option>
+				<option label="500" value="number:500">500</option>
+				<option label="1000" value="number:1000">1000</option>
+				<option label="2000" value="number:2000">2000</option>
+				</select>
+			</form>
+		</div>
+	</div>
+
+	
+
+<table class="table table-striped table-bordered table-hover cf">
+<thead class="cf">
+	<tr>
+	<th class="text-center" rowspan="2">Id Muestra</th>
+	<th class="text-center" rowspan="2">Comuna</th>
+	<th class="text-center" colspan="2">ROL</th>
+	<th class="text-center" rowspan="2">AH</th>
+	<th class="text-center" rowspan="2">Dirección</th>
+	<th class="text-center" rowspan="2">Valor total<br>Muestra<br>(UF)</th>
+	<th class="text-center" rowspan="2">Valor de<br>Construcción<br>(UF)</th>
+	<th class="text-center" rowspan="2">Valor del<br>Terreno<br>(UF)</th>
+	<th class="text-center" rowspan="2">Valor unitario Terreno<br>(UF/m2)</th>
+	<th class="text-center" rowspan="2">Superficie Terreno<br>(m2)</th>
+	<th class="text-center" rowspan="2">Fecha Muestra</th>
+	<th class="text-center" rowspan="2">Fuente Muestra</th>
+	</tr>
+	<tr>
+	<th class="text-center">Manzana</th>
+	<th class="text-center">Predio</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+	<td class="text-center" data-title="Rol">1101-36511</td>
+	<td class="text-center" data-title="Comuna">ARICA</td>
+	<td class="text-center" data-title="Manzana">7221</td>
+	<td class="text-center" data-title="Predio">244</td>
+	<td class="text-center" data-title="AH">HBB049</td>
+	<td data-title="Direccion">Volcan Tacora 084 BL 8 P1 DP 102</td>	
+	<td style="text-align: right !important;" data-title="Fojas">2.051</td>
+	<td style="text-align: right !important;" data-title="Numero">1.325,2814</td>
+	<td style="text-align: right !important;" data-title="Año">725,7186</td>
+	<td style="text-align: right !important;" data-title="Año">9,0635</td>
+	<td style="text-align: right !important;" data-title="Año">80.071</td>
+	<td class="text-center" data-title="AH">2016-11-29</td>
+	<td class="text-center" data-title="AH">Compraventa</td>
+	</tr>
+	
+	<tr>
+	<td class="text-center" data-title="Rol">1101-36040</td>
+	<td class="text-center" data-title="Comuna">ARICA</td>
+	<td class="text-center" data-title="Manzana">1433</td>
+	<td class="text-center" data-title="Predio">26</td>
+	<td class="text-center" data-title="AH">HBB049</td>
+	<td data-title="Direccion">TOLTEN 1116</td>	
+	<td style="text-align: right !important;" data-title="Fojas">839,73</td>
+	<td style="text-align: right !important;" data-title="Numero">68,2814</td>
+	<td style="text-align: right !important;" data-title="Año">711,7186</td>
+	<td style="text-align: right !important;" data-title="Año">2,8778</td>
+	<td style="text-align: right !important;" data-title="Año">268.071</td>
+	<td class="text-center" data-title="AH">2016-08-25</td>
+	<td class="text-center" data-title="AH">Compraventa</td>
+	</tr>
+
+	<tr>
+	<td class="text-center" data-title="Rol">1101-29304</td>
+	<td class="text-center" data-title="Comuna">ARICA</td>
+	<td class="text-center" data-title="Manzana">7044</td>
+	<td class="text-center" data-title="Predio">11</td>
+	<td class="text-center" data-title="AH">HBB049</td>
+	<td data-title="Direccion">AMELIA DEL VILLAR 1887</td>	
+	<td style="text-align: right !important;" data-title="Fojas">2.434</td>
+	<td style="text-align: right !important;" data-title="Numero">1.287,5183</td>
+	<td style="text-align: right !important;" data-title="Año">1.146,4818</td>
+	<td style="text-align: right !important;" data-title="Año">7.077</td>
+	<td style="text-align: right !important;" data-title="Año">162</td>
+	<td class="text-center" data-title="AH">2015-04-28</td>
+	<td class="text-center" data-title="AH">Compraventa</td>
+	</tr>
+
+</tbody>
+</table>
+
+<script>
+$("#descartadas").hide();
+</script>
+
+<table class="table table-striped table-bordered table-hover cf">
+<thead class="cf">
+	<tr>
+	<th>Valor unitario terreno representativo</th>
+	<th style="text-align: right !important;" >4.26</th>
+	</tr>
+	<tr>
+	<th>Valor unitario terreno fiscal = Valor terreno representativo ( 4,26 ) x factor de seguridad ( 0,0 )</th>
+	<th style="text-align: right !important;" >0,0</th>
+	</tr>
+</thead>
+</table>
+
+<div class="row" style="font-size:11px">
+	<div class="col-sm-5">
+	<div class="dataTables_info" id="direccionesVigentes_info" role="status" aria-live="polite">
+	<b>Mostrando  del 1 al 5 de un total de 5 registros</b>
+	</div>
+	</div>
+	<div class="col-sm-6" style="padding:5px 0px 5px 0px !important;">
+		<div class="dataTables_paginate paging_simple_numbers derecha" id="direccionesVigentes_paginate" style="font-size:13px;">
+
+		<ul class="pagination" style="margin:2px 0px;">
+			<li class="previous" id="direccionesVigentes_previous" style="color:#000;">
+				<a href="">Anterior</a>
+			</li>
+			<li class="active">
+				<a href="">1</a>
+			</li>
+			<li class="paginate_button">
+				<a href="">2</a>
+			</li>
+			<li class="next" id="direccionesVigentes_next" style="color:#000;">
+				<a href="">Siguiente</a>
+			</li>
+		</ul>
+		
+		</div>
+	</div>
+</div>
+
+		<li>
+		<ul>a. Las muestras consideradas para este estudio corresponden al periodo 01/01/2021 al 31/12/2026.</ul>
+		<ul>b. Para determinar el valor unitario del terreno que poseen construcciones, se resta del monto total de transferencia, el valor de la construcción. En los casos asociados a copropiedad, se le debe sumar la fracción del bien común que le corresponda según su prorrateo.</ul>
+		<ul>c. De no contar con suficientes muestras para la determinación del valor unitario de terreno, se pueden utilizar muestras de otras áreas homogéneas con características similares ya sea de la misma comuna u otra.</ul>
+		<ul>d. La presencia de un guion en algún campo de la grilla indica la ausencia de un valor registrado.</ul>
+		<ul>e. Para más información de la determinación el valor unitario de terreno consulte la resolución N° xxx del 31 de diciembre de 2026.</ul>
+		</li>		
+
+		<p><b>
+		Para revisar las muestras que fueron descartadas en la determinación del valor unitario: <button type="button" class="btn btn-default" onclick="showDescartadas();">Ingrese aqui</button>
+		</b>
+		</p>
+		
+		<div class="my-card" id="descartadas" name="descartadas">
+			<div class="col-md-12" style="background-color:#C5d7e1;">
+				<p class="text-center" style="font-size:14px !important;margin-top:5px;padding:5px;">
+					&nbsp;<span style="font-size:14px !important;margin-top:5px;margin-bottom:5px;"><b>Muestras de mercado descartadas para determinar el valor unitario de terreno</b></span>&nbsp;
+					<button type="button" class="derecha" style="font-size:14px !important;background-color:#002C48;color:#FFF !important;" onClick="showDescartadas();"> [Cerrar muestras descartadas X]
+					</button>			
+				</p>			  
+			</div>
+			
+		<div class="col-md-12 alingboton filtro">
+			<div class="col-md-2">
+				<form class="form-inline derecha">
+					<label><b>Filtrar por:</b></label>
+				</form>	
+			</div>
+			<div class="col-md-2">
+					<input id="searchText" class="form-control search-text" style="font-size: 12px;background:#fff;"> 
+			</div>
+			<div class="col-md-2">
+				<p>&nbsp;</p>
+			</div>
+			<div class="col-md-6" style="float:right">			
+				<form class="form-inline derecha">
+					<label><b>Total de registros por página:</b></label> 
+					<select class="form-control" style="font-size: 12px;background:#fff;" "name="pageSizeSelect" id="pageSizeSelect">
+					<option label="10" value="number:10"  selected="selected">10</option>
+					<option label="25" value="number:25">25</option>
+					<option label="50" value="number:50">50</option>
+					<option label="100" value="number:100">100</option>
+					<option label="500" value="number:500">500</option>
+					<option label="1000" value="number:1000">1000</option>
+					<option label="2000" value="number:2000">2000</option>
+					</select>
+				</form>
+			</div>
+		</div>
+
+	
+
+		<table class="table table-striped table-bordered table-hover cf">
+		<thead class="cf">
+			<tr>
+			<th class="text-center" rowspan="2">Id Muestra</th>
+			<th class="text-center" rowspan="2">Comuna</th>
+			<th class="text-center" colspan="2">ROL</th>
+			<th class="text-center" rowspan="2">AH</th>
+			<th class="text-center" rowspan="2">Dirección</th>
+			<th class="text-center" rowspan="2">Valor total<br>Muestra<br>(UF)</th>
+			<th class="text-center" rowspan="2">Valor de<br>Construcción<br>(UF)</th>
+			<th class="text-center" rowspan="2">Valor del<br>Terreno<br>(UF)</th>
+			<th class="text-center" rowspan="2">Valor unitario Terreno<br>(UF/m2)</th>
+			<th class="text-center" rowspan="2">Superficie Terreno<br>(m2)</th>
+			<th class="text-center" rowspan="2">Fecha Muestra</th>
+			<th class="text-center" rowspan="2">Fuente Muestra</th>
+			<th class="text-center" rowspan="2">Causa Descarte Muestra</th>
+			</tr>
+			<tr>
+			<th class="text-center">Manzana</th>
+			<th class="text-center">Predio</th>
+			</tr>
+		</thead>
+		<tbody>
+			 <tr>
+			  <td class="text-center">1101-43105 </td>
+			  <td class="text-center">ARICA </td>
+			  <td class="text-center">7220 </td>
+			  <td class="text-center">31 </td>
+			  <td class="text-center">HBB049 </td>
+			  <td >SAN IGNACIO DE LOYOLA 950 DP 407 BL E </td>
+			  <td style="text-align: right !important;">545 </td>
+			  <td style="text-align: right !important;">1.250,0184 </td>
+			  <td style="text-align: right !important;">-705,0184 </td>
+			  <td style="text-align: right !important;">-18,9495 </td>
+			  <td style="text-align: right !important;">37,205 </td>
+			  <td class="text-center">2017-05-19 </td>
+			  <td class="text-center">Compraventa</td>
+			  <td class="text-center"><span data-toggle="tooltip" title="Valores negativos o iguales a cero"> Ver </span>  </td>
+			 </tr>
+			 <tr>
+			  <td class="text-center"> 1101-42378 </td>
+			  <td class="text-center">  ARICA </td>
+			  <td class="text-center">  7220 </td>
+			  <td class="text-center">  61 </td>
+			  <td class="text-center">  HBB049 </td>
+			  <td style="text-align: right !important;">  SAN IGNACIO DE LOYOLA 950 DP 403 BL F </td>
+			  <td style="text-align: right !important;">  545 </td>
+			  <td style="text-align: right !important;">  1.250,5106 </td>
+			  <td style="text-align: right !important;">  -705,5106 </td>
+			  <td style="text-align: right !important;">  -18,8355 </td>
+			  <td style="text-align: right !important;">  37,456 </td>
+			  <td class="text-center">  2017-04-25 </td>
+			  <td class="text-center">  Compraventa </td>
+			  <td class="text-center"><span data-toggle="tooltip" title="Valores negativos o iguales a cero"> Ver </span>  </td>
+			 </tr>
+			 <tr>
+			  <td class="text-center">1101-35304 </td>
+			  <td class="text-center">ARICA </td>
+			  <td class="text-center">1355 </td>
+			  <td class="text-center">16 </td>
+			  <td class="text-center">HBB049 </td>
+			  <td style="text-align: right !important;">CONSTANZA 1418 </td>
+			  <td style="text-align: right !important;">19,07 </td>
+			  <td style="text-align: right !important;">305,9528 </td>
+			  <td style="text-align: right !important;">-286,8828</td>
+			  <td style="text-align: right !important;">-1,4344 </td>
+			  <td style="text-align: right !important;">200 </td>
+			  <td class="text-center">2016-09-15 </td>
+			  <td class="text-center">Compraventa </td>
+			  <td class="text-center"><span data-toggle="tooltip" title="Valores negativos o iguales a cero"> Ver </span>  </td>
+			 </tr>
+			 <tr>
+			  <td class="text-center">1101-37251 </td>
+			  <td class="text-center">ARICA </td>
+			  <td class="text-center">7221 </td>
+			  <td class="text-center">1 </td>
+			  <td class="text-center">HBB049 </td>
+			  <td>SAN IGNACIO DE LOYOLA 850 DP 101 BL A </td>
+			  <td style="text-align: right !important;">555 </td>
+			  <td style="text-align: right !important;">1.247,4662 </td>
+			  <td style="text-align: right !important;">-692,4662 </td>
+			  <td style="text-align: right !important;">-17,8288 </td>
+			  <td style="text-align: right !important;">38,84 </td>
+			  <td class="text-center">2017-02-10 </td>
+			  <td class="text-center">Compraventa</td>
+			  <td class="text-center"><span data-toggle="tooltip" title="Valores negativos o iguales a cero"> Ver </span>  </td>
+			 </tr>
+			 <tr>
+			  <td class="text-center">1101-42365 </td>
+			  <td class="text-center">ARICA </td>
+			  <td class="text-center">7221 </td>
+			  <td class="text-center">104 </td>
+			  <td class="text-center">HBB049 </td>
+			  <td>SAN IGNACIO DE LOYOLA 850 DP 104 BL D </td>
+			  <td style="text-align: right !important;">555 </td>
+			  <td style="text-align: right !important;">1.247,942 </td>
+			  <td style="text-align: right !important;">-692,942 </td>
+			  <td style="text-align: right !important;">-17,7212 </td>
+			  <td style="text-align: right !important;">39,102 </td>
+			  <td class="text-center">2017-05-03 </td>
+			  <td class="text-center">Compraventa </td>
+			  <td class="text-center"><span data-toggle="tooltip" title="Valores negativos o iguales a cero"> Ver </span> </td>
+			 </tr>
+
+
+		</tbody>
+		</table>
+
+
+
+		<div class="row" style="font-size:11px">
+			<div class="col-sm-5">
+			<div class="dataTables_info" id="direccionesVigentes_info" role="status" aria-live="polite">
+			<b>Mostrando  del 1 al 5 de un total de 5 registros</b>
+			</div>
+			</div>
+			<div class="col-sm-6" style="padding:5px 0px 5px 0px !important;">
+				<div class="dataTables_paginate paging_simple_numbers derecha" id="direccionesVigentes_paginate" style="font-size:13px;">
+
+				<ul class="pagination" style="margin:2px 0px;">
+					<li class="previous" id="direccionesVigentes_previous" style="color:#000;">
+						<a href="">Anterior</a>
+					</li>
+					<li class="active">
+						<a href="">1</a>
+					</li>
+					<li class="paginate_button">
+						<a href="">2</a>
+					</li>
+					<li class="next" id="direccionesVigentes_next" style="color:#000;">
+						<a href="">Siguiente</a>
+					</li>
+				</ul>
+				
+				</div>
+			</div>
+		</div>			
+			
+			
+		</div>
+		
+		
+		</div>
+		</div>
+		</div>
+		</div>	 
+	
+        <div class="modal-footer" style="background-color:#fff;align-items: center;">
+			<p class="text-center" style="margin-bottom:0px;">
+			<button type="button" class="btn btn-default" data-dismiss="modal" onClick="showDescartadas();">Cerrar</button>
+			</p>		  
+        </div>
+      </div>
+      
+    </div>
+ </div>					
+ 
+<!---------------xxxxxxxxxxxxxxxxxxxxxxxxx------------>
+
 
 
 <div class="modal fade" id="myModalCartasHistorial" role="dialog">
