@@ -2120,9 +2120,9 @@ $('.modal-child').on('hidden.bs.modal', function () {
 		<button type="button" class="close" data-dismiss="modal" style="font-size:25px;">&times;</button>
 			
 		<div class="col-md-12 text-center">
-		   <h3>Muestras de mercado consideradas para determinar el valor unitario del terreno</h3>
+		   <h3>Muestras de mercado inmobiliario consideradas para determinar el valor unitario del terreno</h3>
 		   	<hr style="margin-top:0px;margin-bottom:0px;">
-			<p>Para determinar el valor unitario de terreno del Área Homogénea se realiza un análisis territorial y de valores de mercado que contemplan registros de compraventas, tasaciones comerciales y/u otras fuentes de información, como instituciones o empresas relacionadas con el sector inmobiliario.</p>
+			<p style="text-align:justify;">Para determinar el valor unitario de terreno del Área Homogénea se realiza un análisis territorial y de valores de mercado que contemplan registros de compraventas, tasaciones comerciales y/u otras fuentes de información, como instituciones o empresas relacionadas con el sector inmobiliario.</p>
 		</div>  
 		</div>
 		
@@ -2167,7 +2167,7 @@ $('.modal-child').on('hidden.bs.modal', function () {
 	<th class="text-center" rowspan="2">Id Muestra</th>
 	<th class="text-center" rowspan="2">Comuna</th>
 	<th class="text-center" colspan="2">ROL</th>
-	<th class="text-center" rowspan="2">AH</th>
+	<th class="text-center" rowspan="2">Área Homogénea</th>
 	<th class="text-center" rowspan="2">Dirección</th>
 	<th class="text-center" rowspan="2">Valor total<br>Muestra<br>(UF)</th>
 	<th class="text-center" rowspan="2">Valor de<br>Construcción<br>(UF)</th>
@@ -2175,7 +2175,7 @@ $('.modal-child').on('hidden.bs.modal', function () {
 	<th class="text-center" rowspan="2">Valor unitario Terreno<br>(UF/m2)</th>
 	<th class="text-center" rowspan="2">Superficie Terreno<br>(m2)</th>
 	<th class="text-center" rowspan="2">Fecha Muestra</th>
-	<th class="text-center" rowspan="2">Fuente Muestra</th>
+	<th class="text-center" rowspan="2">Tipo Muestra</th>
 	</tr>
 	<tr>
 	<th class="text-center">Manzana</th>
@@ -2230,6 +2230,16 @@ $('.modal-child').on('hidden.bs.modal', function () {
 	<td class="text-center" data-title="AH">2015-04-28</td>
 	<td class="text-center" data-title="AH">Compraventa</td>
 	</tr>
+	<tr>
+	<td colspan=9 class="text-center" style="color:#FFF;background-color:#435772;">Valor unitario terreno representativo (UF/m2)</td>
+	<td class="text-center" style="color:#FFF;background-color:#435772;">4.26</td>
+	<td colspan=3 class="text-center noborder" style="background-color:#FFF;">&nbsp;</td>
+	</tr>
+	<tr>
+	<td colspan=9 class="text-center" style="color:#FFF;background-color:#435772;">Valor unitario terreno fiscal = Valor terreno representativo ( 4,26 ) x factor de seguridad ( 0,0 )</td>
+	<td class="text-center" style="color:#FFF;background-color:#435772;">0.0</td>
+	<td colspan=3 class="text-center noborder" style="background-color:#FFF;">&nbsp;</td>
+	</tr>
 
 </tbody>
 </table>
@@ -2238,10 +2248,11 @@ $('.modal-child').on('hidden.bs.modal', function () {
 $("#descartadas").hide();
 </script>
 
+<!--
 <table class="table table-striped table-bordered table-hover cf">
 <thead class="cf">
 	<tr>
-	<th>Valor unitario terreno representativo</th>
+	<th>Valor unitario terreno representativo (UF/m2)</th>
 	<th style="text-align: right !important;" >4.26</th>
 	</tr>
 	<tr>
@@ -2250,7 +2261,7 @@ $("#descartadas").hide();
 	</tr>
 </thead>
 </table>
-
+-->
 <div class="row" style="font-size:11px">
 	<div class="col-sm-5">
 	<div class="dataTables_info" id="direccionesVigentes_info" role="status" aria-live="polite">
@@ -2280,8 +2291,8 @@ $("#descartadas").hide();
 </div>
 
 		<li>
-		<ul>a. Las muestras consideradas para este estudio corresponden al periodo 01/01/2021 al 31/12/2026.</ul>
-		<ul>b. Para determinar el valor unitario del terreno que poseen construcciones, se resta del monto total de transferencia, el valor de la construcción. En los casos asociados a copropiedad, se le debe sumar la fracción del bien común que le corresponda según su prorrateo.</ul>
+		<ul>a. Las muestras de mercado inmobiliario consideradas para este estudio corresponden al periodo 01/01/2021 al 30/06/2026.</ul>
+		<ul>b. Para determinar el valor unitario del terreno que poseen construcciones, al monto total de la muestra se le resta el valor de la construccion. En los casos asociados a copropiedad, se le debe sumar la fracción del bien común que le corresponda según su prorrateo.</ul>
 		<ul>c. De no contar con suficientes muestras para la determinación del valor unitario de terreno, se pueden utilizar muestras de otras áreas homogéneas con características similares ya sea de la misma comuna u otra.</ul>
 		<ul>d. La presencia de un guion en algún campo de la grilla indica la ausencia de un valor registrado.</ul>
 		<ul>e. Para más información de la determinación el valor unitario de terreno consulte la resolución N° xxx del 31 de diciembre de 2026.</ul>
@@ -2337,7 +2348,7 @@ $("#descartadas").hide();
 			<th class="text-center" rowspan="2">Id Muestra</th>
 			<th class="text-center" rowspan="2">Comuna</th>
 			<th class="text-center" colspan="2">ROL</th>
-			<th class="text-center" rowspan="2">AH</th>
+			<th class="text-center" rowspan="2">Área Homogénea</th>
 			<th class="text-center" rowspan="2">Dirección</th>
 			<th class="text-center" rowspan="2">Valor total<br>Muestra<br>(UF)</th>
 			<th class="text-center" rowspan="2">Valor de<br>Construcción<br>(UF)</th>
@@ -2345,8 +2356,8 @@ $("#descartadas").hide();
 			<th class="text-center" rowspan="2">Valor unitario Terreno<br>(UF/m2)</th>
 			<th class="text-center" rowspan="2">Superficie Terreno<br>(m2)</th>
 			<th class="text-center" rowspan="2">Fecha Muestra</th>
-			<th class="text-center" rowspan="2">Fuente Muestra</th>
-			<th class="text-center" rowspan="2">Causa Descarte Muestra</th>
+			<th class="text-center" rowspan="2">Tipo Muestra</th>
+			<th class="text-center" rowspan="2">Causa Rechazo Muestra</th>
 			</tr>
 			<tr>
 			<th class="text-center">Manzana</th>
@@ -4005,11 +4016,11 @@ $("#descartadas").hide();
 							<li><b>BENEFICIO DE REBAJA DE CONTRIBUCIONES PARA EL ADULTO MAYOR (BAM) Ley 20.732</b>
 							Este beneficio consiste en una rebaja del 50% o 100% en las cuotas de contribuciones para adultos mayores que sean propietarios de una vivienda con destino habitacional. El porcentaje de rebaja depende del nivel de ingresos anuales del beneficiario. El beneficio se aplica a las cuotas del segundo semestre del año en curso y del primer semestre del año siguiente, siempre que se cumplan los requisitos establecidos por la ley.
 							</li>
-							<li><b>PREDIOS TOMADOS O URSURPADOS ILEGALMENTE Resolución exenta N° 144, 15 de diciembre de 2023</b>
+							<li><b>PREDIOS TOMADOS O OCUPADOS ILEGALMENTE Resolución exenta N° 144, 15 de diciembre de 2023</b>
 							Los dueños de propiedades ocupadas ilegalmente pueden solicitar una rebaja de hasta un 95% en sus contribuciones, según el porcentaje de terreno afectado. Para ello, deben ingresar a sii.cl y presentar una Solicitud de Modificación Catastral, adjuntando la denuncia y otros documentos que acrediten la ocupación.
 							</li>
 							
-							<li><b>MODELO C / MODIFICACIÓN DE GIRO DE CONTRIBUCIONES</b>
+							<li><b>MODIFICACIÓN DE GIRO DE CONTRIBUCIONES</b>
 							Corresponde a una modificación en la cuota normal de contribuciones, originada por un aumento o disminución excepcional en su monto. Estas variaciones pueden deberse a situaciones extraordinarias, como catástrofes, recálculos, o modificaciones en cuotas fuera del período de retroactividad máxima de tres años. El objetivo de esta modificación es corregir o regularizar las cuotas previamente emitidas.
 							</li>													
 						
