@@ -1614,3 +1614,8 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 	
+
+.noborder {
+    border: none !important;
+    background: #FFFFFF !important;
+}
